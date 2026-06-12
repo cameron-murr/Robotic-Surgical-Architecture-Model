@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- Title -->
+    <mxCell id="title" value="RBNS — Level 2: IBD — 1.0 Localization &amp; Tracking Subsystem" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="30" width="800" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="subtitle" value="SysML-inspired notation | draw.io | Four child blocks with sensor fusion feedback architecture" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=2;" vertex="1" parent="1">
+      <mxGeometry x="40" y="58" width="700" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- Subsystem Boundary -->
+    <mxCell id="boundary" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;strokeWidth=3;dashed=1;arcSize=2;" vertex="1" parent="1">
+      <mxGeometry x="40" y="90" width="1574" height="920" as="geometry" />
+    </mxCell>
+    <mxCell id="boundary_label" value="«block» 1.0 Localization &amp; Tracking Subsystem" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontStyle=1;fontSize=12;fontColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="55" y="95" width="500" height="24" as="geometry" />
+    </mxCell>
+
+    <!-- Input ports (left boundary) -->
+    <mxCell id="p_ex02" value="IF-EX-02&lt;br&gt;(CBCT frames)" style="text;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;align=center;fontSize=8;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="200" width="90" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="p_ex03" value="IF-EX-03&lt;br&gt;(Joint encoders)" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;fontSize=8;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="480" width="90" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="p_if06" value="IF-06&lt;br&gt;(Registered volume&lt;br&gt;+ confidence)" style="text;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;align=center;fontSize=8;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="750" width="90" height="40" as="geometry" />
+    </mxCell>
+
+    <!-- Output ports (right boundary) -->
+    <mxCell id="p_if01" value="IF-01&lt;br&gt;(Fused pose +&lt;br&gt;uncertainty)" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;fontSize=8;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="1524" y="480" width="90" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p_if03" value="IF-03&lt;br&gt;(Tracking status)" style="text;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;fontSize=8;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="1524" y="750" width="90" height="30" as="geometry" />
+    </mxCell>
+
+    <!-- Block 1.1: Proprioceptive State Estimator -->
+    <mxCell id="b11" value="&lt;b&gt;«block»&lt;/b&gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;1.1 Proprioceptive&lt;br&gt;State Estimator&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;b&gt;Inputs:&lt;/b&gt; Joint encoder positions (IF-EX-03),&lt;br&gt;bronchoscope kinematic model&lt;br&gt;&lt;b&gt;Outputs:&lt;/b&gt; FK-derived tip pose estimate,&lt;br&gt;velocity estimate&lt;br&gt;&lt;b&gt;Method:&lt;/b&gt; Forward kinematics chain&lt;br&gt;&lt;b&gt;Failure mode:&lt;/b&gt; Degrades under&lt;br&gt;significant scope flexion&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;verticalAlign=top;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="220" y="380" width="280" height="200" as="geometry" />
+    </mxCell>
+
+    <!-- Block 1.2: Vision-Based Localization -->
+    <mxCell id="b12" value="&lt;b&gt;«block»&lt;/b&gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;1.2 Vision-Based&lt;br&gt;Localization&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;b&gt;Inputs:&lt;/b&gt; Endoscopic camera frame&lt;br&gt;&lt;b&gt;Outputs:&lt;/b&gt; Airway landmark matches,&lt;br&gt;relative displacement estimate&lt;br&gt;&lt;b&gt;Method:&lt;/b&gt; Feature matching vs.&lt;br&gt;preop airway texture map&lt;br&gt;&lt;b&gt;Failure mode:&lt;/b&gt; Low-contrast or&lt;br&gt;mucus-occluded airways&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;verticalAlign=top;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="220" y="660" width="280" height="210" as="geometry" />
+    </mxCell>
+
+    <!-- Block 1.3: Image-to-Patient Registration -->
+    <mxCell id="b13" value="&lt;b&gt;«block»&lt;/b&gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;1.3 Image-to-Patient&lt;br&gt;Registration&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;b&gt;Inputs:&lt;/b&gt; Registered CBCT volume (IF-06),&lt;br&gt;current FK estimate (from 1.1)&lt;br&gt;&lt;b&gt;Outputs:&lt;/b&gt; Refined tip position in&lt;br&gt;CBCT-grounded coordinate frame&lt;br&gt;&lt;b&gt;Method:&lt;/b&gt; ICP or intensity-based registration&lt;br&gt;&lt;b&gt;Constraint:&lt;/b&gt; Must complete within&lt;br&gt;one respiratory cycle (~4 sec)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=10;verticalAlign=top;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="700" y="660" width="280" height="220" as="geometry" />
+    </mxCell>
+
+    <!-- Block 1.4: Sensor Fusion & Uncertainty Estimator -->
+    <mxCell id="b14" value="&lt;b&gt;«block»&lt;/b&gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;1.4 Sensor Fusion &amp;amp;&lt;br&gt;Uncertainty Estimator&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;b&gt;Inputs:&lt;/b&gt; Pose estimates from 1.1, 1.2, 1.3&lt;br&gt;&lt;b&gt;Outputs:&lt;/b&gt; Fused tip pose (x,y,z,q),&lt;br&gt;3D uncertainty ellipsoid → IF-01;&lt;br&gt;Tracking status → IF-03&lt;br&gt;&lt;b&gt;Method:&lt;/b&gt; Extended Kalman Filter&lt;br&gt;&lt;b&gt;Fusion hierarchy:&lt;/b&gt;&lt;br&gt;FK = high-rate / low-accuracy&lt;br&gt;Vision = med-rate / med-accuracy&lt;br&gt;CBCT reg = low-rate / high-accuracy&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;fontSize=10;verticalAlign=top;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="1100" y="380" width="300" height="280" as="geometry" />
+    </mxCell>
+
+    <!-- Internal interface: 1.1 → 1.4 (FK pose) -->
+    <mxCell id="i11_14" value="FK pose estimate&lt;br&gt;+ velocity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#6c8ebf;" edge="1" source="b11" target="b14" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="660" y="480" />
+          <mxPoint x="1100" y="480" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Internal interface: 1.2 → 1.4 (vision displacement) -->
+    <mxCell id="i12_14" value="Landmark matches,&lt;br&gt;displacement estimate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#6c8ebf;" edge="1" source="b12" target="b14" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="660" y="760" />
+          <mxPoint x="900" y="760" />
+          <mxPoint x="900" y="560" />
+          <mxPoint x="1100" y="560" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Internal interface: 1.3 → 1.4 (CBCT-refined position) -->
+    <mxCell id="i13_14" value="CBCT-refined tip position&lt;br&gt;(periodic, high accuracy)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#9673a6;" edge="1" source="b13" target="b14" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="980" y="770" />
+          <mxPoint x="1060" y="770" />
+          <mxPoint x="1060" y="620" />
+          <mxPoint x="1100" y="620" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Internal interface: 1.1 → 1.3 (FK initializes registration) -->
+    <mxCell id="i11_13" value="FK estimate&lt;br&gt;(init for ICP)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#6c8ebf;dashed=1;" edge="1" source="b11" target="b13" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="500" y="560" />
+          <mxPoint x="500" y="630" />
+          <mxPoint x="660" y="630" />
+          <mxPoint x="660" y="720" />
+          <mxPoint x="700" y="720" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- External ports to blocks -->
+    <mxCell id="ex03_to_11" value="" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#6c8ebf;dashed=1;" edge="1" source="p_ex03" target="b11" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="170" y="495" />
+          <mxPoint x="170" y="480" />
+          <mxPoint x="220" y="480" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Endoscope camera input to 1.2 (annotated) -->
+    <mxCell id="cam_note" value="Endoscopic camera&lt;br&gt;(bronchoscope-integrated)" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=8;rounded=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+      <mxGeometry x="40" y="700" width="130" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="cam_to_12" value="" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#6c8ebf;dashed=1;" edge="1" source="cam_note" target="b12" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="170" y="720" />
+          <mxPoint x="220" y="720" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <mxCell id="if06_to_13" value="" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#9673a6;dashed=1;" edge="1" source="p_if06" target="b13" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="170" y="770" />
+          <mxPoint x="700" y="770" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 1.4 → output ports -->
+    <mxCell id="b14_to_if01" value="" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#82b366;dashed=1;" edge="1" source="b14" target="p_if01" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1450" y="500" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="b14_to_if03" value="" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#d79b00;dashed=1;" edge="1" source="b14" target="p_if03" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1450" y="640" />
+          <mxPoint x="1450" y="765" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Design Decision Callout -->
+    <mxCell id="dd_box" value="&lt;b&gt;Key Design Decision: Sensor Fusion Hierarchy&lt;/b&gt;&lt;br&gt;CBCT registration is periodic (triggered, ~low rate) and high-accuracy.&lt;br&gt;FK is continuous (high rate) but accumulates error under flexion.&lt;br&gt;Vision is medium rate, fails in low-contrast environments.&lt;br&gt;The EKF weights these three sources by their respective error covariances,&lt;br&gt;using CBCT registration as a periodic ground-truth correction to the continuous FK+vision estimate.&lt;br&gt;This architecture tolerates any single-source failure gracefully." style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;fontSize=9;whiteSpace=wrap;rounded=1;verticalAlign=top;" vertex="1" parent="1">
+      <mxGeometry x="700" y="200" width="580" height="120" as="geometry" />
+    </mxCell>
+
+    <!-- Uncertainty callout -->
+    <mxCell id="unc_box" value="&lt;b&gt;IF-01 carries uncertainty bounds — not just position.&lt;/b&gt;&lt;br&gt;Path Planning (2.0) uses the 3D uncertainty ellipsoid to gate replanning:&lt;br&gt;if position uncertainty exceeds threshold, replanning is inhibited&lt;br&gt;(system holds current path rather than commanding motion&lt;br&gt;based on unreliable localization)." style="text;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;fontSize=9;whiteSpace=wrap;rounded=1;verticalAlign=top;" vertex="1" parent="1">
+      <mxGeometry x="220" y="200" width="420" height="120" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>

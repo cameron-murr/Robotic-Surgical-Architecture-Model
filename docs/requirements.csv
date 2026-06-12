@@ -1,0 +1,18 @@
+id,requirement,allocated_to,verification_method,status
+RBNS-REQ-001,"The RBNS shall produce a fused bronchoscope tip pose estimate at a rate of no less than 30 Hz during the NAVIGATE phase.","1.0/1.4",Test,Baselined
+RBNS-REQ-002,"Each fused tip pose estimate shall include a 3D position uncertainty representation expressed as an ellipsoid with semi-axis lengths in millimeters.","1.4","Inspection,Test",Baselined
+RBNS-REQ-003,"The RBNS shall complete image-to-patient registration within 4 seconds of receiving a CBCT volume.","1.3,3.0",Test,Baselined
+RBNS-REQ-004,"The RBNS shall inhibit path replanning when the tip position uncertainty exceeds the configured replanning threshold.","2.2",Test,Baselined
+RBNS-REQ-005,"The replanning uncertainty threshold shall be a configurable parameter modifiable without software rebuild.","2.2","Inspection,Demonstration",Baselined
+RBNS-REQ-006,"The RBNS shall command zero scope advancement (HOLD) within one guidance cycle of the tip position uncertainty exceeding the configured threshold.","2.3",Test,Baselined
+RBNS-REQ-007,"All guidance commands shall be magnitude-limited to configurable maximum advance rate and maximum steering angle values prior to transmission on IF-07.","2.3",Test,Baselined
+RBNS-REQ-008,"The RBNS shall implement the procedure state machine with states IDLE, NAVIGATE, CONFIRM, BIOPSY, FAULT, and ABORT, with transitions as defined in the Supervisor state machine model.","4.0","Test,Demonstration",Baselined
+RBNS-REQ-009,"All communication between the RBNS and external systems shall be routed through the Procedure Supervisor.","4.0","Inspection,Analysis",Baselined
+RBNS-REQ-010,"The RBNS shall report a lost-tracking alert to the Procedure Supervisor within 100 ms of tracking loss detection.","1.4",Test,Baselined
+RBNS-REQ-011,"Upon deassertion of the motion enable signal (IF-EX-06a), the RBNS shall cease issuing guidance commands within 50 ms.","4.0",Test,Baselined
+RBNS-REQ-012,"Upon receiving a lost-tracking alert, the Procedure Supervisor shall transition to the FAULT state and command HOLD on IF-EX-04 within 100 ms.","4.0",Test,Baselined
+RBNS-REQ-013,"The RBNS shall maintain a degraded tip pose estimate upon failure of any single localization source, and shall flag the estimate as DEGRADED on IF-03.","1.4","Test,Analysis",Baselined
+RBNS-REQ-014,"The RBNS shall compute an airway path from current position to a newly commanded target within 1 second.","2.1",Test,Baselined
+RBNS-REQ-015,"The end-to-end latency from a tip pose estimate (IF-01) to the corresponding guidance command transmission (IF-EX-04) shall not exceed 200 ms.","2.0,4.0","Test,Analysis",Baselined
+RBNS-REQ-016,"The RBNS shall issue CBCT acquisition triggers (IF-EX-02b) only during the NAVIGATE and CONFIRM procedure phases.","4.0",Test,Baselined
+RBNS-REQ-017,"The RBNS shall record all state transitions, replanning events, fault events, and the tip pose trace to the Procedure Data Recorder (IF-EX-07) with timestamps of 10 ms resolution or better.","4.0","Test,Inspection",Baselined

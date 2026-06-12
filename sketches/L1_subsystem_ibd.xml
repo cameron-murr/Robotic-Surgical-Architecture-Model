@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- Title -->
+    <mxCell id="title" value="RBNS — Level 1: Internal Block Diagram (IBD)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="30" width="700" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="subtitle" value="SysML-inspired notation | draw.io | Four internal subsystem blocks with explicit interface definitions" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=2;" vertex="1" parent="1">
+      <mxGeometry x="40" y="58" width="700" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- RBNS System Boundary -->
+    <mxCell id="boundary" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;strokeWidth=3;dashed=1;arcSize=2;verticalAlign=top;" vertex="1" parent="1">
+      <mxGeometry x="40" y="90" width="1574" height="970" as="geometry" />
+    </mxCell>
+    <mxCell id="boundary_label" value="«block» Robotic Bronchoscopy Navigation Subsystem (RBNS)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontStyle=1;fontSize=12;fontColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="55" y="95" width="500" height="24" as="geometry" />
+    </mxCell>
+
+    <!-- External ports on boundary (stub connectors) -->
+    <!-- Left side ports: IF-EX-01 (preop), IF-EX-02 (CBCT), IF-EX-03 (RMC in) -->
+    <mxCell id="port_ex01" value="IF-EX-01" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;fontSize=8;whiteSpace=wrap;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="200" width="80" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="port_ex02" value="IF-EX-02" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;fontSize=8;whiteSpace=wrap;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="480" width="80" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="port_ex03" value="IF-EX-03" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;fontSize=8;whiteSpace=wrap;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="760" width="80" height="24" as="geometry" />
+    </mxCell>
+
+    <!-- Right side ports: IF-EX-04 (RMC out), IF-EX-05 (console), IF-EX-06 (safety), IF-EX-07 (recorder) -->
+    <mxCell id="port_ex04" value="IF-EX-04" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;fontSize=8;whiteSpace=wrap;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="1534" y="760" width="80" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="port_ex05" value="IF-EX-05" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;fontSize=8;whiteSpace=wrap;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="1534" y="200" width="80" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="port_ex06" value="IF-EX-06" style="text;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;fontSize=8;whiteSpace=wrap;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="1534" y="480" width="80" height="24" as="geometry" />
+    </mxCell>
+    <mxCell id="port_ex07" value="IF-EX-07" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;fontSize=8;whiteSpace=wrap;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="1534" y="900" width="80" height="24" as="geometry" />
+    </mxCell>
+
+    <!-- Block 1.0: Localization & Tracking -->
+    <mxCell id="b10" value="&lt;b&gt;«block»&lt;/b&gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;1.0 Localization &amp;amp;&lt;br&gt;Tracking Subsystem&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Fuses proprioceptive, vision,&lt;br&gt;and CBCT data into a single&lt;br&gt;tip position + uncertainty estimate&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;verticalAlign=top;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="200" y="420" width="280" height="160" as="geometry" />
+    </mxCell>
+
+    <!-- Block 2.0: Path Planning & Guidance -->
+    <mxCell id="b20" value="&lt;b&gt;«block»&lt;/b&gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;2.0 Path Planning &amp;amp;&lt;br&gt;Guidance Subsystem&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Plans and continuously updates&lt;br&gt;airway navigation path; generates&lt;br&gt;motion guidance commands&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;verticalAlign=top;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="800" y="420" width="280" height="160" as="geometry" />
+    </mxCell>
+
+    <!-- Block 3.0: Image Processing & Registration -->
+    <mxCell id="b30" value="&lt;b&gt;«block»&lt;/b&gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;3.0 Image Processing &amp;amp;&lt;br&gt;Registration Subsystem&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Ingests CBCT volumes; registers&lt;br&gt;intraoperative imaging to preop&lt;br&gt;model; outputs confidence score&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=10;verticalAlign=top;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="200" y="700" width="280" height="160" as="geometry" />
+    </mxCell>
+
+    <!-- Block 4.0: Procedure Supervisor -->
+    <mxCell id="b40" value="&lt;b&gt;«block»&lt;/b&gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;4.0 Procedure Supervisor&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Sole external interface point.&lt;br&gt;Manages procedure state machine&lt;br&gt;(IDLE → NAVIGATE → CONFIRM → BIOPSY).&lt;br&gt;Routes commands; handles faults.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=10;verticalAlign=top;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="800" y="700" width="280" height="180" as="geometry" />
+    </mxCell>
+
+    <!-- IF-01: Localization → Path Planning -->
+    <mxCell id="if01" value="&lt;b&gt;IF-01&lt;/b&gt;&lt;br&gt;Tip position (x,y,z),&lt;br&gt;orientation quaternion,&lt;br&gt;3D uncertainty ellipsoid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#6c8ebf;exitX=1;exitY=0.4;exitDx=0;exitDy=0;entryX=0;entryY=0.4;entryDx=0;entryDy=0;" edge="1" source="b10" target="b20" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="600" y="484" />
+          <mxPoint x="800" y="484" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- IF-02: Path Planning → Supervisor (status) -->
+    <mxCell id="if02" value="&lt;b&gt;IF-02&lt;/b&gt;&lt;br&gt;Current waypoint,&lt;br&gt;distance-to-target,&lt;br&gt;replanning events" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#82b366;" edge="1" source="b20" target="b40" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="940" y="580" />
+          <mxPoint x="940" y="700" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- IF-03: Localization → Supervisor (tracking status) -->
+    <mxCell id="if03" value="&lt;b&gt;IF-03&lt;/b&gt;&lt;br&gt;Tracking status,&lt;br&gt;confidence flag,&lt;br&gt;lost-tracking alert" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#6c8ebf;" edge="1" source="b10" target="b40" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="340" y="580" />
+          <mxPoint x="340" y="660" />
+          <mxPoint x="750" y="660" />
+          <mxPoint x="750" y="760" />
+          <mxPoint x="800" y="760" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- IF-04: Supervisor → Path Planning (mode + target) -->
+    <mxCell id="if04" value="&lt;b&gt;IF-04&lt;/b&gt;&lt;br&gt;Procedure phase,&lt;br&gt;target coordinates,&lt;br&gt;mode command" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#d79b00;" edge="1" source="b40" target="b20" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1000" y="700" />
+          <mxPoint x="1000" y="580" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- IF-05: Supervisor → Image Processing (trigger + mode) -->
+    <mxCell id="if05" value="&lt;b&gt;IF-05&lt;/b&gt;&lt;br&gt;CBCT acquisition trigger,&lt;br&gt;registration mode command" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#d79b00;" edge="1" source="b40" target="b30" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="860" y="700" />
+          <mxPoint x="860" y="650" />
+          <mxPoint x="400" y="650" />
+          <mxPoint x="400" y="860" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- IF-06: Image Processing → Localization (registered volume) -->
+    <mxCell id="if06" value="&lt;b&gt;IF-06&lt;/b&gt;&lt;br&gt;Registered CBCT volume,&lt;br&gt;airway centerline update,&lt;br&gt;registration confidence score" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#9673a6;" edge="1" source="b30" target="b10" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="280" y="700" />
+          <mxPoint x="280" y="580" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- External stubs to blocks -->
+    <!-- IF-EX-01 → Supervisor -->
+    <mxCell id="ex01_line" value="" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#6c8ebf;dashed=1;" edge="1" source="port_ex01" target="b40" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="120" y="212" />
+          <mxPoint x="120" y="150" />
+          <mxPoint x="940" y="150" />
+          <mxPoint x="940" y="700" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- IF-EX-02 → Image Processing -->
+    <mxCell id="ex02_line" value="" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#6c8ebf;dashed=1;" edge="1" source="port_ex02" target="b30" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="160" y="492" />
+          <mxPoint x="160" y="780" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- IF-EX-03 → Localization -->
+    <mxCell id="ex03_line" value="" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#6c8ebf;dashed=1;" edge="1" source="port_ex03" target="b10" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="160" y="772" />
+          <mxPoint x="160" y="500" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Supervisor → IF-EX-04 -->
+    <mxCell id="ex04_line" value="" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#82b366;dashed=1;" edge="1" source="b40" target="port_ex04" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1080" y="790" />
+          <mxPoint x="1450" y="790" />
+          <mxPoint x="1450" y="772" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Supervisor ↔ IF-EX-05 -->
+    <mxCell id="ex05_line" value="" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#d6b656;dashed=1;" edge="1" source="b40" target="port_ex05" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1080" y="720" />
+          <mxPoint x="1450" y="720" />
+          <mxPoint x="1450" y="212" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Supervisor ↔ IF-EX-06 -->
+    <mxCell id="ex06_line" value="" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#d79b00;dashed=1;" edge="1" source="b40" target="port_ex06" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1080" y="760" />
+          <mxPoint x="1400" y="760" />
+          <mxPoint x="1400" y="492" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Supervisor → IF-EX-07 -->
+    <mxCell id="ex07_line" value="" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#82b366;dashed=1;" edge="1" source="b40" target="port_ex07" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1080" y="860" />
+          <mxPoint x="1400" y="860" />
+          <mxPoint x="1400" y="912" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Interface Reference Table -->
+    <mxCell id="table_title" value="Internal Interface Reference" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="200" y="920" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="table" value="&lt;table border=&quot;1&quot; cellpadding=&quot;4&quot; style=&quot;font-size:9px;border-collapse:collapse;&quot;&gt;&lt;tr style=&quot;background:#eee;&quot;&gt;&lt;th&gt;ID&lt;/th&gt;&lt;th&gt;From&lt;/th&gt;&lt;th&gt;To&lt;/th&gt;&lt;th&gt;Data&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IF-01&lt;/td&gt;&lt;td&gt;1.0 Localization&lt;/td&gt;&lt;td&gt;2.0 Path Planning&lt;/td&gt;&lt;td&gt;Tip pose + uncertainty ellipsoid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IF-02&lt;/td&gt;&lt;td&gt;2.0 Path Planning&lt;/td&gt;&lt;td&gt;4.0 Supervisor&lt;/td&gt;&lt;td&gt;Waypoint, distance-to-target, replanning events&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IF-03&lt;/td&gt;&lt;td&gt;1.0 Localization&lt;/td&gt;&lt;td&gt;4.0 Supervisor&lt;/td&gt;&lt;td&gt;Tracking status, confidence flag, lost-tracking alert&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IF-04&lt;/td&gt;&lt;td&gt;4.0 Supervisor&lt;/td&gt;&lt;td&gt;2.0 Path Planning&lt;/td&gt;&lt;td&gt;Procedure phase, target coordinates&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IF-05&lt;/td&gt;&lt;td&gt;4.0 Supervisor&lt;/td&gt;&lt;td&gt;3.0 Image Processing&lt;/td&gt;&lt;td&gt;CBCT acquisition trigger, registration mode&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IF-06&lt;/td&gt;&lt;td&gt;3.0 Image Processing&lt;/td&gt;&lt;td&gt;1.0 Localization&lt;/td&gt;&lt;td&gt;Registered CBCT volume, centerline update, confidence score&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;verticalAlign=top;" vertex="1" parent="1">
+      <mxGeometry x="200" y="944" width="900" height="100" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>

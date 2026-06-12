@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- Title -->
+    <mxCell id="title" value="RBNS — Level 0: System Context Diagram (BDD)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="30" width="600" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="subtitle" value="SysML-inspired notation | draw.io | Robotic Bronchoscopy Navigation Subsystem" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=2;" vertex="1" parent="1">
+      <mxGeometry x="40" y="58" width="600" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- Central System Block: RBNS -->
+    <mxCell id="rbns" value="&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;«block»&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Robotic Bronchoscopy&lt;br&gt;Navigation Subsystem&lt;br&gt;(RBNS)&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;[System Under Design]&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;fontSize=12;verticalAlign=middle;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="577" y="434" width="280" height="140" as="geometry" />
+    </mxCell>
+
+    <!-- External Actor: Preoperative Planning System -->
+    <mxCell id="preop" value="&lt;b&gt;«external system»&lt;/b&gt;&lt;br&gt;&lt;b&gt;Preoperative&lt;br&gt;Planning System&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size=9px&quot;&gt;Airway segmentation,&lt;br&gt;nodule coordinates&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;arcSize=5;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="100" y="100" width="200" height="100" as="geometry" />
+    </mxCell>
+
+    <!-- External Actor: CBCT Imaging System -->
+    <mxCell id="cbct" value="&lt;b&gt;«external system»&lt;/b&gt;&lt;br&gt;&lt;b&gt;CBCT Imaging System&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size=9px&quot;&gt;GE HealthCare OEC 3D&lt;br&gt;Mobile CBCT&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;arcSize=5;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="100" y="434" width="200" height="100" as="geometry" />
+    </mxCell>
+
+    <!-- External Actor: Robot Motion Controller -->
+    <mxCell id="rmc" value="&lt;b&gt;«external system»&lt;/b&gt;&lt;br&gt;&lt;b&gt;Robot Motion&lt;br&gt;Controller&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size=9px&quot;&gt;Bronchoscope kinematics&lt;br&gt;and actuation stack&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;arcSize=5;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="100" y="740" width="200" height="100" as="geometry" />
+    </mxCell>
+
+    <!-- External Actor: Operator Console -->
+    <mxCell id="opconsole" value="&lt;b&gt;«actor»&lt;/b&gt;&lt;br&gt;&lt;b&gt;Operator Console&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size=9px&quot;&gt;Surgeon HMI; procedure&lt;br&gt;commands and display&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;arcSize=5;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="1134" y="100" width="200" height="100" as="geometry" />
+    </mxCell>
+
+    <!-- External Actor: Safety and Interlock System -->
+    <mxCell id="safety" value="&lt;b&gt;«external system»&lt;/b&gt;&lt;br&gt;&lt;b&gt;Safety &amp;amp; Interlock&lt;br&gt;System&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size=9px&quot;&gt;E-stop, motion enable,&lt;br&gt;fault management&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;arcSize=5;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="1134" y="434" width="200" height="100" as="geometry" />
+    </mxCell>
+
+    <!-- External Actor: Procedure Data Recorder -->
+    <mxCell id="pdr" value="&lt;b&gt;«external system»&lt;/b&gt;&lt;br&gt;&lt;b&gt;Procedure Data&lt;br&gt;Recorder&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size=9px&quot;&gt;Navigation log, tip trace,&lt;br&gt;confidence metrics&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;arcSize=5;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="1134" y="740" width="200" height="100" as="geometry" />
+    </mxCell>
+
+    <!-- IF-EX-01: Preop Planning → RBNS -->
+    <mxCell id="ifex01" value="IF-EX-01&lt;br&gt;&lt;i&gt;Segmented airway tree (STL/mesh),&lt;br&gt;target nodule coordinates&lt;/i&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#6c8ebf;" edge="1" source="preop" target="rbns" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- IF-EX-02: CBCT ↔ RBNS (bidirectional) -->
+    <mxCell id="ifex02a" value="IF-EX-02a&lt;br&gt;&lt;i&gt;Intraoperative volumetric&lt;br&gt;image frames&lt;/i&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#6c8ebf;" edge="1" source="cbct" target="rbns" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="370" y="484" />
+          <mxPoint x="370" y="484" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ifex02b" value="IF-EX-02b&lt;br&gt;&lt;i&gt;Acquisition trigger commands&lt;/i&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#6c8ebf;" edge="1" source="rbns" target="cbct" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="510" y="524" />
+          <mxPoint x="370" y="524" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- IF-EX-03: Robot Motion Controller → RBNS -->
+    <mxCell id="ifex03" value="IF-EX-03&lt;br&gt;&lt;i&gt;Joint encoder positions,&lt;br&gt;bend angles&lt;/i&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#6c8ebf;" edge="1" source="rmc" target="rbns" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="370" y="790" />
+          <mxPoint x="370" y="544" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- IF-EX-04: RBNS → Robot Motion Controller -->
+    <mxCell id="ifex04" value="IF-EX-04&lt;br&gt;&lt;i&gt;Guidance commands&lt;br&gt;(waypoint, advance/retract/steer)&lt;/i&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#82b366;" edge="1" source="rbns" target="rmc" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="480" y="560" />
+          <mxPoint x="480" y="810" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- IF-EX-05: Operator Console ↔ RBNS (bidirectional) -->
+    <mxCell id="ifex05a" value="IF-EX-05a&lt;br&gt;&lt;i&gt;Procedure state commands&lt;br&gt;(start/pause/abort)&lt;/i&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#d6b656;" edge="1" source="opconsole" target="rbns" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1060" y="150" />
+          <mxPoint x="1060" y="454" />
+          <mxPoint x="857" y="454" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ifex05b" value="IF-EX-05b&lt;br&gt;&lt;i&gt;Navigation overlay,&lt;br&gt;alert states&lt;/i&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#82b366;" edge="1" source="rbns" target="opconsole" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="900" y="474" />
+          <mxPoint x="1100" y="474" />
+          <mxPoint x="1100" y="170" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- IF-EX-06: Safety ↔ RBNS -->
+    <mxCell id="ifex06a" value="IF-EX-06a&lt;br&gt;&lt;i&gt;Motion enable signal&lt;/i&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#d79b00;" edge="1" source="safety" target="rbns" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1060" y="484" />
+          <mxPoint x="857" y="484" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ifex06b" value="IF-EX-06b&lt;br&gt;&lt;i&gt;Fault acknowledgment&lt;/i&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#82b366;" edge="1" source="rbns" target="safety" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="900" y="504" />
+          <mxPoint x="1100" y="504" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- IF-EX-07: RBNS → Procedure Data Recorder -->
+    <mxCell id="ifex07" value="IF-EX-07&lt;br&gt;&lt;i&gt;Navigation log, tip position trace,&lt;br&gt;confidence metrics&lt;/i&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#82b366;" edge="1" source="rbns" target="pdr" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="857" y="554" />
+          <mxPoint x="1100" y="554" />
+          <mxPoint x="1100" y="790" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Legend -->
+    <mxCell id="leg_title" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="577" y="650" width="80" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="leg1" value="System Under Design" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=9;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="577" y="674" width="130" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="leg2" value="External System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=9;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="720" y="674" width="130" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="leg3" value="Operator / Actor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=9;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="863" y="674" width="130" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="leg4" value="Safety-Critical System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=9;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="1006" y="674" width="130" height="30" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>

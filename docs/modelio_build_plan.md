@@ -1,7 +1,7 @@
 # RBNS Modelio Build Plan — Full SysML Diagram Set
 
 **Tool:** Modelio Open Source 5.x + official SysML module
-**Source of truth:** `interface_registry.md` v1.0 and `requirements.md` v1.0 — build the model from these, not from the draw.io sketches.
+**Source of truth:** `interface_registry.md` v1.1 and `requirements.md` v2.1 — build the model from these, not from the draw.io sketches.
 
 ---
 
@@ -15,8 +15,8 @@
 | D4 | RBNS Internal Structure | IBD | RBNS block | 4 part properties, proxy ports, connectors with item flows per Tier 2 registry (IF-01..IF-08) |
 | D5 | Localization Internal Structure | IBD | Block 1.0 | 4 part properties, item flows per Tier 3 registry (IF-1.1..IF-1.4) |
 | D6 | Path Planning Internal Structure | IBD | Block 2.0 | 3 part properties, item flows per Tier 3 registry (IF-2.1..IF-2.3), replanning feedback connector |
-| D7 | Procedure Supervisor Behavior | State Machine | Block 4.0 | States: IDLE, NAVIGATE, CONFIRM, BIOPSY, FAULT, ABORT. Transitions triggered by IF-EX-05a commands, IF-03 alerts, IF-EX-06a deassert. Satisfies REQ-008 |
-| D8 | Requirements Traceability | Requirements Diagram | Requirements package | All 17 requirements as «requirement» elements; «satisfy» links to blocks; «verify» placeholders |
+| D7 | Procedure Supervisor Behavior | State Machine | Block 4.0 | States: IDLE, NAVIGATE, CONFIRM, BIOPSY, FAULT, ABORT. Transitions triggered by IF-EX-05a commands, IF-03 alerts, IF-EX-06a deassert. Satisfies SUB-REQ-008 |
+| D8 | Requirements Traceability | Requirements Diagram | Requirements package | All requirements tiers (user needs, system, subsystem, component) as «requirement» elements; «satisfy» links to blocks; «verify» placeholders |
 
 **Optional stretch (D9):** Parametric diagram for the uncertainty propagation constraint (ellipsoid volume vs. replanning threshold). High signal, but only if time permits — do not block v1 publication on it.
 
@@ -50,8 +50,8 @@
     - any → FAULT [lost-tracking alert (IF-03) OR motion enable deassert (IF-EX-06a)]
     - FAULT → NAVIGATE [fault cleared + operator confirm] / → ABORT [operator ABORT]
     - any → ABORT [operator ABORT]
-    - Entry action on FAULT: command HOLD on IF-EX-04 (satisfies REQ-012)
-13. D8: import the 17 requirements as «requirement» elements (Modelio supports manual entry; ID + text fields per `requirements.csv`), draw «satisfy» dependencies to allocated blocks per the allocation table
+    - Entry action on FAULT: command HOLD on IF-EX-04 (satisfies SUB-REQ-012)
+13. D8: import the full requirements hierarchy from `requirements.md` (user needs, system requirements, subsystem requirements, component requirements) as «requirement» elements, draw «satisfy» dependencies to allocated blocks per the allocation table. Component requirements marked TBD (COMP-REQ-001 through 003) should appear in the diagram as open items, not omitted.
 
 ### Phase 5 — Export and publish (~2 hrs)
 14. Export every diagram: right-click diagram → Export image → SVG, white background
@@ -76,10 +76,10 @@
 
 ## Definition of Done (v1)
 
-- [ ] All 8 diagrams exist and conform to interface registry v1.0
+- [ ] All 8 diagrams exist and conform to interface registry v1.1
 - [ ] Every connector in D4–D6 carries an item flow named per registry
-- [ ] D7 state machine satisfies REQ-008 transition set
-- [ ] All 17 requirements appear in D8 with at least one «satisfy» link each
+- [ ] D7 state machine satisfies SUB-REQ-008 transition set
+- [ ] All requirements tiers (user needs, system, subsystem, component) appear in D8 with at least one «satisfy» link each where applicable
 - [ ] SVGs exported and embedded in README
 - [ ] Modelio project committed to `/model`, zipped release asset created
 - [ ] draw.io XMLs moved to `/sketches` with README note: "Preliminary concept sketches, superseded by the Modelio model"

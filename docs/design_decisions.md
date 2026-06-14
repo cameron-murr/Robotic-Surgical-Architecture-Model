@@ -2,8 +2,8 @@
 ## Functional Architecture Model — Design Decisions Document
 
 **Author:** Portfolio Project — Systems Engineering Competency Demonstration  
-**Notation:** SysML-inspired (BDD / IBD conventions), implemented in draw.io  
-**Version:** 1.1  
+**Notation:** SysML, implemented in Modelio  
+**Version:** 1.2  
 **Date:** 2026
 
 ---
@@ -14,8 +14,8 @@ The RBNS is defined as the software subsystem responsible for intraoperative loc
 
 **What is explicitly excluded:**
 
-- **Robot kinematics and actuation stack.** The RBNS does not model joint torque, motor control, or mechanical drive. This boundary reflects a real architectural seam: guidance intent and motion execution are separated by a well-defined command interface (IF-EX-04), allowing either subsystem to be developed and validated independently. This mirrors the integration architecture between navigation software and drive hardware in platforms like Monarch QUEST.
-- **CBCT imaging hardware.** The GE OEC 3D system is treated as an external system. The RBNS consumes volumetric data and issues acquisition triggers via a defined open interface (IF-EX-02), consistent with the OEC Open interface model. This boundary supports imaging hardware substitution without changes to navigation software.
+- **Robot kinematics and actuation stack.** The RBNS does not model joint torque, motor control, or mechanical drive. This boundary reflects a real architectural seam: guidance intent and motion execution are separated by a well-defined command interface (IF-EX-04), allowing either subsystem to be developed and validated independently.
+- **Cone Beam Computed Tomography (CBCT) imaging hardware.** The CBCT imaging system is treated as an external system. The RBNS consumes volumetric data and issues acquisition triggers via a defined open interface (IF-EX-02). This boundary supports imaging hardware substitution without changes to navigation software.
 - **Surgeon console rendering pipeline.** The RBNS outputs navigation overlay data to the console (IF-EX-05b) but does not manage display rendering. Display logic is a separate concern with different real-time constraints.
 
 The resulting boundary produces a subsystem that is functionally cohesive — all internal blocks share the goal of knowing where the scope is and where it should go — and that has explicit, testable interfaces at every external boundary.
@@ -32,7 +32,7 @@ The Localization and Tracking subsystem (1.0) uses a four-block architecture wit
 
 | Source | Rate | Accuracy | Failure mode |
 |---|---|---|---|
-| Proprioceptive (FK) — Block 1.1 | High (~100 Hz) | Low (accumulates error under flexion) | Scope deformation, cable stretch |
+| Proprioceptive (Forward Kinematics, FK) — Block 1.1 | High (~100 Hz) | Low (accumulates error under flexion) | Scope deformation, cable stretch |
 | Vision-based — Block 1.2 | Medium (~30 Hz) | Medium | Mucus occlusion, low-contrast airways |
 | CBCT registration — Block 1.3 | Low (triggered, ~periodic) | High | Radiation dose limits frequency; latency |
 
@@ -40,7 +40,7 @@ The Localization and Tracking subsystem (1.0) uses a four-block architecture wit
 
 CBCT acquisition is periodic and triggered — it cannot provide continuous localization. Between acquisitions, the system must maintain a position estimate using FK and vision. If CBCT were treated as ground truth and discarded between acquisitions, the system would have no principled way to propagate uncertainty during the intervals. The EKF architecture treats CBCT registration as a high-accuracy periodic correction to a continuous low-accuracy estimate, which is the appropriate model for this sensor topology.
 
-**FK initializes registration (dashed interface, Block 1.1 → 1.3).** The current FK estimate is passed to the ICP registration algorithm as an initial pose estimate, improving convergence speed and reducing the risk of landing in a local minimum. This is a soft dependency — the registration can run without it — but FK initialization is expected to be used in nominal operation.
+**FK initializes registration (dashed interface, Block 1.1 → 1.3).** The current FK estimate is passed to the Iterative Closest Point (ICP) registration algorithm as an initial pose estimate, improving convergence speed and reducing the risk of landing in a local minimum. This is a soft dependency — the registration can run without it — but FK initialization is expected to be used in nominal operation.
 
 ---
 
@@ -90,9 +90,9 @@ Centralizing external interfaces in the Supervisor enforces a clean separation b
 
 ## 6. Notation Note
 
-All diagrams in this portfolio artifact use SysML-inspired notation implemented in draw.io. Diagram types follow SysML 1.6 Block Definition Diagram (BDD) and Internal Block Diagram (IBD) conventions, including block stereotypes, interface flows, and port annotations.
+All diagrams in this portfolio artifact are built in Modelio with the SysML module, following SysML 1.6 Block Definition Diagram (BDD) and Internal Block Diagram (IBD) conventions, including block stereotypes, proxy ports, and item flows.
 
-These are not formally validated SysML models and were not produced with a tool-enforcing SysML semantics (such as Cameo Systems Modeler or Papyrus). The notation is used for its communicative value — to convey architectural intent clearly to a systems engineering audience — rather than to claim compliance with the OMG SysML specification.
+Because Modelio's SysML module enforces SysML semantics, block relationships, ports, and item flows are defined as elements in the underlying model and are consistent across diagrams, rather than existing only as independent graphical shapes.
 
 ---
 
@@ -100,7 +100,7 @@ These are not formally validated SysML models and were not produced with a tool-
 
 **Assumptions made to bound this model:**
 
-- Bronchoscope DOF count is not specified; kinematics are treated as a black box consumed via IF-EX-03.
+- Bronchoscope degrees of freedom (DOF) count is not specified; kinematics are treated as a black box consumed via IF-EX-03.
 - The airway model from the preoperative planning system is assumed to be a centerline graph with segment IDs, not a raw mesh (influences Block 2.1 algorithm selection).
 - Respiratory motion compensation is not modeled. Tissue deformation due to breathing is an open problem; the current architecture assumes it is handled by the CBCT registration frequency and EKF uncertainty bounds, which is a simplification.
 - CBCT acquisition frequency is assumed to be clinically determined (radiation dose constraint), not RBNS-driven.
@@ -113,7 +113,7 @@ These are not formally validated SysML models and were not produced with a tool-
 - How should the Supervisor handle simultaneous faults — e.g., lost tracking (IF-03 alert) coinciding with a safety interlock (IF-EX-06)?
 - What is the required bronchoscope tip articulation range to satisfy SYS-REQ-001 (navigable reach into the segmented airway tree)? (Tracked as COMP-REQ-001, TBD pending kinematic reach analysis.)
 
-These questions are intentionally surfaced rather than resolved. In a production program, they would be inputs to the system FMEA and hazard analysis.
+These questions are intentionally surfaced rather than resolved. In a production program, they would be inputs to the system Failure Mode and Effects Analysis (FMEA) and hazard analysis.
 
 ---
 

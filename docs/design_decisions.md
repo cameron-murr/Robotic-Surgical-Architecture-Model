@@ -3,7 +3,7 @@
 
 **Author:** Portfolio Project — Systems Engineering Competency Demonstration  
 **Notation:** SysML-inspired (BDD / IBD conventions), implemented in draw.io  
-**Version:** 1.0  
+**Version:** 1.1  
 **Date:** 2026
 
 ---
@@ -19,6 +19,8 @@ The RBNS is defined as the software subsystem responsible for intraoperative loc
 - **Surgeon console rendering pipeline.** The RBNS outputs navigation overlay data to the console (IF-EX-05b) but does not manage display rendering. Display logic is a separate concern with different real-time constraints.
 
 The resulting boundary produces a subsystem that is functionally cohesive — all internal blocks share the goal of knowing where the scope is and where it should go — and that has explicit, testable interfaces at every external boundary.
+
+User needs and system requirements are defined in `requirements.md` (Tiers 1-2) and provide the upstream trace for the subsystem and component requirements referenced throughout this document.
 
 ---
 
@@ -68,6 +70,8 @@ When position uncertainty exceeds the threshold, Block 2.2 does not request a re
 
 The appropriate uncertainty threshold depends on airway diameter at the current position (a 3mm uncertainty is tolerable in a mainstem bronchus, unacceptable in a third-generation branch), procedure phase, and the specific clinical risk tolerance of the deployment. Making it a configurable parameter supports per-procedure-type tuning and enables clinical validation studies to characterize threshold effects on diagnostic yield and safety.
 
+**Status of the threshold value itself:** The numeric default for this threshold is formally a derived component requirement (COMP-REQ-003 in `requirements.md`, Tier 4), produced by parametric analysis relating airway diameter at branch points to tolerable position uncertainty. It is currently marked TBD pending that analysis — consistent with the principle that derived values are outputs of analysis, not asserted defaults.
+
 ---
 
 ## 5. Procedure Supervisor as the Sole External Interface Point
@@ -103,10 +107,11 @@ These are not formally validated SysML models and were not produced with a tool-
 
 **Open systems questions not resolved in this model:**
 
-- What is the correct uncertainty threshold for replanning inhibition, and how is it validated clinically?
+- What is the correct uncertainty threshold for replanning inhibition, and how is it validated clinically? (Tracked as COMP-REQ-003, TBD.)
 - How does Block 1.2 (vision-based localization) degrade gracefully when endoscopic visibility is lost entirely — does the system fall back to FK-only, and what does that do to the uncertainty ellipsoid?
 - What is the maximum tolerable latency on IF-EX-04 (guidance commands to motion controller) for safe scope advancement, and does the current architecture meet it?
 - How should the Supervisor handle simultaneous faults — e.g., lost tracking (IF-03 alert) coinciding with a safety interlock (IF-EX-06)?
+- What is the required bronchoscope tip articulation range to satisfy SYS-REQ-001 (navigable reach into the segmented airway tree)? (Tracked as COMP-REQ-001, TBD pending kinematic reach analysis.)
 
 These questions are intentionally surfaced rather than resolved. In a production program, they would be inputs to the system FMEA and hazard analysis.
 

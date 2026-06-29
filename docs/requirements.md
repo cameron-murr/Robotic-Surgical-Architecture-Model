@@ -1,10 +1,8 @@
 # RBNS Requirements Hierarchy
 
-**Status:** Baseline v2.1 — supersedes v2.0 (renamed RBNS-REQ-### to SUB-REQ-### for ID consistency; removed interview-framing commentary).
+**Status:** Baseline v2.3 — supersedes v2.2 (rewrote SYS-REQ tier to be properly system-level, scoped to the full robotic bronchoscopy system rather than the RBNS; SUB-REQ tier unchanged).
 **Structure:** User Needs → System Requirements → Subsystem Requirements → Component Requirements → Verification Method.
 **Verification methods:** I = Inspection, A = Analysis, D = Demonstration, T = Test
-
-This hierarchy exists for two reasons: (1) it gives the D8 requirements traceability diagram a real multi-level trace rather than a flat allocation table, and (2) it demonstrates the correct decomposition pattern for solution-space details (like articulation range) that are easy to mis-level as system requirements. See the worked example at the end of this document.
 
 ---
 
@@ -22,24 +20,22 @@ This hierarchy exists for two reasons: (1) it gives the D8 requirements traceabi
 
 ## Tier 2: System Requirements
 
-Derived from user needs. Stated at the level of the RBNS as a whole, without specifying internal decomposition or kinematic implementation.
+Scoped to the full robotic bronchoscopy system. These requirements describe what the overall system must do from a clinical perspective, without specifying internal subsystem architecture or implementation. The RBNS exists as the subsystem that satisfies these requirements through its functional decomposition.
 
 | ID | System Requirement | Derived From | Verif. |
 |---|---|---|---|
-| SYS-REQ-001 | The RBNS shall provide navigation guidance sufficient to reach target nodules located anywhere within the segmented airway tree provided by the preoperative planning system, including branches up to the generation depth represented in that model. | UN-002 | A, D |
-| SYS-REQ-002 | The RBNS shall provide a tip position estimate at the target location accurate to within a defined tolerance sufficient to support biopsy confirmation. | UN-001 | T, A |
-| SYS-REQ-003 | The RBNS shall not issue guidance commands that would result in airway wall contact forces exceeding safe tissue limits. | UN-003 | T, A |
-| SYS-REQ-004 | The RBNS shall cease issuing guidance commands within a bounded time of an operator pause/abort command or a safety interlock deassertion. | UN-004 | T |
-| SYS-REQ-005 | The RBNS shall record navigation events and system state with sufficient fidelity to support post-procedure audit. | UN-005 | T, I |
-| SYS-REQ-006 | The RBNS shall detect loss of reliable position information and shall respond without issuing guidance commands based on that unreliable information. | UN-003 | T, A |
-
-**Note on SYS-REQ-001:** This requirement is intentionally stated as a *reach/workspace* capability, not as a bend angle, degrees-of-freedom count, or articulation specification. At the system level, the requirement is about what clinical targets must be accessible — it says nothing about how the bronchoscope achieves that access. The "how" (articulation range, insertion mechanics, steering authority) is a derived design solution and belongs at the component level. See the worked example below.
+| SYS-REQ-001 | The system shall enable a physician to navigate a flexible bronchoscope to target pulmonary nodules identified in preoperative imaging. | UN-001, UN-002 | A, D |
+| SYS-REQ-002 | The system shall provide the physician with sufficient positional confidence to perform a tissue biopsy at the target location. | UN-001 | T, A |
+| SYS-REQ-003 | The system shall prevent unintended scope advancement or steering that could result in airway wall injury. | UN-003 | T, A |
+| SYS-REQ-004 | The system shall respond to physician pause and abort commands within a clinically acceptable time. | UN-004 | T |
+| SYS-REQ-005 | The system shall generate a complete procedure record suitable for post-procedure clinical review. | UN-005 | T, I |
+| SYS-REQ-006 | The system shall detect conditions under which navigation accuracy cannot be assured and shall prevent scope motion under those conditions. | UN-003 | T, A |
 
 ---
 
 ## Tier 3: Subsystem Requirements
 
-Originally numbered RBNS-REQ-001 through 017; renamed to SUB-REQ-### for consistency with the document numbering convention. A "Traces To" column links each to its parent System Requirement(s).
+Scoped to the Robotic Bronchoscopy Navigation Subsystem (RBNS). These requirements define what the RBNS must do to satisfy the system requirements above. Originally numbered RBNS-REQ-001 through 017; renamed to SUB-REQ-### for consistency with the document numbering convention.
 
 | ID | Requirement | Allocated To | Traces To | Verif. |
 |---|---|---|---|---|
@@ -51,7 +47,7 @@ Originally numbered RBNS-REQ-001 through 017; renamed to SUB-REQ-### for consist
 | SUB-REQ-006 | The RBNS shall command zero scope advancement (HOLD) within one guidance cycle of the tip position uncertainty exceeding the configured threshold. | 2.3 | SYS-REQ-003, SYS-REQ-006 | T |
 | SUB-REQ-007 | All guidance commands shall be magnitude-limited to configurable maximum advance rate and maximum steering angle values prior to transmission on IF-07. | 2.3 | SYS-REQ-003 | T |
 | SUB-REQ-008 | The RBNS shall implement the procedure state machine with states IDLE, NAVIGATE, CONFIRM, BIOPSY, FAULT, and ABORT, with transitions as defined in the Supervisor state machine model. | 4.0 | SYS-REQ-004 | T, D |
-| SUB-REQ-009 | All communication between the RBNS and external systems shall be routed through the Procedure Supervisor. | 4.0 (architecture constraint) | SYS-REQ-004, SYS-REQ-005 | I, A |
+| SUB-REQ-009 | All command, control, status, and logging communication between the RBNS and external systems shall be routed through the Procedure Supervisor, with the exception of continuous sensor and imaging feeds (IF-EX-02a, IF-EX-03, IF-EX-08), which connect directly to their consuming subsystem. | 4.0 (architecture constraint) | SYS-REQ-004, SYS-REQ-005 | I, A |
 | SUB-REQ-010 | The RBNS shall report a lost-tracking alert to the Procedure Supervisor within 100 ms of tracking loss detection. | 1.4 | SYS-REQ-006 | T |
 | SUB-REQ-011 | Upon deassertion of the motion enable signal (IF-EX-06a), the RBNS shall cease issuing guidance commands within 50 ms. | 4.0 | SYS-REQ-003, SYS-REQ-004 | T |
 | SUB-REQ-012 | Upon receiving a lost-tracking alert, the Procedure Supervisor shall transition to the FAULT state and command HOLD on IF-EX-04 within 100 ms. | 4.0 | SYS-REQ-003, SYS-REQ-006 | T |
@@ -65,28 +61,42 @@ Originally numbered RBNS-REQ-001 through 017; renamed to SUB-REQ-### for consist
 
 ## Tier 4: Component Requirements
 
-Derived from subsystem requirements through analysis (kinematic, statistical, or parametric). These are the requirements that translate a capability into a concrete engineering specification.
+Derived from subsystem requirements through analysis (kinematic, statistical, or parametric). These requirements translate a capability into a concrete engineering specification. TBD values are pending the indicated analysis.
 
 | ID | Requirement | Allocated To | Derived From | Method of Derivation | Verif. |
 |---|---|---|---|---|---|
-| COMP-REQ-001 | The Guidance Command Generator (2.3) shall support distal tip articulation commands of up to [TBD, kinematic analysis output] degrees per axis, sufficient to follow airway centerline curvature at branch points up to the generation depth required by SYS-REQ-001, given the bronchoscope's outer diameter, bend radius, and insertion depth at the target. | 2.3 | SYS-REQ-001, SUB-REQ-014 | Kinematic reach analysis: given the airway centerline geometry from the segmented model, compute the minimum tip articulation envelope (angle and rate) required to traverse the tightest branch curvature on any path to a reachable target. | A, T |
-| COMP-REQ-002 | The Sensor Fusion & Uncertainty Estimator (1.4) shall bound the fused position uncertainty ellipsoid such that, given a registration confidence score above the minimum threshold, the 95% confidence volume does not exceed [TBD, statistical analysis output]. | 1.4 | SYS-REQ-002, SUB-REQ-002 | Statistical analysis of Extended Kalman Filter (EKF) covariance propagation between CBCT corrections, parameterized by forward kinematics (FK) drift rate and vision update rate. | A, T |
-| COMP-REQ-003 | The Real-Time Path Updater (2.2) shall default the replanning inhibition threshold to an uncertainty ellipsoid semi-axis of [TBD, parametric analysis output], expressed in the same units as IF-01, configurable per SUB-REQ-005. | 2.2 | SYS-REQ-003, SUB-REQ-004 | Parametric analysis relating airway diameter at branch points (from the segmented model) to the maximum tolerable position uncertainty before a guidance command risks wall contact. | A, T |
+| COMP-REQ-001 | The Guidance Command Generator shall support distal tip articulation commands of up to [TBD, kinematic analysis output] degrees per axis, sufficient to follow airway centerline curvature at branch points up to the generation depth required by SYS-REQ-001, given the bronchoscope outer diameter, bend radius, and insertion depth at the target. | GuidanceCommandGenerator | SYS-REQ-001, SUB-REQ-014 | Kinematic reach analysis: given the airway centerline geometry from the segmented model, compute the minimum tip articulation envelope required to traverse the tightest branch curvature on any path to a reachable target. | A, T |
+| COMP-REQ-002 | The Sensor Fusion & Uncertainty Estimator shall bound the fused position uncertainty ellipsoid such that, given a registration confidence score above the minimum threshold, the 95% confidence volume does not exceed [TBD, statistical analysis output]. | SensorFusionUncertaintyEstimator | SYS-REQ-002, SUB-REQ-002 | Statistical analysis of Extended Kalman Filter (EKF) covariance propagation between CBCT corrections, parameterized by forward kinematics (FK) drift rate and vision update rate. | A, T |
+| COMP-REQ-003 | The Real-Time Path Updater shall default the replanning inhibition threshold to an uncertainty ellipsoid semi-axis of [TBD, parametric analysis output], expressed in the same units as IF-01, configurable per SUB-REQ-005. | RealTimePathUpdater | SYS-REQ-003, SUB-REQ-004 | Parametric analysis relating airway diameter at branch points to the maximum tolerable position uncertainty before a guidance command risks wall contact. | A, T |
+
+---
+
+## Allocation Summary
+
+| Block | Allocated Requirements |
+|---|---|
+| LocalizationTracking (incl. ImageToPatientRegistration, SensorFusionUncertaintyEstimator) | SUB-REQ-001, 002, 003, 010, 013 |
+| PathPlanningGuidance (incl. AirwayGraphNavigator, RealTimePathUpdater, GuidanceCommandGenerator) | SUB-REQ-004, 005, 006, 007, 014, 015 (shared) |
+| ImageProcessingRegistration | SUB-REQ-003 (shared) |
+| ProcedureSupervisor | SUB-REQ-008, 009, 011, 012, 015 (shared), 016, 017 |
+| GuidanceCommandGenerator | COMP-REQ-001 |
+| SensorFusionUncertaintyEstimator | COMP-REQ-002 |
+| RealTimePathUpdater | COMP-REQ-003 |
 
 ---
 
 ## Worked Example: Articulation Range — Correct Decomposition
 
-This example exists to demonstrate the correct system-requirement framing for "the bronchoscope must bend to reach targets," contrasting with the framing error of stating articulation range as a system requirement directly.
+This example demonstrates the correct system-requirement framing for "the bronchoscope must bend to reach targets."
 
 **Incorrect framing (system-level):**
 > "The system shall provide bronchoscope tip articulation of plus or minus 180 degrees."
 
-This is incorrect at the system level for two reasons. First, it bakes in a specific kinematic solution (a particular articulation mechanism and range) as if it were a clinical or mission requirement — but the actual need is about *reach*, and there may be multiple kinematic solutions (different bend radii, multi-segment articulation, insertion-depth strategies) that satisfy the same reach need. Second, it is not independently verifiable against a clinical need — "is plus or minus 180 degrees correct?" cannot be answered without first knowing what reach is required, which means the requirement as stated is actually a *derived* value masquerading as a top-level one.
+This is incorrect at the system level because it bakes in a specific kinematic solution as if it were a clinical requirement. The actual need is about *reach*, and there may be multiple kinematic solutions that satisfy the same reach need.
 
 **Correct framing, full chain:**
 
 1. **User Need (UN-002):** Physicians need to reach target nodules located in peripheral airway branches that are difficult or impossible to access with manual bronchoscopy.
-2. **System Requirement (SYS-REQ-001):** The RBNS shall provide navigation guidance sufficient to reach target nodules located anywhere within the segmented airway tree, including branches up to the generation depth represented in that model. — *Note: this is stated purely in terms of clinical workspace (airway generations), with no reference to articulation, bend angle, or mechanism.*
-3. **Subsystem Requirement (SUB-REQ-014):** The RBNS shall compute an airway path from current position to a newly commanded target within 1 second. — *This addresses the planning side of "reach": the system must be able to find a route through that workspace.*
-4. **Component Requirement (COMP-REQ-001):** The Guidance Command Generator shall support distal tip articulation of a defined number of degrees per axis, where that number is the output of a kinematic reach analysis against the airway geometry. — *This is where articulation range actually belongs. It is a number produced by analysis, not asserted from clinical need directly.*
+2. **System Requirement (SYS-REQ-001):** The system shall enable a physician to navigate a flexible bronchoscope to target pulmonary nodules identified in preoperative imaging. — *Stated in terms of clinical capability; no reference to articulation, bend angle, or mechanism.*
+3. **Subsystem Requirement (SUB-REQ-014):** The RBNS shall compute an airway path from current position to a newly commanded target within 1 second. — *Addresses the planning side of reach.*
+4. **Component Requirement (COMP-REQ-001):** The Guidance Command Generator shall support distal tip articulation of a defined number of degrees per axis, where that number is the output of a kinematic reach analysis against the airway geometry. — *This is where articulation range belongs — a number produced by analysis, not asserted from clinical need directly.*

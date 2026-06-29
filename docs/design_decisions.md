@@ -3,7 +3,7 @@
 
 **Author:** Portfolio Project — Systems Engineering Competency Demonstration  
 **Notation:** SysML, implemented in Modelio  
-**Version:** 1.2  
+**Version:** 1.4  
 **Date:** 2026
 
 ---
@@ -20,7 +20,7 @@ The RBNS is defined as the software subsystem responsible for intraoperative loc
 
 The resulting boundary produces a subsystem that is functionally cohesive — all internal blocks share the goal of knowing where the scope is and where it should go — and that has explicit, testable interfaces at every external boundary.
 
-User needs and system requirements are defined in `requirements.md` (Tiers 1-2) and provide the upstream trace for the subsystem and component requirements referenced throughout this document.
+User needs and system requirements are defined in `requirements.md` (Tiers 1-2). System requirements (SYS-REQ) are scoped to the full robotic bronchoscopy system; subsystem requirements (SUB-REQ) are scoped to the RBNS and provide the upstream trace for the component requirements referenced throughout this document.
 
 ---
 
@@ -74,17 +74,26 @@ The appropriate uncertainty threshold depends on airway diameter at the current 
 
 ---
 
-## 5. Procedure Supervisor as the Sole External Interface Point
+## 5. Procedure Supervisor as the Primary External Interface Point, with a Defined Exception for High-Rate Sensor Feeds
 
-All seven external interfaces (IF-EX-01 through IF-EX-07) connect to or through Block 4.0 (Procedure Supervisor). No internal block — Localization, Image Processing, or Path Planning — communicates directly with an external system.
+Most external interfaces connect to or through Block 4.0 (Procedure Supervisor). Command, control, status, and logging interfaces — IF-EX-01, IF-EX-02b, IF-EX-04, IF-EX-05a, IF-EX-05b, IF-EX-06a, IF-EX-06b, and IF-EX-07 — all route through the Supervisor. No internal block other than the Supervisor issues or receives these interfaces directly.
 
-**Rationale:**
+**Exception: continuous sensor and imaging feeds connect directly to their consuming subsystem, bypassing the Supervisor.** Specifically:
 
-Centralizing external interfaces in the Supervisor enforces a clean separation between functional processing (blocks 1.0–3.0) and procedure management. The functional blocks do not need to know about procedure phase, operator commands, or safety interlocks — they receive mode commands from the Supervisor and return status. This has three practical consequences:
+- IF-EX-03 (encoder telemetry, 100 Hz) and IF-EX-08 (endoscopic video, 30 Hz) connect directly to Block 1.0 (Localization & Tracking)
+- IF-EX-02a (CBCT volume) connects directly to Block 3.0 (Image Processing & Registration), and also to Block 1.0 where the registered volume is consumed for fusion
 
-1. **Testability.** Blocks 1.0–3.0 can be tested in isolation by injecting Supervisor-equivalent commands, without requiring a live console, imaging system, or safety interlock.
+**Rationale for the exception:**
+
+Routing high-rate, continuous sensor data through a central relay adds latency and turns the Supervisor into a throughput bottleneck for data it has no need to inspect or act on. The Supervisor's role is procedure-level command and fault management — it does not need to see every encoder sample or video frame to do that job. Forcing 100 Hz telemetry through an intermediary that exists to manage a six-state procedure machine would add transport latency without any corresponding architectural or safety benefit, and would make the Supervisor a single point of failure for sensor data that has nothing to do with procedure state.
+
+Command, control, and status interfaces remain centralized through the Supervisor because those interfaces are low-rate, event-driven, and directly relevant to the Supervisor's fault-handling and state-management responsibilities — centralizing them keeps fault response logic in one place (see the three practical consequences below). High-rate sensor data does not share those characteristics, so the same centralization argument does not apply.
+
+**Practical consequences of centralizing the command/control/status interfaces:**
+
+1. **Testability.** Blocks 2.0–4.0's command and control paths can be tested in isolation by injecting Supervisor-equivalent commands, without requiring a live console or safety interlock. (Blocks 1.0 and 3.0 additionally require their direct sensor/imaging feeds to be tested end-to-end, which is a reasonable trade for the latency benefit.)
 2. **Fault handling centralization.** When Block 1.0 reports a lost-tracking alert (IF-03), the Supervisor decides the system response — hold, alert, or abort. The decision logic is in one place, not distributed across functional blocks.
-3. **Interface stability.** Changes to external systems (e.g., a new imaging modality replacing CBCT) require changes only to the Supervisor's external interface handling and the Image Processing block, not to Path Planning or Localization.
+3. **Interface stability.** Changes to external command/control systems (e.g., a new operator console) require changes only to the Supervisor's external interface handling, not to Path Planning or Localization. Changes to sensor hardware require changes to the directly-connected subsystem (Localization or Image Processing) and are appropriately scoped there rather than touching the Supervisor.
 
 ---
 

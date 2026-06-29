@@ -3,7 +3,7 @@
 **Status:** CANONICAL — this registry is the single source of truth for all interface definitions.
 All diagrams, documents, and models shall conform to this registry. Discrepancies are defects in the downstream artifact, not the registry.
 
-**Version:** 1.1
+**Version:** 1.2
 **Change control:** Any interface addition, removal, or redefinition requires a version increment and a changelog entry.
 
 ---
@@ -64,10 +64,11 @@ All diagrams, documents, and models shall conform to this registry. Discrepancie
 |---|---|---|
 | 1.0 | Initial registry established as canonical. Added IF-EX-08 (bronchoscope camera), IF-07 (guidance forwarding), IF-08 (localization mode command). Renumber conflict with pre-registry working notes resolved in favor of artifact numbering. | Registry audit found one undocumented boundary crossing and one routing contradiction with Design Decision 5; both resolved. |
 | 1.1 | Removed product-specific imaging system references; replaced with generic CBCT terminology, defined on first use. Updated REQ-### references to SUB-REQ-### to match the renamed requirements hierarchy. | Project repositioned as company-agnostic; requirements ID convention updated for consistency across documents. |
+| 1.2 | No interface changes. Conformance note updated to reflect Design Decision 5 amendment (Supervisor routing exception for high-rate sensor/imaging feeds). | The registry's port assignments (Localization and Image Processing receiving certain external interfaces directly) were already correct; the design decisions document and SUB-REQ-009 had not caught up to match. |
 
 ## Conformance Notes for Downstream Artifacts
 
 - `L0_system_context` diagram: **requires update** — add Bronchoscope Camera actor and IF-EX-08
 - `L2_path_planning_ibd` diagram: **requires update** — Block 2.3 output port relabeled IF-07 (to Supervisor), not IF-EX-04
-- `design_decisions.md`: conformant (Design Decision 5 language now accurately reflects implemented routing)
+- `design_decisions.md`: conformant (Design Decision 5 documents the Supervisor-centralized routing for command/control/status interfaces and the explicit exception for IF-EX-02a, IF-EX-03, and IF-EX-08, which connect directly to Blocks 1.0 and 3.0)
 - Modelio model: build directly from this registry

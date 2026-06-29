@@ -13,7 +13,7 @@ The system boundary is deliberately narrow: the RBNS receives a preoperative air
 ```
 ├── docs/
 │   ├── interface_registry.md    ← CANONICAL interface definitions (3 tiers, 26 interfaces)
-│   ├── requirements.md          ← Full requirements hierarchy: user needs, system, subsystem, and component requirements, with allocation and verification methods
+│   ├── requirements.md          ← Full requirements hierarchy: user needs, system requirements (full bronchoscopy system), subsystem requirements (RBNS), and component requirements, with allocation and verification methods
 │   ├── requirements.csv         ← Tooling-readable export (medtrace-compatible)
 │   ├── design_decisions.md      ← 5 key architectural decisions with rationale
 │   └── modelio_build_plan.md    ← SysML diagram set specification and build sequence

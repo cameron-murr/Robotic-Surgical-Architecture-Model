@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+  <uml:Model xmi:id="_LvDiUGtFEfG8dPPFavWWFA" name="Robotic-Surgical-Architecture">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ypXF4GtoEfGuEvnTmBr3Tw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ypXF4WtoEfGuEvnTmBr3Tw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ypXF4mtoEfGuEvnTmBr3Tw" name="01_Context">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypXF42toEfGuEvnTmBr3Tw" name="PreopPlanningSystem">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_7rx8EGt9EfGZxrK6B1XObg" name="roboticbronchoscopynavigationsystem" type="_ypXtEmtoEfGuEvnTmBr3Tw" association="_7rg2UGt9EfGZxrK6B1XObg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7rzKMGt9EfGZxrK6B1XObg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7rzxQGt9EfGZxrK6B1XObg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypXF52toEfGuEvnTmBr3Tw" name="CBCTImagingSystem">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_-NYWIWt9EfGZxrK6B1XObg" name="roboticbronchoscopynavigationsystem" type="_ypXtEmtoEfGuEvnTmBr3Tw" association="_-NWg8Gt9EfGZxrK6B1XObg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-NY9MGt9EfGZxrK6B1XObg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-NZkQGt9EfGZxrK6B1XObg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypXF62toEfGuEvnTmBr3Tw" name="RoboticMotionController">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_JY-E0mt-EfGZxrK6B1XObg" name="roboticbronchoscopynavigationsystem" type="_ypXtEmtoEfGuEvnTmBr3Tw" association="_JY7okGt-EfGZxrK6B1XObg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JY-r4Gt-EfGZxrK6B1XObg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JY-r4Wt-EfGZxrK6B1XObg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypXF72toEfGuEvnTmBr3Tw" name="OperatorConsole">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Qt310mt-EfGZxrK6B1XObg" name="roboticbronchoscopynavigationsystem" type="_ypXtEmtoEfGuEvnTmBr3Tw" association="_Qt2AoGt-EfGZxrK6B1XObg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qt4c4Gt-EfGZxrK6B1XObg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qt4c4Wt-EfGZxrK6B1XObg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypXF82toEfGuEvnTmBr3Tw" name="SafetyInterlockSystem">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_XAu7Amt-EfGZxrK6B1XObg" name="roboticbronchoscopynavigationsystem" type="_ypXtEmtoEfGuEvnTmBr3Tw" association="_XAtF0Gt-EfGZxrK6B1XObg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XAviEGt-EfGZxrK6B1XObg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XAviEWt-EfGZxrK6B1XObg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypXF92toEfGuEvnTmBr3Tw" name="ProcedureDataRecorder"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypXF-GtoEfGuEvnTmBr3Tw" name="BronchoscopeCamera">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_fKnzQmt-EfGZxrK6B1XObg" name="roboticbronchoscopynavigationsystem" type="_ypXtEmtoEfGuEvnTmBr3Tw" association="_fKmlIGt-EfGZxrK6B1XObg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fKoaUGt-EfGZxrK6B1XObg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fKoaUWt-EfGZxrK6B1XObg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_7rg2UGt9EfGZxrK6B1XObg" memberEnd="_7rx8EGt9EfGZxrK6B1XObg _7rzxQWt9EfGZxrK6B1XObg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7rwt8Gt9EfGZxrK6B1XObg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7rxVAGt9EfGZxrK6B1XObg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_7rzxQWt9EfGZxrK6B1XObg" name="preopplanningsystem" type="_ypXF42toEfGuEvnTmBr3Tw" association="_7rg2UGt9EfGZxrK6B1XObg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_-NWg8Gt9EfGZxrK6B1XObg" memberEnd="_-NYWIWt9EfGZxrK6B1XObg _-NZkQWt9EfGZxrK6B1XObg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-NXvEGt9EfGZxrK6B1XObg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-NYWIGt9EfGZxrK6B1XObg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_-NZkQWt9EfGZxrK6B1XObg" name="cbctimagingsystem" type="_ypXF52toEfGuEvnTmBr3Tw" association="_-NWg8Gt9EfGZxrK6B1XObg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_AP19IGt-EfGZxrK6B1XObg" memberEnd="_AP4ZYGt-EfGZxrK6B1XObg _AP5Acmt-EfGZxrK6B1XObg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AP3yUGt-EfGZxrK6B1XObg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AP3yUWt-EfGZxrK6B1XObg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_AP5Acmt-EfGZxrK6B1XObg" name="roboticbronchoscopynavigationsystem" type="_ypXtEmtoEfGuEvnTmBr3Tw" association="_AP19IGt-EfGZxrK6B1XObg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_JY7okGt-EfGZxrK6B1XObg" memberEnd="_JY-E0mt-EfGZxrK6B1XObg _JY_S8Gt-EfGZxrK6B1XObg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JY-E0Gt-EfGZxrK6B1XObg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JY-E0Wt-EfGZxrK6B1XObg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_JY_S8Gt-EfGZxrK6B1XObg" name="roboticmotioncontroller" type="_ypXF62toEfGuEvnTmBr3Tw" association="_JY7okGt-EfGZxrK6B1XObg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Mt6AUGt-EfGZxrK6B1XObg" memberEnd="_Mt8ckWt-EfGZxrK6B1XObg _Mt9qsGt-EfGZxrK6B1XObg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Mt71gGt-EfGZxrK6B1XObg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Mt8ckGt-EfGZxrK6B1XObg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Mt9qsGt-EfGZxrK6B1XObg" name="roboticbronchoscopynavigationsystem" type="_ypXtEmtoEfGuEvnTmBr3Tw" association="_Mt6AUGt-EfGZxrK6B1XObg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Qt2AoGt-EfGZxrK6B1XObg" memberEnd="_Qt310mt-EfGZxrK6B1XObg _Qt4c4mt-EfGZxrK6B1XObg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Qt310Gt-EfGZxrK6B1XObg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Qt310Wt-EfGZxrK6B1XObg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Qt4c4mt-EfGZxrK6B1XObg" name="operatorconsole" type="_ypXF72toEfGuEvnTmBr3Tw" association="_Qt2AoGt-EfGZxrK6B1XObg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_S_JU4Gt-EfGZxrK6B1XObg" memberEnd="_S_KjAGt-EfGZxrK6B1XObg _S_KjA2t-EfGZxrK6B1XObg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S_J78Gt-EfGZxrK6B1XObg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_S_J78Wt-EfGZxrK6B1XObg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <name xsi:nil="true"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_S_KjA2t-EfGZxrK6B1XObg" name="roboticbronchoscopynavigationsystem" type="_ypXtEmtoEfGuEvnTmBr3Tw" association="_S_JU4Gt-EfGZxrK6B1XObg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XAtF0Gt-EfGZxrK6B1XObg" memberEnd="_XAu7Amt-EfGZxrK6B1XObg _XAwJIGt-EfGZxrK6B1XObg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XAu7AGt-EfGZxrK6B1XObg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XAu7AWt-EfGZxrK6B1XObg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_XAwJIGt-EfGZxrK6B1XObg" name="safetyinterlocksystem" type="_ypXF82toEfGuEvnTmBr3Tw" association="_XAtF0Gt-EfGZxrK6B1XObg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZIeqoGt-EfGZxrK6B1XObg" memberEnd="_ZIf4wmt-EfGZxrK6B1XObg _ZIgf0mt-EfGZxrK6B1XObg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZIf4wGt-EfGZxrK6B1XObg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZIf4wWt-EfGZxrK6B1XObg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ZIgf0mt-EfGZxrK6B1XObg" name="roboticbronchoscopynavigationsystem" type="_ypXtEmtoEfGuEvnTmBr3Tw" association="_ZIeqoGt-EfGZxrK6B1XObg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_dFRQUGt-EfGZxrK6B1XObg" memberEnd="_dFSecmt-EfGZxrK6B1XObg _dFTFgmt-EfGZxrK6B1XObg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dFSecGt-EfGZxrK6B1XObg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dFSecWt-EfGZxrK6B1XObg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_dFTFgmt-EfGZxrK6B1XObg" name="roboticbronchoscopynavigationsystem" type="_ypXtEmtoEfGuEvnTmBr3Tw" association="_dFRQUGt-EfGZxrK6B1XObg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_fKmlIGt-EfGZxrK6B1XObg" memberEnd="_fKnzQmt-EfGZxrK6B1XObg _fKoaUmt-EfGZxrK6B1XObg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fKnzQGt-EfGZxrK6B1XObg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fKnzQWt-EfGZxrK6B1XObg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_fKoaUmt-EfGZxrK6B1XObg" name="bronchoscopecamera" type="_ypXF-GtoEfGuEvnTmBr3Tw" association="_fKmlIGt-EfGZxrK6B1XObg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ypXtEWtoEfGuEvnTmBr3Tw" name="02_Structure">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypXtEmtoEfGuEvnTmBr3Tw" name="RoboticBronchoscopyNavigationSystem" visibility="package">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_AP4ZYGt-EfGZxrK6B1XObg" name="cbctimagingsystem" type="_ypXF52toEfGuEvnTmBr3Tw" association="_AP19IGt-EfGZxrK6B1XObg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AP5AcGt-EfGZxrK6B1XObg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AP5AcWt-EfGZxrK6B1XObg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Mt8ckWt-EfGZxrK6B1XObg" name="roboticmotioncontroller" type="_ypXF62toEfGuEvnTmBr3Tw" association="_Mt6AUGt-EfGZxrK6B1XObg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mt9DoGt-EfGZxrK6B1XObg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mt9DoWt-EfGZxrK6B1XObg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_S_KjAGt-EfGZxrK6B1XObg" name="operatorconsole" type="_ypXF72toEfGuEvnTmBr3Tw" association="_S_JU4Gt-EfGZxrK6B1XObg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S_KjAWt-EfGZxrK6B1XObg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S_KjAmt-EfGZxrK6B1XObg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZIf4wmt-EfGZxrK6B1XObg" name="safetyinterlocksystem" type="_ypXF82toEfGuEvnTmBr3Tw" association="_ZIeqoGt-EfGZxrK6B1XObg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZIgf0Gt-EfGZxrK6B1XObg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZIgf0Wt-EfGZxrK6B1XObg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_dFSecmt-EfGZxrK6B1XObg" name="proceduredatarecorder" type="_ypXF92toEfGuEvnTmBr3Tw" association="_dFRQUGt-EfGZxrK6B1XObg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dFTFgGt-EfGZxrK6B1XObg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dFTFgWt-EfGZxrK6B1XObg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_iQDy0GuBEfGUxO55bkUw7g" name="localizationTracking" type="_ypXtImtoEfGuEvnTmBr3Tw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_iyqJkGuBEfGUxO55bkUw7g" name="imageProcessingRegistration" type="_ypYUBWtoEfGuEvnTmBr3Tw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_kjkGgGuBEfGUxO55bkUw7g" name="pathPlanningGuidance" type="_ypYUCWtoEfGuEvnTmBr3Tw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_lO0C8GuBEfGUxO55bkUw7g" name="procedureSupervisor" type="_ypYUEWtoEfGuEvnTmBr3Tw"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_yFbpIHJdEfG0jpWE5r8r7Q" name="port_IF_EX_01" type="_ypYUIWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_mt0bMHJeEfG0jpWE5r8r7Q" name="port_IF_EX_02a" type="_ypYUImtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_B2oRAHJeEfG0jpWE5r8r7Q" name="port_IF_EX_02b" type="_ypYUI2toEfGuEvnTmBr3Tw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_fRB5gHJeEfG0jpWE5r8r7Q" name="port_IF_EX_03" type="_ypYUJGtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_HN6ewHJeEfG0jpWE5r8r7Q" name="port_IF_EX_04" type="_ypYUJWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_NJd3MHJeEfG0jpWE5r8r7Q" name="port_IF_EX_05a" type="_ypYUKWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_P56lkHJeEfG0jpWE5r8r7Q" name="port_IF_EX_05b" type="_ypYUKmtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_ThP4oHJeEfG0jpWE5r8r7Q" name="port_IF_EX_06a" type="_ypYUK2toEfGuEvnTmBr3Tw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_W5bVYHJeEfG0jpWE5r8r7Q" name="port_IF_EX_06b" type="_ypYULGtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_Z2jN0HJeEfG0jpWE5r8r7Q" name="port_IF_EX_07" type="_ypYULWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_jWKi4HJeEfG0jpWE5r8r7Q" name="port_IF_EX_08" type="_ypY7EWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_gr9JgGuGEfGUxO55bkUw7g" name="IF_01">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_gsCCAGuGEfGUxO55bkUw7g" partWithPort="_iQDy0GuBEfGUxO55bkUw7g" role="_ypXtJmtoEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_gsCCAWuGEfGUxO55bkUw7g" partWithPort="_kjkGgGuBEfGUxO55bkUw7g" role="_ypYUCmtoEfGuEvnTmBr3Tw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_nuibcGuGEfGUxO55bkUw7g" name="IF_03">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_nujpkGuGEfGUxO55bkUw7g" partWithPort="_iQDy0GuBEfGUxO55bkUw7g" role="_ypXtJ2toEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_nujpkWuGEfGUxO55bkUw7g" partWithPort="_lO0C8GuBEfGUxO55bkUw7g" role="_ypYUG2toEfGuEvnTmBr3Tw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_tDnpwGuGEfGUxO55bkUw7g" name="IF_06">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_tDpe8GuGEfGUxO55bkUw7g" partWithPort="_iyqJkGuBEfGUxO55bkUw7g" role="_ypYUCGtoEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_tDpe8WuGEfGUxO55bkUw7g" partWithPort="_iQDy0GuBEfGUxO55bkUw7g" role="_ypXtKGtoEfGuEvnTmBr3Tw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_xcxbUGuGEfGUxO55bkUw7g" name="IF_02">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_xcypcGuGEfGUxO55bkUw7g" partWithPort="_kjkGgGuBEfGUxO55bkUw7g" role="_ypYUDGtoEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_xcypcWuGEfGUxO55bkUw7g" partWithPort="_lO0C8GuBEfGUxO55bkUw7g" role="_ypYUGmtoEfGuEvnTmBr3Tw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_1Dg4gGuGEfGUxO55bkUw7g" name="IF_07">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_1DiGoGuGEfGUxO55bkUw7g" partWithPort="_kjkGgGuBEfGUxO55bkUw7g" role="_ypYUDWtoEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_1DiGoWuGEfGUxO55bkUw7g" partWithPort="_lO0C8GuBEfGUxO55bkUw7g" role="_ypYUHmtoEfGuEvnTmBr3Tw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_A0Rw0GuHEfGUxO55bkUw7g" name="IF_04">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_A0S-8GuHEfGUxO55bkUw7g" partWithPort="_lO0C8GuBEfGUxO55bkUw7g" role="_ypYUHGtoEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_A0TmAGuHEfGUxO55bkUw7g" partWithPort="_kjkGgGuBEfGUxO55bkUw7g" role="_ypYUC2toEfGuEvnTmBr3Tw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_EhVRYGuHEfGUxO55bkUw7g" name="IF_05">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_EhWfgGuHEfGUxO55bkUw7g" partWithPort="_lO0C8GuBEfGUxO55bkUw7g" role="_ypYUHWtoEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_EhWfgWuHEfGUxO55bkUw7g" partWithPort="_iyqJkGuBEfGUxO55bkUw7g" role="_ypYUB2toEfGuEvnTmBr3Tw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_OjXXAGuHEfGUxO55bkUw7g" name="IF_08">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_OjYlIGuHEfGUxO55bkUw7g" partWithPort="_lO0C8GuBEfGUxO55bkUw7g" role="_ypYUH2toEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_OjZMMGuHEfGUxO55bkUw7g" partWithPort="_iQDy0GuBEfGUxO55bkUw7g" role="_ypYUAGtoEfGuEvnTmBr3Tw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_3xqEwHJgEfG0jpWE5r8r7Q" name="IF-EX_01">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_3xr58HJgEfG0jpWE5r8r7Q" partWithPort="_lO0C8GuBEfGUxO55bkUw7g" role="_ypYUEmtoEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_3xr58XJgEfG0jpWE5r8r7Q" role="_yFbpIHJdEfG0jpWE5r8r7Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_54GM0HJgEfG0jpWE5r8r7Q" name="IF-EX_02b">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_54Ha8HJgEfG0jpWE5r8r7Q" partWithPort="_lO0C8GuBEfGUxO55bkUw7g" role="_ypYUE2toEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_54Ha8XJgEfG0jpWE5r8r7Q" role="_B2oRAHJeEfG0jpWE5r8r7Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_7QCQIHJgEfG0jpWE5r8r7Q" name="IF-EX_04">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_7QDeQHJgEfG0jpWE5r8r7Q" partWithPort="_lO0C8GuBEfGUxO55bkUw7g" role="_ypYUFGtoEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_7QEFUHJgEfG0jpWE5r8r7Q" role="_HN6ewHJeEfG0jpWE5r8r7Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_77uRcHJgEfG0jpWE5r8r7Q" name="IF-EX_05a">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_77vfkHJgEfG0jpWE5r8r7Q" partWithPort="_lO0C8GuBEfGUxO55bkUw7g" role="_ypYUFWtoEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_77wGoHJgEfG0jpWE5r8r7Q" role="_NJd3MHJeEfG0jpWE5r8r7Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_86wskHJgEfG0jpWE5r8r7Q" name="IF-EX_05b">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_86x6sHJgEfG0jpWE5r8r7Q" partWithPort="_lO0C8GuBEfGUxO55bkUw7g" role="_ypYUFmtoEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_86yhwHJgEfG0jpWE5r8r7Q" role="_P56lkHJeEfG0jpWE5r8r7Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_9jC0kHJgEfG0jpWE5r8r7Q" name="IF-EX_06a">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_9jECsHJgEfG0jpWE5r8r7Q" partWithPort="_lO0C8GuBEfGUxO55bkUw7g" role="_ypYUF2toEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_9jEpwHJgEfG0jpWE5r8r7Q" role="_ThP4oHJeEfG0jpWE5r8r7Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_-KICsHJgEfG0jpWE5r8r7Q" name="IF-EX_06b">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_-KIpwHJgEfG0jpWE5r8r7Q" partWithPort="_lO0C8GuBEfGUxO55bkUw7g" role="_ypYUGGtoEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_-KJQ0HJgEfG0jpWE5r8r7Q" role="_W5bVYHJeEfG0jpWE5r8r7Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_-wNyUHJgEfG0jpWE5r8r7Q" name="IF-EX_07">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_-wOZYHJgEfG0jpWE5r8r7Q" partWithPort="_lO0C8GuBEfGUxO55bkUw7g" role="_ypYUGWtoEfGuEvnTmBr3Tw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_-wOZYXJgEfG0jpWE5r8r7Q" role="_Z2jN0HJeEfG0jpWE5r8r7Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_AqzPsHJhEfG0jpWE5r8r7Q" name="IF-EX_02a">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Aq0d0HJhEfG0jpWE5r8r7Q" role="_mt0bMHJeEfG0jpWE5r8r7Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Aq0d0XJhEfG0jpWE5r8r7Q" partWithPort="_iyqJkGuBEfGUxO55bkUw7g" role="_ypYUBmtoEfGuEvnTmBr3Tw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_Bs6M8HJhEfG0jpWE5r8r7Q" name="IF-EX_08">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Bs7bEHJhEfG0jpWE5r8r7Q" role="_jWKi4HJeEfG0jpWE5r8r7Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Bs7bEXJhEfG0jpWE5r8r7Q" partWithPort="_iQDy0GuBEfGUxO55bkUw7g" role="_ypXtJWtoEfGuEvnTmBr3Tw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_CVmkoHJhEfG0jpWE5r8r7Q" name="IF-EX_03">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_CVnywHJhEfG0jpWE5r8r7Q" role="_fRB5gHJeEfG0jpWE5r8r7Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_CVnywXJhEfG0jpWE5r8r7Q" partWithPort="_iQDy0GuBEfGUxO55bkUw7g" role="_ypXtJGtoEfGuEvnTmBr3Tw"/>
+        </ownedConnector>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_ypXtImtoEfGuEvnTmBr3Tw" name="LocalizationTracking">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypXtJGtoEfGuEvnTmBr3Tw" name="port_IF_EX_03" type="_ypYUJGtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypXtJWtoEfGuEvnTmBr3Tw" name="port_IF_EX_08" type="_ypYULmtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypXtJmtoEfGuEvnTmBr3Tw" name="port_IF_01_out" type="_ypYUL2toEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypXtJ2toEfGuEvnTmBr3Tw" name="port_IF_03_out" type="_ypYUNWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypXtKGtoEfGuEvnTmBr3Tw" name="port_IF_06_in" type="_ypYUO2toEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUAGtoEfGuEvnTmBr3Tw" name="port_IF_08_in" type="_ypY7EWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_E66LQHJnEfG0jpWE5r8r7Q" name="proprioceptiveStateEstimator" type="_ypYUAWtoEfGuEvnTmBr3Tw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_E691pnJnEfG0jpWE5r8r7Q" name="visionBasedLocalization" type="_ypYUAmtoEfGuEvnTmBr3Tw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_E6_q1XJnEfG0jpWE5r8r7Q" name="imageToPatientRegistration" type="_ypYUA2toEfGuEvnTmBr3Tw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_E7A4-HJnEfG0jpWE5r8r7Q" name="sensorFusionUncertaintyEstimator" type="_ypYUBGtoEfGuEvnTmBr3Tw"/>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_cCWGMHM-EfG0jpWE5r8r7Q" name="IF-LT-FKPose">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_cCa-sHM-EfG0jpWE5r8r7Q" partWithPort="_E66LQHJnEfG0jpWE5r8r7Q" role="_BnfaEHJkEfG0jpWE5r8r7Q"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_cCa-sXM-EfG0jpWE5r8r7Q" partWithPort="_E7A4-HJnEfG0jpWE5r8r7Q" role="_3wki0HJkEfG0jpWE5r8r7Q"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_gEJuwHM-EfG0jpWE5r8r7Q" name="IF-LT-FKInit">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_gEMLAHM-EfG0jpWE5r8r7Q" partWithPort="_E66LQHJnEfG0jpWE5r8r7Q" role="_vjM4wHJkEfG0jpWE5r8r7Q"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_gEMyEHM-EfG0jpWE5r8r7Q" partWithPort="_E6_q1XJnEfG0jpWE5r8r7Q" role="_U6EeAHJkEfG0jpWE5r8r7Q"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_mlG6UHM-EfG0jpWE5r8r7Q" name="IF-LT-VisionDisplacement">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_mlIvgHM-EfG0jpWE5r8r7Q" partWithPort="_E691pnJnEfG0jpWE5r8r7Q" role="_MRllQHJkEfG0jpWE5r8r7Q"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_mlIvgXM-EfG0jpWE5r8r7Q" partWithPort="_E7A4-HJnEfG0jpWE5r8r7Q" role="_7swrkHJkEfG0jpWE5r8r7Q"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_ttG3wHM-EfG0jpWE5r8r7Q" name="IF-LT-CBCTRefinedPose">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_ttJUAHM-EfG0jpWE5r8r7Q" partWithPort="_E6_q1XJnEfG0jpWE5r8r7Q" role="_hz7sYHJkEfG0jpWE5r8r7Q"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_ttJUAXM-EfG0jpWE5r8r7Q" partWithPort="_E7A4-HJnEfG0jpWE5r8r7Q" role="__FxOwHJkEfG0jpWE5r8r7Q"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_FrKW4HNAEfG0jpWE5r8r7Q" name="IF-EX-03">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_FrMzIHNAEfG0jpWE5r8r7Q" role="_ypXtJGtoEfGuEvnTmBr3Tw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_FrMzIXNAEfG0jpWE5r8r7Q" partWithPort="_E66LQHJnEfG0jpWE5r8r7Q" role="_8Y7qgHJjEfG0jpWE5r8r7Q"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_GWmgkHNAEfG0jpWE5r8r7Q" name="IF-EX-08">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_GWo80HNAEfG0jpWE5r8r7Q" partWithPort="_E691pnJnEfG0jpWE5r8r7Q" role="_HE3owHJkEfG0jpWE5r8r7Q"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_GWpj4HNAEfG0jpWE5r8r7Q" role="_ypXtJWtoEfGuEvnTmBr3Tw"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_G19WEHNAEfG0jpWE5r8r7Q" name="IF-01">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_G1_yUHNAEfG0jpWE5r8r7Q" partWithPort="_E7A4-HJnEfG0jpWE5r8r7Q" role="_GB5TYHJlEfG0jpWE5r8r7Q"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_G1_yUXNAEfG0jpWE5r8r7Q" role="_ypXtJmtoEfGuEvnTmBr3Tw"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_HUjWkHNAEfG0jpWE5r8r7Q" name="IF-03">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_HUmZ4HNAEfG0jpWE5r8r7Q" partWithPort="_E7A4-HJnEfG0jpWE5r8r7Q" role="_LpZucHJlEfG0jpWE5r8r7Q"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_HUmZ4XNAEfG0jpWE5r8r7Q" role="_ypXtJ2toEfGuEvnTmBr3Tw"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_H1sUwHNAEfG0jpWE5r8r7Q" name="IF-06">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_H1uxAHNAEfG0jpWE5r8r7Q" role="_ypXtKGtoEfGuEvnTmBr3Tw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_H1vYEHNAEfG0jpWE5r8r7Q" partWithPort="_E6_q1XJnEfG0jpWE5r8r7Q" role="_QIciEHJkEfG0jpWE5r8r7Q"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_4FhyMHNAEfG0jpWE5r8r7Q" name="IF-08">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_4FkOcHNAEfG0jpWE5r8r7Q" partWithPort="_E7A4-HJnEfG0jpWE5r8r7Q" role="_tc7b0HNAEfG0jpWE5r8r7Q"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_4FkOcXNAEfG0jpWE5r8r7Q" role="_ypYUAGtoEfGuEvnTmBr3Tw"/>
+          </ownedConnector>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_ypYUAWtoEfGuEvnTmBr3Tw" name="ProprioceptiveStateEstimator">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_8Y7qgHJjEfG0jpWE5r8r7Q" name="port_IF_EX_03_in" visibility="public" type="_ypYUJGtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_BnfaEHJkEfG0jpWE5r8r7Q" name="port_IF_LT_FKPose_out" type="_Dx_YMHJjEfG0jpWE5r8r7Q" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_vjM4wHJkEfG0jpWE5r8r7Q" name="port_IF_LT_FKInit_out" type="_OzqV4HJjEfG0jpWE5r8r7Q" aggregation="composite"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_ypYUAmtoEfGuEvnTmBr3Tw" name="VisionBasedLocalization">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_HE3owHJkEfG0jpWE5r8r7Q" name="port_IF_EX_08_in" visibility="public" type="_ypYULmtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_MRllQHJkEfG0jpWE5r8r7Q" name="port_IF_LT_VisionDisplacement_out" visibility="public" type="_GlNGsHJjEfG0jpWE5r8r7Q" aggregation="composite"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_ypYUA2toEfGuEvnTmBr3Tw" name="ImageToPatientRegistration">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_QIciEHJkEfG0jpWE5r8r7Q" name="port_IF_06_in" type="_ypYUO2toEfGuEvnTmBr3Tw" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_U6EeAHJkEfG0jpWE5r8r7Q" name="port_IF_LT_FKInit_in" type="_OzqV4HJjEfG0jpWE5r8r7Q" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_hz7sYHJkEfG0jpWE5r8r7Q" name="port_IF_LT_CBCTRefinedPose_out" type="_KhiZYHJjEfG0jpWE5r8r7Q" aggregation="composite"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_ypYUBGtoEfGuEvnTmBr3Tw" name="SensorFusionUncertaintyEstimator">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_3wki0HJkEfG0jpWE5r8r7Q" name="port_IF_LT_FKPose_in" type="_Dx_YMHJjEfG0jpWE5r8r7Q" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_7swrkHJkEfG0jpWE5r8r7Q" name="port_IF_LT_VisionDisplacement_in" type="_GlNGsHJjEfG0jpWE5r8r7Q" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="__FxOwHJkEfG0jpWE5r8r7Q" name="port_IF_LT_CBCTRefinedPose_in" type="_KhiZYHJjEfG0jpWE5r8r7Q" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_GB5TYHJlEfG0jpWE5r8r7Q" name="port_IF_01_out" type="_ypYUL2toEfGuEvnTmBr3Tw" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_LpZucHJlEfG0jpWE5r8r7Q" name="port_IF_03_out" type="_ypYUNWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_tc7b0HNAEfG0jpWE5r8r7Q" name="port_IF_08_in" visibility="public" type="_ypY7EWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_ypYUBWtoEfGuEvnTmBr3Tw" name="ImageProcessingRegistration">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUBmtoEfGuEvnTmBr3Tw" name="port_IF_EX_02a_in" type="_ypYUImtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUB2toEfGuEvnTmBr3Tw" name="port_IF_05_in" type="_ypYUOmtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUCGtoEfGuEvnTmBr3Tw" name="port_IF_06_out" type="_ypYUO2toEfGuEvnTmBr3Tw" aggregation="composite"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_ypYUCWtoEfGuEvnTmBr3Tw" name="PathPlanningGuidance">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUCmtoEfGuEvnTmBr3Tw" name="port_IF_01_in" type="_ypYUL2toEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUC2toEfGuEvnTmBr3Tw" name="port_IF_04_in" type="_ypYUOWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUDGtoEfGuEvnTmBr3Tw" name="port_IF_02_out" type="_ypYUNGtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUDWtoEfGuEvnTmBr3Tw" name="port_IF_07_out" type="_ypYUPGtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SDQ_MHNEEfGImPMr3c7uaQ" name="airwayGraphNavigator" type="_ypYUDmtoEfGuEvnTmBr3Tw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SDV3tXNEEfGImPMr3c7uaQ" name="guidanceCommandGenerator" type="_ypYUD2toEfGuEvnTmBr3Tw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SDXF2HNEEfGImPMr3c7uaQ" name="realTimePathUpdater" type="_ypYUEGtoEfGuEvnTmBr3Tw"/>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_7onhoHNEEfGImPMr3c7uaQ" name="IF_PP_NextWaypoint">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_7opW0HNEEfGImPMr3c7uaQ" partWithPort="_SDV3tXNEEfGImPMr3c7uaQ" role="_sxpYQHNCEfGImPMr3c7uaQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_7opW0XNEEfGImPMr3c7uaQ" partWithPort="_SDXF2HNEEfGImPMr3c7uaQ" role="_J03P0HNDEfGImPMr3c7uaQ"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_8dNAQHNEEfGImPMr3c7uaQ" name="IF_07">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_8dO1cHNEEfGImPMr3c7uaQ" role="_ypYUDWtoEfGuEvnTmBr3Tw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_8dPcgHNEEfGImPMr3c7uaQ" partWithPort="_SDV3tXNEEfGImPMr3c7uaQ" role="_zd-tYHNCEfGImPMr3c7uaQ"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_9N75oHNEEfGImPMr3c7uaQ" name="IF_01">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_9N9HwHNEEfGImPMr3c7uaQ" role="_ypYUCmtoEfGuEvnTmBr3Tw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_9N9HwXNEEfGImPMr3c7uaQ" partWithPort="_SDV3tXNEEfGImPMr3c7uaQ" role="_oe_QQHNCEfGImPMr3c7uaQ"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_94Oz0HNEEfGImPMr3c7uaQ" name="IF_01">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_94QB8HNEEfGImPMr3c7uaQ" role="_ypYUCmtoEfGuEvnTmBr3Tw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_94QB8XNEEfGImPMr3c7uaQ" partWithPort="_SDXF2HNEEfGImPMr3c7uaQ" role="_93xLsHNCEfGImPMr3c7uaQ"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_-nz2oHNEEfGImPMr3c7uaQ" name="IF_02">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_-n1EwHNEEfGImPMr3c7uaQ" role="_ypYUDGtoEfGuEvnTmBr3Tw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_-n1EwXNEEfGImPMr3c7uaQ" partWithPort="_SDXF2HNEEfGImPMr3c7uaQ" role="_FnMgEHNEEfGImPMr3c7uaQ"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="__cvTgHNEEfGImPMr3c7uaQ" name="IF_PP_PlannedPath">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="__cv6kHNEEfGImPMr3c7uaQ" partWithPort="_SDXF2HNEEfGImPMr3c7uaQ" role="_BunhcHNDEfGImPMr3c7uaQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="__cwhoHNEEfGImPMr3c7uaQ" partWithPort="_SDQ_MHNEEfGImPMr3c7uaQ" role="_hm2TwHNCEfGImPMr3c7uaQ"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_BNHE8HNFEfGImPMr3c7uaQ" name="IF_PP_ReplanRequest">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_BNITEHNFEfGImPMr3c7uaQ" partWithPort="_SDQ_MHNEEfGImPMr3c7uaQ" role="_SBxm4HNDEfGImPMr3c7uaQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_BNITEXNFEfGImPMr3c7uaQ" partWithPort="_SDXF2HNEEfGImPMr3c7uaQ" role="_FbeNsHNDEfGImPMr3c7uaQ"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_B_VMEHNFEfGImPMr3c7uaQ" name="IF_04">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_B_WaMHNFEfGImPMr3c7uaQ" partWithPort="_SDQ_MHNEEfGImPMr3c7uaQ" role="_ele0gHNCEfGImPMr3c7uaQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_B_WaMXNFEfGImPMr3c7uaQ" role="_ypYUC2toEfGuEvnTmBr3Tw"/>
+          </ownedConnector>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_ypYUDmtoEfGuEvnTmBr3Tw" name="AirwayGraphNavigator">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_ele0gHNCEfGImPMr3c7uaQ" name="port_IF_04_in" type="_ypYUOWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_hm2TwHNCEfGImPMr3c7uaQ" name="port_IF_PP_PlannedPath_out" type="_ProEUHNCEfGImPMr3c7uaQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_SBxm4HNDEfGImPMr3c7uaQ" name="port_IF_PP_ReplanRequest_in" type="_Ss-VcHNCEfGImPMr3c7uaQ" aggregation="composite"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_ypYUD2toEfGuEvnTmBr3Tw" name="GuidanceCommandGenerator">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_oe_QQHNCEfGImPMr3c7uaQ" name="port_IF_01_in" type="_ypYUL2toEfGuEvnTmBr3Tw" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_sxpYQHNCEfGImPMr3c7uaQ" name="port_IF_PP_NextWaypoint_in" type="_VTg54HNCEfGImPMr3c7uaQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_zd-tYHNCEfGImPMr3c7uaQ" name="port_IF_07_out" type="_ypYUPGtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_ypYUEGtoEfGuEvnTmBr3Tw" name="RealTimePathUpdater">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_93xLsHNCEfGImPMr3c7uaQ" name="port_IF_01_in" type="_ypYUL2toEfGuEvnTmBr3Tw" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_BunhcHNDEfGImPMr3c7uaQ" name="port_IF_PP_PlannedPath_in" type="_ProEUHNCEfGImPMr3c7uaQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_FbeNsHNDEfGImPMr3c7uaQ" name="port_IF_PP_ReplanRequest_out" type="_Ss-VcHNCEfGImPMr3c7uaQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_J03P0HNDEfGImPMr3c7uaQ" name="port_IF_PP_NextWaypoint_out" type="_VTg54HNCEfGImPMr3c7uaQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_FnMgEHNEEfGImPMr3c7uaQ" name="port_IF_02_out" type="_ypYUNGtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_ypYUEWtoEfGuEvnTmBr3Tw" name="ProcedureSupervisor" classifierBehavior="_i1hwkHNGEfGImPMr3c7uaQ">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUEmtoEfGuEvnTmBr3Tw" name="port_IF_EX_01_in" type="_ypYUIWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUE2toEfGuEvnTmBr3Tw" name="port_IF_EX_02b_out" type="_ypYUI2toEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUFGtoEfGuEvnTmBr3Tw" name="port_IF_EX_04_out" type="_ypYUJWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUFWtoEfGuEvnTmBr3Tw" name="port_IF_EX_05a_in" type="_ypYUKWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUFmtoEfGuEvnTmBr3Tw" name="port_IF_EX_05b_out" type="_ypYUKmtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUF2toEfGuEvnTmBr3Tw" name="port_IF_EX_06a_in" type="_ypYUK2toEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUGGtoEfGuEvnTmBr3Tw" name="port_IF_EX_06b_out" type="_ypYULGtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUGWtoEfGuEvnTmBr3Tw" name="port_IF_EX_07_out" type="_ypYULWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUGmtoEfGuEvnTmBr3Tw" name="port_IF_02_in" type="_ypYUNGtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUG2toEfGuEvnTmBr3Tw" name="port_IF_03_in" visibility="private" type="_ypYUNWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUHGtoEfGuEvnTmBr3Tw" name="port_IF_04_out" type="_ypYUOWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUHWtoEfGuEvnTmBr3Tw" name="port_IF_05_out" type="_ypYUOmtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUHmtoEfGuEvnTmBr3Tw" name="port_IF_07_in" type="_ypYUPGtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUH2toEfGuEvnTmBr3Tw" name="port_IF_08_out" type="_ypY7EWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
+          <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_i1hwkHNGEfGImPMr3c7uaQ" name="SupervisorStateMachine">
+            <region xmi:type="uml:Region" xmi:id="_krjeEHNGEfGImPMr3c7uaQ" name="Region1">
+              <transition xmi:type="uml:Transition" xmi:id="_Z906oHNHEfGImPMr3c7uaQ" source="_4T-PIHNGEfGImPMr3c7uaQ" target="_6Omv0HNGEfGImPMr3c7uaQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_qgWRwHNHEfGImPMr3c7uaQ" name="[START + plan loaded]" source="_6Omv0HNGEfGImPMr3c7uaQ" target="_7aGSkHNGEfGImPMr3c7uaQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_0UByUHNHEfGImPMr3c7uaQ" name="[distance-to-target &lt; threshold]" source="_7aGSkHNGEfGImPMr3c7uaQ" target="_8jm4UHNGEfGImPMr3c7uaQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_3681sHNHEfGImPMr3c7uaQ" name="[operator CONFIRM_TARGET]" source="_8jm4UHNGEfGImPMr3c7uaQ" target="_9UXm4HNGEfGImPMr3c7uaQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_95jiIHNHEfGImPMr3c7uaQ" name="[operator REPLAN]" source="_9UXm4HNGEfGImPMr3c7uaQ" target="_7aGSkHNGEfGImPMr3c7uaQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_Edg-YHNIEfGImPMr3c7uaQ" name="[procedure complete]" source="_9UXm4HNGEfGImPMr3c7uaQ" target="_6Omv0HNGEfGImPMr3c7uaQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_T0AAMHNIEfGImPMr3c7uaQ" name="[lost-tracking OR motion-enable lost]" source="_7aGSkHNGEfGImPMr3c7uaQ" target="_-W_hgHNGEfGImPMr3c7uaQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_ZGX4wHNIEfGImPMr3c7uaQ" name="[lost-tracking OR motion-enable lost]" source="_8jm4UHNGEfGImPMr3c7uaQ" target="_-W_hgHNGEfGImPMr3c7uaQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_ryD70HNIEfGImPMr3c7uaQ" name="[fault cleared + operator confirm]" source="_-W_hgHNGEfGImPMr3c7uaQ" target="_7aGSkHNGEfGImPMr3c7uaQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_xnFOcHNIEfGImPMr3c7uaQ" name="[operator ABORT]" source="_-W_hgHNGEfGImPMr3c7uaQ" target="__1Cz4HNGEfGImPMr3c7uaQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_a3HoMHNJEfGImPMr3c7uaQ" name="[operator ABORT]" source="_7aGSkHNGEfGImPMr3c7uaQ" target="__1Cz4HNGEfGImPMr3c7uaQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_oEmWIHNJEfGImPMr3c7uaQ" name="[operator ABORT]" source="_8jm4UHNGEfGImPMr3c7uaQ" target="__1Cz4HNGEfGImPMr3c7uaQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_Ev75MHNKEfGImPMr3c7uaQ" name="[operator ABORT]" source="_9UXm4HNGEfGImPMr3c7uaQ" target="__1Cz4HNGEfGImPMr3c7uaQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_fpumIHNKEfGImPMr3c7uaQ" source="__1Cz4HNGEfGImPMr3c7uaQ" target="_dc6JQHNKEfGImPMr3c7uaQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_4qNBAHNKEfGImPMr3c7uaQ" name="[lost-tracking OR motion-enable lost]" source="_9UXm4HNGEfGImPMr3c7uaQ" target="_-W_hgHNGEfGImPMr3c7uaQ"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_4T-PIHNGEfGImPMr3c7uaQ" name="Initial"/>
+              <subvertex xmi:type="uml:State" xmi:id="_6Omv0HNGEfGImPMr3c7uaQ" name="IDLE"/>
+              <subvertex xmi:type="uml:State" xmi:id="_7aGSkHNGEfGImPMr3c7uaQ" name="NAVIGATE"/>
+              <subvertex xmi:type="uml:State" xmi:id="_8jm4UHNGEfGImPMr3c7uaQ" name="CONFIRM"/>
+              <subvertex xmi:type="uml:State" xmi:id="_9UXm4HNGEfGImPMr3c7uaQ" name="BIOPSY"/>
+              <subvertex xmi:type="uml:State" xmi:id="_-W_hgHNGEfGImPMr3c7uaQ" name="FAULT">
+                <entry xmi:type="uml:OpaqueBehavior" xmi:id="_P5IlwHNLEfGImPMr3c7uaQ" name="command HOLD on IF-EX-04"/>
+              </subvertex>
+              <subvertex xmi:type="uml:State" xmi:id="__1Cz4HNGEfGImPMr3c7uaQ" name="ABORT"/>
+              <subvertex xmi:type="uml:FinalState" xmi:id="_dc6JQHNKEfGImPMr3c7uaQ" name="FinalState"/>
+            </region>
+          </ownedBehavior>
+        </nestedClassifier>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ypYUIGtoEfGuEvnTmBr3Tw" name="03_Interfaces">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYUIWtoEfGuEvnTmBr3Tw" name="IF_EX_01_PreopData"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYUImtoEfGuEvnTmBr3Tw" name="IF_EX_02a_CBCTVolume"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYUI2toEfGuEvnTmBr3Tw" name="IF_EX_02b_AcquisitionTrigger"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYUJGtoEfGuEvnTmBr3Tw" name="IF_EX_03_EncoderTelemetry"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYUJWtoEfGuEvnTmBr3Tw" name="IF_EX_04_GuidanceCommand">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ypYUJmtoEfGuEvnTmBr3Tw" name="advanceRetractMagnitude" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ypYUJ2toEfGuEvnTmBr3Tw" name="steeringVector">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ypYUKGtoEfGuEvnTmBr3Tw" name="holdFlag">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYUKWtoEfGuEvnTmBr3Tw" name="IF_EX_05a_OperatorCommand"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYUKmtoEfGuEvnTmBr3Tw" name="IF_EX_05b_NavigationOverlay"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYUK2toEfGuEvnTmBr3Tw" name="IF_EX_06a_MotionEnable"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYULGtoEfGuEvnTmBr3Tw" name="IF_EX_06b_FaultAck"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYULWtoEfGuEvnTmBr3Tw" name="IF_EX_07_ProcedureLog"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYULmtoEfGuEvnTmBr3Tw" name="IF_EX_08_EndoscopicVideo"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYUL2toEfGuEvnTmBr3Tw" name="IF_01_FusedPose">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ypYUMGtoEfGuEvnTmBr3Tw" name="position" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ypYUMWtoEfGuEvnTmBr3Tw" name="orientationQuaternion">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ypYUMmtoEfGuEvnTmBr3Tw" name="uncertaintyEllipsoidSemiAxes">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ypYUM2toEfGuEvnTmBr3Tw" name="trackingStatus">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYUNGtoEfGuEvnTmBr3Tw" name="IF_02_PathStatus"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYUNWtoEfGuEvnTmBr3Tw" name="IF_03_TrackingStatus">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ypYUNmtoEfGuEvnTmBr3Tw" name="statusEnum">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ypYUN2toEfGuEvnTmBr3Tw" name="perSourceHealthFlags">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ypYUOGtoEfGuEvnTmBr3Tw" name="lostTrackingAlert">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYUOWtoEfGuEvnTmBr3Tw" name="IF_04_SupervisorCommand"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYUOmtoEfGuEvnTmBr3Tw" name="IF_05_ImagingTrigger"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYUO2toEfGuEvnTmBr3Tw" name="IF_06_RegisteredVolume"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypYUPGtoEfGuEvnTmBr3Tw" name="IF_07_GuidancePacket">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ypYUPWtoEfGuEvnTmBr3Tw" name="advanceRetractMagnitude">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ypYUPmtoEfGuEvnTmBr3Tw" name="steeringVector">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ypY7EGtoEfGuEvnTmBr3Tw" name="holdFlag">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypY7EWtoEfGuEvnTmBr3Tw" name="IF_08_LocalizationMode"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Dx_YMHJjEfG0jpWE5r8r7Q" name="IF_LT_FKPose"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GlNGsHJjEfG0jpWE5r8r7Q" name="IF_LT_VisionDisplacement"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_KhiZYHJjEfG0jpWE5r8r7Q" name="IF_LT_CBCTRefinedPose"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OzqV4HJjEfG0jpWE5r8r7Q" name="IF_LT_FKInit"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ProEUHNCEfGImPMr3c7uaQ" name="IF_PP_PlannedPath"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ss-VcHNCEfGImPMr3c7uaQ" name="IF_PP_ReplanRequest"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VTg54HNCEfGImPMr3c7uaQ" name="IF_PP_NextWaypoint"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ypY7EmtoEfGuEvnTmBr3Tw" name="04_Behavior"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ypY7E2toEfGuEvnTmBr3Tw" name="05_Requirements">
+      <packagedElement xmi:type="uml:Class" xmi:id="__WqJUHP3EfGImPMr3c7uaQ" name="UN-001"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_0racsHP5EfGImPMr3c7uaQ" name="UN-002"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1A5kgHP5EfGImPMr3c7uaQ" name="UN-003"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1R-GYHP5EfGImPMr3c7uaQ" name="UN-004"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1rvRQHP5EfGImPMr3c7uaQ" name="UN-005"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bpy84HP6EfGImPMr3c7uaQ" name="SYS-REQ-001"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_b-ezcHP6EfGImPMr3c7uaQ" name="SYS-REQ-002"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fZm2gHP6EfGImPMr3c7uaQ" name="SYS-REQ-003"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_gUMPcHP6EfGImPMr3c7uaQ" name="SYS-REQ-004"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_g5f78HP6EfGImPMr3c7uaQ" name="SYS-REQ-005"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hi43MHP6EfGImPMr3c7uaQ" name="SYS-REQ-006"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_pb-BYHP8EfGImPMr3c7uaQ" name="SUB-REQ-001"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sE_SEHP8EfGImPMr3c7uaQ" name="SUB-REQ-002"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tL_WYHP8EfGImPMr3c7uaQ" name="SUB-REQ-003"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vcG-4HP8EfGImPMr3c7uaQ" name="SUB-REQ-004"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wVSCkHP8EfGImPMr3c7uaQ" name="SUB-REQ-005"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MeNcIHP9EfGImPMr3c7uaQ" name="SUB-REQ-006"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_QsR_EHP9EfGImPMr3c7uaQ" name="SUB-REQ-007"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Rb2a0HP9EfGImPMr3c7uaQ" name="SUB-REQ-008"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SKozcHP9EfGImPMr3c7uaQ" name="SUB-REQ-009"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Tb4Y4HP9EfGImPMr3c7uaQ" name="SUB-REQ-010"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WBRGwHP9EfGImPMr3c7uaQ" name="SUB-REQ-011"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_W1YEQHP9EfGImPMr3c7uaQ" name="SUB-REQ-012"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Xu34EHP9EfGImPMr3c7uaQ" name="SUB-REQ-013"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YfT2gHP9EfGImPMr3c7uaQ" name="SUB-REQ-014"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_aNUQcHP9EfGImPMr3c7uaQ" name="SUB-REQ-015"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bAR-cHP9EfGImPMr3c7uaQ" name="SUB-REQ-016"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_b4RWYHP9EfGImPMr3c7uaQ" name="SUB-REQ-017"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6sZ8gHP-EfGImPMr3c7uaQ" name="COMP-REQ-001"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7DiqIHP-EfGImPMr3c7uaQ" name="COMP-REQ-002"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7Xx0wHP-EfGImPMr3c7uaQ" name="COMP-REQ-003"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_fDO5sHQBEfGImPMr3c7uaQ" name="Satisfy32" client="_bpy84HP6EfGImPMr3c7uaQ" supplier="__WqJUHP3EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_f70ukHQBEfGImPMr3c7uaQ" name="Satisfy33" client="_ypY7E2toEfGuEvnTmBr3Tw" supplier="_0racsHP5EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_iv-4QHQBEfGImPMr3c7uaQ" name="Satisfy34" client="_b-ezcHP6EfGImPMr3c7uaQ" supplier="__WqJUHP3EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_kS6DkHQBEfGImPMr3c7uaQ" name="Satisfy35" client="_fZm2gHP6EfGImPMr3c7uaQ" supplier="_1A5kgHP5EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_lm5bAHQBEfGImPMr3c7uaQ" name="Satisfy36" client="_gUMPcHP6EfGImPMr3c7uaQ" supplier="_1R-GYHP5EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_mgkN8HQBEfGImPMr3c7uaQ" name="Satisfy37" client="_g5f78HP6EfGImPMr3c7uaQ" supplier="_1rvRQHP5EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_nq2PwHQBEfGImPMr3c7uaQ" name="Satisfy38" client="_hi43MHP6EfGImPMr3c7uaQ" supplier="_ypY7E2toEfGuEvnTmBr3Tw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_vIRqoHQBEfGImPMr3c7uaQ" name="Satisfy39" client="_pb-BYHP8EfGImPMr3c7uaQ" supplier="_bpy84HP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_xLYK0HQBEfGImPMr3c7uaQ" name="Satisfy40" client="_pb-BYHP8EfGImPMr3c7uaQ" supplier="_b-ezcHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_31WvgHQBEfGImPMr3c7uaQ" name="Satisfy41" client="_sE_SEHP8EfGImPMr3c7uaQ" supplier="_b-ezcHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_4zdWgHQBEfGImPMr3c7uaQ" name="Satisfy42" client="_sE_SEHP8EfGImPMr3c7uaQ" supplier="_hi43MHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_6lZOMHQBEfGImPMr3c7uaQ" name="Satisfy43" client="_tL_WYHP8EfGImPMr3c7uaQ" supplier="_b-ezcHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_80GhcHQBEfGImPMr3c7uaQ" name="Refine44" client="_vcG-4HP8EfGImPMr3c7uaQ" supplier="_ypY7E2toEfGuEvnTmBr3Tw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_9mp_wHQBEfGImPMr3c7uaQ" name="Refine45" client="_vcG-4HP8EfGImPMr3c7uaQ" supplier="_hi43MHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="__TmCsHQBEfGImPMr3c7uaQ" name="Satisfy46" client="_wVSCkHP8EfGImPMr3c7uaQ" supplier="_fZm2gHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_ApthEHQCEfGImPMr3c7uaQ" name="Satisfy47" client="_MeNcIHP9EfGImPMr3c7uaQ" supplier="_ypY7E2toEfGuEvnTmBr3Tw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_BfujEHQCEfGImPMr3c7uaQ" name="Satisfy48" client="_ypY7E2toEfGuEvnTmBr3Tw" supplier="_hi43MHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_C7YBsHQCEfGImPMr3c7uaQ" name="Satisfy49" client="_QsR_EHP9EfGImPMr3c7uaQ" supplier="_fZm2gHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_EhkjcHQCEfGImPMr3c7uaQ" name="Refine50" client="_Rb2a0HP9EfGImPMr3c7uaQ" supplier="_ypY7E2toEfGuEvnTmBr3Tw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GKuSkHQCEfGImPMr3c7uaQ" name="Satisfy51" client="_SKozcHP9EfGImPMr3c7uaQ" supplier="_gUMPcHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_HKHTAHQCEfGImPMr3c7uaQ" name="Satisfy52" client="_SKozcHP9EfGImPMr3c7uaQ" supplier="_g5f78HP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_IchWEHQCEfGImPMr3c7uaQ" name="Satisfy53" client="_ypY7E2toEfGuEvnTmBr3Tw" supplier="_hi43MHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_KQd_8HQCEfGImPMr3c7uaQ" name="Satisfy54" client="_WBRGwHP9EfGImPMr3c7uaQ" supplier="_fZm2gHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_LV3hwHQCEfGImPMr3c7uaQ" name="Satisfy55" client="_WBRGwHP9EfGImPMr3c7uaQ" supplier="_gUMPcHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_NQIPAHQCEfGImPMr3c7uaQ" name="Satisfy56" client="_W1YEQHP9EfGImPMr3c7uaQ" supplier="_fZm2gHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_OF6ngHQCEfGImPMr3c7uaQ" name="Satisfy57" client="_ypY7E2toEfGuEvnTmBr3Tw" supplier="_ypY7E2toEfGuEvnTmBr3Tw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Q8krkHQCEfGImPMr3c7uaQ" name="Satisfy58" client="_Xu34EHP9EfGImPMr3c7uaQ" supplier="_b-ezcHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_RyjRUHQCEfGImPMr3c7uaQ" name="Satisfy59" client="_Xu34EHP9EfGImPMr3c7uaQ" supplier="_hi43MHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_UnAV8HQCEfGImPMr3c7uaQ" name="Satisfy60" client="_YfT2gHP9EfGImPMr3c7uaQ" supplier="_bpy84HP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_WxnzYHQCEfGImPMr3c7uaQ" name="Satisfy61" client="_aNUQcHP9EfGImPMr3c7uaQ" supplier="_bpy84HP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_XnUsUHQCEfGImPMr3c7uaQ" name="Satisfy62" client="_aNUQcHP9EfGImPMr3c7uaQ" supplier="_fZm2gHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_ZlOjcHQCEfGImPMr3c7uaQ" name="Satisfy63" client="_bAR-cHP9EfGImPMr3c7uaQ" supplier="_b-ezcHP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_bEc6gHQCEfGImPMr3c7uaQ" name="Trace64" client="_b4RWYHP9EfGImPMr3c7uaQ" supplier="_g5f78HP6EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_eguNEHQCEfGImPMr3c7uaQ" name="Satisfy65" client="_6sZ8gHP-EfGImPMr3c7uaQ" supplier="_YfT2gHP9EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_pK8UEHQCEfGImPMr3c7uaQ" name="Satisfy66" client="_7DiqIHP-EfGImPMr3c7uaQ" supplier="_sE_SEHP8EfGImPMr3c7uaQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_qiR6cHQCEfGImPMr3c7uaQ" name="Satisfy67" client="_7Xx0wHP-EfGImPMr3c7uaQ" supplier="_ypY7E2toEfGuEvnTmBr3Tw"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ypY7FGtoEfGuEvnTmBr3Tw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ypY7FWtoEfGuEvnTmBr3Tw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ypY7FmtoEfGuEvnTmBr3Tw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ypY7F2toEfGuEvnTmBr3Tw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ypY7GGtoEfGuEvnTmBr3Tw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ypY7GWtoEfGuEvnTmBr3Tw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ypY7GmtoEfGuEvnTmBr3Tw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ypY7G2toEfGuEvnTmBr3Tw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ypY7HGtoEfGuEvnTmBr3Tw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ypY7HWtoEfGuEvnTmBr3Tw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ypY7HmtoEfGuEvnTmBr3Tw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ypY7H2toEfGuEvnTmBr3Tw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ypY7IGtoEfGuEvnTmBr3Tw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ypY7IWtoEfGuEvnTmBr3Tw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ypY7ImtoEfGuEvnTmBr3Tw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ypY7I2toEfGuEvnTmBr3Tw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ypY7JGtoEfGuEvnTmBr3Tw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ypY7JWtoEfGuEvnTmBr3Tw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ypY7JmtoEfGuEvnTmBr3Tw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ypY7J2toEfGuEvnTmBr3Tw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jOChwHNHEfGImPMr3c7uaQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jOJ2gHNHEfGImPMr3c7uaQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <Blocks:Block xmi:id="_25_20Gt3EfGlq9aVfX9kFw" base_Class="_ypXtEmtoEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_B8eFwGt4EfGlq9aVfX9kFw" base_Class="_ypXF42toEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_C__YQGt4EfGlq9aVfX9kFw" base_Class="_ypXF52toEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_ER4d8Gt4EfGlq9aVfX9kFw" base_Class="_ypXF62toEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_FQ0ycGt4EfGlq9aVfX9kFw" base_Class="_ypXF72toEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_GQh78Gt4EfGlq9aVfX9kFw" base_Class="_ypXF82toEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_HmisoGt4EfGlq9aVfX9kFw" base_Class="_ypXF92toEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_IiCEgGt4EfGlq9aVfX9kFw" base_Class="_ypXF-GtoEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_LWcs4Gt4EfGlq9aVfX9kFw" base_Class="_ypXtImtoEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_Nl2jsGt4EfGlq9aVfX9kFw" base_Class="_ypYUBWtoEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_QCrLcGt4EfGlq9aVfX9kFw" base_Class="_ypYUCWtoEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_RBAb8Gt4EfGlq9aVfX9kFw" base_Class="_ypYUEWtoEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_Twb2oGt4EfGlq9aVfX9kFw" base_Class="_ypYUAWtoEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_UhVIEGt4EfGlq9aVfX9kFw" base_Class="_ypYUAmtoEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_VSffQGt4EfGlq9aVfX9kFw" base_Class="_ypYUA2toEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_WGdS0Gt4EfGlq9aVfX9kFw" base_Class="_ypYUBGtoEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_Xz8vYGt4EfGlq9aVfX9kFw" base_Class="_ypYUDmtoEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_YqxCoGt4EfGlq9aVfX9kFw" base_Class="_ypYUD2toEfGuEvnTmBr3Tw"/>
+  <Blocks:Block xmi:id="_ZkLW4Gt4EfGlq9aVfX9kFw" base_Class="_ypYUEGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_esxBUGt4EfGlq9aVfX9kFw" base_Class="_ypYUIWtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_f4J2YGt4EfGlq9aVfX9kFw" base_Class="_ypYUImtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_g5ohgGt4EfGlq9aVfX9kFw" base_Class="_ypYUI2toEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_iVOVwGt4EfGlq9aVfX9kFw" base_Class="_ypYUJGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_jLZIwGt4EfGlq9aVfX9kFw" base_Class="_ypYUJWtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_kEbCgGt4EfGlq9aVfX9kFw" base_Class="_ypYUKWtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_lFalcGt4EfGlq9aVfX9kFw" base_Class="_ypYUKmtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_l-CPgGt4EfGlq9aVfX9kFw" base_Class="_ypYUK2toEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_oJlhEGt4EfGlq9aVfX9kFw" base_Class="_ypYULGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_o7yaEGt4EfGlq9aVfX9kFw" base_Class="_ypYULWtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_p0j1IGt4EfGlq9aVfX9kFw" base_Class="_ypYULmtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_qtN7cGt4EfGlq9aVfX9kFw" base_Class="_ypYUL2toEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_r_bKMGt4EfGlq9aVfX9kFw" base_Class="_ypYUNGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_s6o1QGt4EfGlq9aVfX9kFw" base_Class="_ypYUNWtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_t9QI0Gt4EfGlq9aVfX9kFw" base_Class="_ypYUOWtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_vKleoGt4EfGlq9aVfX9kFw" base_Class="_ypYUOmtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_v8mxcGt4EfGlq9aVfX9kFw" base_Class="_ypYUO2toEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_w8FRcGt4EfGlq9aVfX9kFw" base_Class="_ypYUPGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_x5acYGt4EfGlq9aVfX9kFw" base_Class="_ypY7EWtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:FlowProperty xmi:id="_4_9BQGt4EfGlq9aVfX9kFw" base_Property="_ypYUPWtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:FlowProperty xmi:id="_5xM4AGt4EfGlq9aVfX9kFw" base_Property="_ypYUPmtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:FlowProperty xmi:id="_6tmO0Gt4EfGlq9aVfX9kFw" base_Property="_ypY7EGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:FlowProperty xmi:id="_9PdHkGt4EfGlq9aVfX9kFw" base_Property="_ypYUM2toEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:FlowProperty xmi:id="_-DQjEGt4EfGlq9aVfX9kFw" base_Property="_ypYUMmtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:FlowProperty xmi:id="__BuWcGt4EfGlq9aVfX9kFw" base_Property="_ypYUMWtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:FlowProperty xmi:id="_Ag64UGt5EfGlq9aVfX9kFw" base_Property="_ypYUKGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:FlowProperty xmi:id="_BVfI0Gt5EfGlq9aVfX9kFw" base_Property="_ypYUJ2toEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:FlowProperty xmi:id="_CXXckGt5EfGlq9aVfX9kFw" base_Property="_ypYUJmtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:FlowProperty xmi:id="_D31JwGt5EfGlq9aVfX9kFw" base_Property="_ypYUMGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:FlowProperty xmi:id="_FzflMGt5EfGlq9aVfX9kFw" base_Property="_ypYUOGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:FlowProperty xmi:id="_GnpmAGt5EfGlq9aVfX9kFw" base_Property="_ypYUN2toEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:FlowProperty xmi:id="_Ha_HcGt5EfGlq9aVfX9kFw" base_Property="_ypYUNmtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_Koz44Gt6EfGlq9aVfX9kFw" base_Port="_ypXtJGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_LqszsGt6EfGlq9aVfX9kFw" base_Port="_ypXtJWtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_Mlnj0Gt6EfGlq9aVfX9kFw" base_Port="_ypXtJmtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_NiliYGt6EfGlq9aVfX9kFw" base_Port="_ypXtJ2toEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_O6tL4Gt6EfGlq9aVfX9kFw" base_Port="_ypXtKGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_P0G5EGt6EfGlq9aVfX9kFw" base_Port="_ypYUAGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_RYakcGt6EfGlq9aVfX9kFw" base_Port="_ypYUBmtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_SRN0sGt6EfGlq9aVfX9kFw" base_Port="_ypYUB2toEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_TJHtEGt6EfGlq9aVfX9kFw" base_Port="_ypYUCGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_U3mBEGt6EfGlq9aVfX9kFw" base_Port="_ypYUCmtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_VkjNsGt6EfGlq9aVfX9kFw" base_Port="_ypYUC2toEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_WX2S4Gt6EfGlq9aVfX9kFw" base_Port="_ypYUDGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_XZKl8Gt6EfGlq9aVfX9kFw" base_Port="_ypYUDWtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_Yi08sGt6EfGlq9aVfX9kFw" base_Port="_ypYUEmtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_ZbylAGt6EfGlq9aVfX9kFw" base_Port="_ypYUE2toEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_aZ8PUGt6EfGlq9aVfX9kFw" base_Port="_ypYUFGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_bRFSsGt6EfGlq9aVfX9kFw" base_Port="_ypYUFWtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_cUIrIGt6EfGlq9aVfX9kFw" base_Port="_ypYUFmtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_dZqIwGt6EfGlq9aVfX9kFw" base_Port="_ypYUF2toEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_eJd1EGt6EfGlq9aVfX9kFw" base_Port="_ypYUGGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_fG9_IGt6EfGlq9aVfX9kFw" base_Port="_ypYUGWtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_f2D5wGt6EfGlq9aVfX9kFw" base_Port="_ypYUGmtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_g0OLIGt6EfGlq9aVfX9kFw" base_Port="_ypYUG2toEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_i8zBMGt6EfGlq9aVfX9kFw" base_Port="_ypYUHGtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_j0Z-oGt6EfGlq9aVfX9kFw" base_Port="_ypYUHWtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_kkXb8Gt6EfGlq9aVfX9kFw" base_Port="_ypYUHmtoEfGuEvnTmBr3Tw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_lcR7YGt6EfGlq9aVfX9kFw" base_Port="_ypYUH2toEfGuEvnTmBr3Tw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_gsD3MGuGEfGUxO55bkUw7g" base_Element="_gsCCAGuGEfGUxO55bkUw7g" propertyPath="_iQDy0GuBEfGUxO55bkUw7g" base_ConnectorEnd="_gsCCAGuGEfGUxO55bkUw7g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_gsEeQGuGEfGUxO55bkUw7g" base_Element="_gsCCAWuGEfGUxO55bkUw7g" propertyPath="_kjkGgGuBEfGUxO55bkUw7g" base_ConnectorEnd="_gsCCAWuGEfGUxO55bkUw7g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_nujpkmuGEfGUxO55bkUw7g" base_Element="_nujpkGuGEfGUxO55bkUw7g" propertyPath="_iQDy0GuBEfGUxO55bkUw7g" base_ConnectorEnd="_nujpkGuGEfGUxO55bkUw7g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_nukQoGuGEfGUxO55bkUw7g" base_Element="_nujpkWuGEfGUxO55bkUw7g" propertyPath="_lO0C8GuBEfGUxO55bkUw7g" base_ConnectorEnd="_nujpkWuGEfGUxO55bkUw7g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_tDpe8muGEfGUxO55bkUw7g" base_Element="_tDpe8GuGEfGUxO55bkUw7g" propertyPath="_iyqJkGuBEfGUxO55bkUw7g" base_ConnectorEnd="_tDpe8GuGEfGUxO55bkUw7g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_tDqGAGuGEfGUxO55bkUw7g" base_Element="_tDpe8WuGEfGUxO55bkUw7g" propertyPath="_iQDy0GuBEfGUxO55bkUw7g" base_ConnectorEnd="_tDpe8WuGEfGUxO55bkUw7g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_xcypcmuGEfGUxO55bkUw7g" base_Element="_xcypcGuGEfGUxO55bkUw7g" propertyPath="_kjkGgGuBEfGUxO55bkUw7g" base_ConnectorEnd="_xcypcGuGEfGUxO55bkUw7g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_xczQgGuGEfGUxO55bkUw7g" base_Element="_xcypcWuGEfGUxO55bkUw7g" propertyPath="_lO0C8GuBEfGUxO55bkUw7g" base_ConnectorEnd="_xcypcWuGEfGUxO55bkUw7g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_1DiGomuGEfGUxO55bkUw7g" base_Element="_1DiGoGuGEfGUxO55bkUw7g" propertyPath="_kjkGgGuBEfGUxO55bkUw7g" base_ConnectorEnd="_1DiGoGuGEfGUxO55bkUw7g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_1DitsGuGEfGUxO55bkUw7g" base_Element="_1DiGoWuGEfGUxO55bkUw7g" propertyPath="_lO0C8GuBEfGUxO55bkUw7g" base_ConnectorEnd="_1DiGoWuGEfGUxO55bkUw7g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_A0TmAWuHEfGUxO55bkUw7g" base_Element="_A0S-8GuHEfGUxO55bkUw7g" propertyPath="_lO0C8GuBEfGUxO55bkUw7g" base_ConnectorEnd="_A0S-8GuHEfGUxO55bkUw7g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_A0TmAmuHEfGUxO55bkUw7g" base_Element="_A0TmAGuHEfGUxO55bkUw7g" propertyPath="_kjkGgGuBEfGUxO55bkUw7g" base_ConnectorEnd="_A0TmAGuHEfGUxO55bkUw7g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_EhWfgmuHEfGUxO55bkUw7g" base_Element="_EhWfgGuHEfGUxO55bkUw7g" propertyPath="_lO0C8GuBEfGUxO55bkUw7g" base_ConnectorEnd="_EhWfgGuHEfGUxO55bkUw7g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_EhXGkGuHEfGUxO55bkUw7g" base_Element="_EhWfgWuHEfGUxO55bkUw7g" propertyPath="_iyqJkGuBEfGUxO55bkUw7g" base_ConnectorEnd="_EhWfgWuHEfGUxO55bkUw7g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_OjZMMWuHEfGUxO55bkUw7g" base_Element="_OjYlIGuHEfGUxO55bkUw7g" propertyPath="_lO0C8GuBEfGUxO55bkUw7g" base_ConnectorEnd="_OjYlIGuHEfGUxO55bkUw7g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_OjZzQGuHEfGUxO55bkUw7g" base_Element="_OjZMMGuHEfGUxO55bkUw7g" propertyPath="_iQDy0GuBEfGUxO55bkUw7g" base_ConnectorEnd="_OjZMMGuHEfGUxO55bkUw7g"/>
+  <PortsAndFlows:ProxyPort xmi:id="_yF3G8HJdEfG0jpWE5r8r7Q" base_Port="_yFbpIHJdEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_B2tJgHJeEfG0jpWE5r8r7Q" base_Port="_B2oRAHJeEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_HN-JIHJeEfG0jpWE5r8r7Q" base_Port="_HN6ewHJeEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_NJgTcHJeEfG0jpWE5r8r7Q" base_Port="_NJd3MHJeEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_P59o4HJeEfG0jpWE5r8r7Q" base_Port="_P56lkHJeEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_ThVYMHJeEfG0jpWE5r8r7Q" base_Port="_ThP4oHJeEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_W5eYsHJeEfG0jpWE5r8r7Q" base_Port="_W5bVYHJeEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_Z2lqEHJeEfG0jpWE5r8r7Q" base_Port="_Z2jN0HJeEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_fREVwHJeEfG0jpWE5r8r7Q" base_Port="_fRB5gHJeEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_jWM_IHJeEfG0jpWE5r8r7Q" base_Port="_jWKi4HJeEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_mt4soHJeEfG0jpWE5r8r7Q" base_Port="_mt0bMHJeEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_3xshAHJgEfG0jpWE5r8r7Q" base_Element="_3xr58HJgEfG0jpWE5r8r7Q" propertyPath="_lO0C8GuBEfGUxO55bkUw7g" base_ConnectorEnd="_3xr58HJgEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_54Ha8nJgEfG0jpWE5r8r7Q" base_Element="_54Ha8HJgEfG0jpWE5r8r7Q" propertyPath="_lO0C8GuBEfGUxO55bkUw7g" base_ConnectorEnd="_54Ha8HJgEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_7QEFUXJgEfG0jpWE5r8r7Q" base_Element="_7QDeQHJgEfG0jpWE5r8r7Q" propertyPath="_lO0C8GuBEfGUxO55bkUw7g" base_ConnectorEnd="_7QDeQHJgEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_77wGoXJgEfG0jpWE5r8r7Q" base_Element="_77vfkHJgEfG0jpWE5r8r7Q" propertyPath="_lO0C8GuBEfGUxO55bkUw7g" base_ConnectorEnd="_77vfkHJgEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_86yhwXJgEfG0jpWE5r8r7Q" base_Element="_86x6sHJgEfG0jpWE5r8r7Q" propertyPath="_lO0C8GuBEfGUxO55bkUw7g" base_ConnectorEnd="_86x6sHJgEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_9jEpwXJgEfG0jpWE5r8r7Q" base_Element="_9jECsHJgEfG0jpWE5r8r7Q" propertyPath="_lO0C8GuBEfGUxO55bkUw7g" base_ConnectorEnd="_9jECsHJgEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_-KJQ0XJgEfG0jpWE5r8r7Q" base_Element="_-KIpwHJgEfG0jpWE5r8r7Q" propertyPath="_lO0C8GuBEfGUxO55bkUw7g" base_ConnectorEnd="_-KIpwHJgEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_-wOZYnJgEfG0jpWE5r8r7Q" base_Element="_-wOZYHJgEfG0jpWE5r8r7Q" propertyPath="_lO0C8GuBEfGUxO55bkUw7g" base_ConnectorEnd="_-wOZYHJgEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_Aq0d0nJhEfG0jpWE5r8r7Q" base_Element="_Aq0d0XJhEfG0jpWE5r8r7Q" propertyPath="_iyqJkGuBEfGUxO55bkUw7g" base_ConnectorEnd="_Aq0d0XJhEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_Bs7bEnJhEfG0jpWE5r8r7Q" base_Element="_Bs7bEXJhEfG0jpWE5r8r7Q" propertyPath="_iQDy0GuBEfGUxO55bkUw7g" base_ConnectorEnd="_Bs7bEXJhEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_CVnywnJhEfG0jpWE5r8r7Q" base_Element="_CVnywXJhEfG0jpWE5r8r7Q" propertyPath="_iQDy0GuBEfGUxO55bkUw7g" base_ConnectorEnd="_CVnywXJhEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_DyE3wHJjEfG0jpWE5r8r7Q" base_Class="_Dx_YMHJjEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_GlSmQHJjEfG0jpWE5r8r7Q" base_Class="_GlNGsHJjEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_Khk1oHJjEfG0jpWE5r8r7Q" base_Class="_KhiZYHJjEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_OzuAQHJjEfG0jpWE5r8r7Q" base_Class="_OzqV4HJjEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_8Y_78HJjEfG0jpWE5r8r7Q" base_Port="_8Y7qgHJjEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_BnidYHJkEfG0jpWE5r8r7Q" base_Port="_BnfaEHJkEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_HE6FAHJkEfG0jpWE5r8r7Q" base_Port="_HE3owHJkEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_MRoBgHJkEfG0jpWE5r8r7Q" base_Port="_MRllQHJkEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_QIe-UHJkEfG0jpWE5r8r7Q" base_Port="_QIciEHJkEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_U6G6QHJkEfG0jpWE5r8r7Q" base_Port="_U6EeAHJkEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_hz-IoHJkEfG0jpWE5r8r7Q" base_Port="_hz7sYHJkEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_vjPVAHJkEfG0jpWE5r8r7Q" base_Port="_vjM4wHJkEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_3wnmIHJkEfG0jpWE5r8r7Q" base_Port="_3wki0HJkEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_7szH0HJkEfG0jpWE5r8r7Q" base_Port="_7swrkHJkEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="__FzrAHJkEfG0jpWE5r8r7Q" base_Port="__FxOwHJkEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_GB7voHJlEfG0jpWE5r8r7Q" base_Port="_GB5TYHJlEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_LpbjoHJlEfG0jpWE5r8r7Q" base_Port="_LpZucHJlEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_cCblwHM-EfG0jpWE5r8r7Q" base_Element="_cCa-sHM-EfG0jpWE5r8r7Q" propertyPath="_E66LQHJnEfG0jpWE5r8r7Q" base_ConnectorEnd="_cCa-sHM-EfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_cCeCAHM-EfG0jpWE5r8r7Q" base_Element="_cCa-sXM-EfG0jpWE5r8r7Q" propertyPath="_E7A4-HJnEfG0jpWE5r8r7Q" base_ConnectorEnd="_cCa-sXM-EfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_gEMyEXM-EfG0jpWE5r8r7Q" base_Element="_gEMLAHM-EfG0jpWE5r8r7Q" propertyPath="_E66LQHJnEfG0jpWE5r8r7Q" base_ConnectorEnd="_gEMLAHM-EfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_gEOAMHM-EfG0jpWE5r8r7Q" base_Element="_gEMyEHM-EfG0jpWE5r8r7Q" propertyPath="_E6_q1XJnEfG0jpWE5r8r7Q" base_ConnectorEnd="_gEMyEHM-EfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_mlJWkHM-EfG0jpWE5r8r7Q" base_Element="_mlIvgHM-EfG0jpWE5r8r7Q" propertyPath="_E691pnJnEfG0jpWE5r8r7Q" base_ConnectorEnd="_mlIvgHM-EfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_mlJ9oHM-EfG0jpWE5r8r7Q" base_Element="_mlIvgXM-EfG0jpWE5r8r7Q" propertyPath="_E7A4-HJnEfG0jpWE5r8r7Q" base_ConnectorEnd="_mlIvgXM-EfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_ttJUAnM-EfG0jpWE5r8r7Q" base_Element="_ttJUAHM-EfG0jpWE5r8r7Q" propertyPath="_E6_q1XJnEfG0jpWE5r8r7Q" base_ConnectorEnd="_ttJUAHM-EfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_ttJ7EHM-EfG0jpWE5r8r7Q" base_Element="_ttJUAXM-EfG0jpWE5r8r7Q" propertyPath="_E7A4-HJnEfG0jpWE5r8r7Q" base_ConnectorEnd="_ttJUAXM-EfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_FrMzInNAEfG0jpWE5r8r7Q" base_Element="_FrMzIXNAEfG0jpWE5r8r7Q" propertyPath="_E66LQHJnEfG0jpWE5r8r7Q" base_ConnectorEnd="_FrMzIXNAEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_GWpj4XNAEfG0jpWE5r8r7Q" base_Element="_GWo80HNAEfG0jpWE5r8r7Q" propertyPath="_E691pnJnEfG0jpWE5r8r7Q" base_ConnectorEnd="_GWo80HNAEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_G1_yUnNAEfG0jpWE5r8r7Q" base_Element="_G1_yUHNAEfG0jpWE5r8r7Q" propertyPath="_E7A4-HJnEfG0jpWE5r8r7Q" base_ConnectorEnd="_G1_yUHNAEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_HUmZ4nNAEfG0jpWE5r8r7Q" base_Element="_HUmZ4HNAEfG0jpWE5r8r7Q" propertyPath="_E7A4-HJnEfG0jpWE5r8r7Q" base_ConnectorEnd="_HUmZ4HNAEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_H1vYEXNAEfG0jpWE5r8r7Q" base_Element="_H1vYEHNAEfG0jpWE5r8r7Q" propertyPath="_E6_q1XJnEfG0jpWE5r8r7Q" base_ConnectorEnd="_H1vYEHNAEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:ProxyPort xmi:id="_tc_GMHNAEfG0jpWE5r8r7Q" base_Port="_tc7b0HNAEfG0jpWE5r8r7Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_4FkOcnNAEfG0jpWE5r8r7Q" base_Element="_4FkOcHNAEfG0jpWE5r8r7Q" propertyPath="_E7A4-HJnEfG0jpWE5r8r7Q" base_ConnectorEnd="_4FkOcHNAEfG0jpWE5r8r7Q"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_PsBF4HNCEfGImPMr3c7uaQ" base_Class="_ProEUHNCEfGImPMr3c7uaQ"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_StCm4HNCEfGImPMr3c7uaQ" base_Class="_Ss-VcHNCEfGImPMr3c7uaQ"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_VTlyYHNCEfGImPMr3c7uaQ" base_Class="_VTg54HNCEfGImPMr3c7uaQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_elh30HNCEfGImPMr3c7uaQ" base_Port="_ele0gHNCEfGImPMr3c7uaQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_hm4wAHNCEfGImPMr3c7uaQ" base_Port="_hm2TwHNCEfGImPMr3c7uaQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_ofBFcHNCEfGImPMr3c7uaQ" base_Port="_oe_QQHNCEfGImPMr3c7uaQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_sxsbkHNCEfGImPMr3c7uaQ" base_Port="_sxpYQHNCEfGImPMr3c7uaQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_zeBJoHNCEfGImPMr3c7uaQ" base_Port="_zd-tYHNCEfGImPMr3c7uaQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_932rQHNCEfGImPMr3c7uaQ" base_Port="_93xLsHNCEfGImPMr3c7uaQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_BurL0HNDEfGImPMr3c7uaQ" base_Port="_BunhcHNDEfGImPMr3c7uaQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_Fbgp8HNDEfGImPMr3c7uaQ" base_Port="_FbeNsHNDEfGImPMr3c7uaQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_J05sEHNDEfGImPMr3c7uaQ" base_Port="_J03P0HNDEfGImPMr3c7uaQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_SB0qMHNDEfGImPMr3c7uaQ" base_Port="_SBxm4HNDEfGImPMr3c7uaQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_FnQKcHNEEfGImPMr3c7uaQ" base_Port="_FnMgEHNEEfGImPMr3c7uaQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_7opW0nNEEfGImPMr3c7uaQ" base_Element="_7opW0HNEEfGImPMr3c7uaQ" propertyPath="_SDV3tXNEEfGImPMr3c7uaQ" base_ConnectorEnd="_7opW0HNEEfGImPMr3c7uaQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_7oqk8HNEEfGImPMr3c7uaQ" base_Element="_7opW0XNEEfGImPMr3c7uaQ" propertyPath="_SDXF2HNEEfGImPMr3c7uaQ" base_ConnectorEnd="_7opW0XNEEfGImPMr3c7uaQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_8dPcgXNEEfGImPMr3c7uaQ" base_Element="_8dPcgHNEEfGImPMr3c7uaQ" propertyPath="_SDV3tXNEEfGImPMr3c7uaQ" base_ConnectorEnd="_8dPcgHNEEfGImPMr3c7uaQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_9N9u0HNEEfGImPMr3c7uaQ" base_Element="_9N9HwXNEEfGImPMr3c7uaQ" propertyPath="_SDV3tXNEEfGImPMr3c7uaQ" base_ConnectorEnd="_9N9HwXNEEfGImPMr3c7uaQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_94QB8nNEEfGImPMr3c7uaQ" base_Element="_94QB8XNEEfGImPMr3c7uaQ" propertyPath="_SDXF2HNEEfGImPMr3c7uaQ" base_ConnectorEnd="_94QB8XNEEfGImPMr3c7uaQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_-n1EwnNEEfGImPMr3c7uaQ" base_Element="_-n1EwXNEEfGImPMr3c7uaQ" propertyPath="_SDXF2HNEEfGImPMr3c7uaQ" base_ConnectorEnd="_-n1EwXNEEfGImPMr3c7uaQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="__cwhoXNEEfGImPMr3c7uaQ" base_Element="__cv6kHNEEfGImPMr3c7uaQ" propertyPath="_SDXF2HNEEfGImPMr3c7uaQ" base_ConnectorEnd="__cv6kHNEEfGImPMr3c7uaQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="__cwhonNEEfGImPMr3c7uaQ" base_Element="__cwhoHNEEfGImPMr3c7uaQ" propertyPath="_SDQ_MHNEEfGImPMr3c7uaQ" base_ConnectorEnd="__cwhoHNEEfGImPMr3c7uaQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_BNI6IHNFEfGImPMr3c7uaQ" base_Element="_BNITEHNFEfGImPMr3c7uaQ" propertyPath="_SDQ_MHNEEfGImPMr3c7uaQ" base_ConnectorEnd="_BNITEHNFEfGImPMr3c7uaQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_BNJhMHNFEfGImPMr3c7uaQ" base_Element="_BNITEXNFEfGImPMr3c7uaQ" propertyPath="_SDXF2HNEEfGImPMr3c7uaQ" base_ConnectorEnd="_BNITEXNFEfGImPMr3c7uaQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_B_XBQHNFEfGImPMr3c7uaQ" base_Element="_B_WaMHNFEfGImPMr3c7uaQ" propertyPath="_SDQ_MHNEEfGImPMr3c7uaQ" base_ConnectorEnd="_B_WaMHNFEfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="__WtzsHP3EfGImPMr3c7uaQ" base_NamedElement="__WqJUHP3EfGImPMr3c7uaQ" id="UN-001" text="Physicians need to navigate a bronchoscope to a target nodule identified in preoperative imaging in order to obtain a tissue biopsy." base_Class="__WqJUHP3EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_0riYgHP5EfGImPMr3c7uaQ" base_NamedElement="_0racsHP5EfGImPMr3c7uaQ" id="UN-002" text="Physicians need to reach target nodules located in peripheral airway branches that are difficult or impossible to access with manual bronchoscopy." base_Class="_0racsHP5EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_1A918HP5EfGImPMr3c7uaQ" base_NamedElement="_1A5kgHP5EfGImPMr3c7uaQ" id="UN-003" text="Patients need assurance that navigation will not cause unintended injury to the airway." base_Class="_1A5kgHP5EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_1SCX0HP5EfGImPMr3c7uaQ" base_NamedElement="_1R-GYHP5EfGImPMr3c7uaQ" id="UN-004" text="Physicians need to retain supervisory authority over the procedure, including the ability to pause or abort navigation at any time." base_Class="_1R-GYHP5EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_1rzisHP5EfGImPMr3c7uaQ" base_NamedElement="_1rvRQHP5EfGImPMr3c7uaQ" id="UN-005" text="Clinical staff need a record of the navigation procedure to support post-procedure review." base_Class="_1rvRQHP5EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_bp8G0HP6EfGImPMr3c7uaQ" base_NamedElement="_bpy84HP6EfGImPMr3c7uaQ" id="SYS-REQ-001" text="The system shall enable a physician to navigate a flexible bronchoscope to target pulmonary nodules identified in preoperative imaging." base_Class="_bpy84HP6EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_b-jr8HP6EfGImPMr3c7uaQ" base_NamedElement="_b-ezcHP6EfGImPMr3c7uaQ" id="SYS-REQ-002" text="The system shall provide the physician with sufficient positional confidence to perform a tissue biopsy at the target location." base_Class="_b-ezcHP6EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_fZsWEHP6EfGImPMr3c7uaQ" base_NamedElement="_fZm2gHP6EfGImPMr3c7uaQ" id="SYS-REQ-003" text="The system shall prevent unintended scope advancement or steering that could result in airway wall injury." base_Class="_fZm2gHP6EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_gURvAHP6EfGImPMr3c7uaQ" base_NamedElement="_gUMPcHP6EfGImPMr3c7uaQ" id="SYS-REQ-004" text="The system shall respond to physician pause and abort commands within a clinically acceptable time." base_Class="_gUMPcHP6EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_g5lbgHP6EfGImPMr3c7uaQ" base_NamedElement="_g5f78HP6EfGImPMr3c7uaQ" id="SYS-REQ-005" text="The system shall generate a complete procedure record suitable for post-procedure clinical review." base_Class="_g5f78HP6EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_hi9vsHP6EfGImPMr3c7uaQ" base_NamedElement="_hi43MHP6EfGImPMr3c7uaQ" id="SYS-REQ-006" text="The system shall detect conditions under which navigation accuracy cannot be assured and shall prevent scope motion under those conditions." base_Class="_hi43MHP6EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_pcNR8HP8EfGImPMr3c7uaQ" base_NamedElement="_pb-BYHP8EfGImPMr3c7uaQ" id="SUB-REQ-001" text="The RBNS shall produce a fused bronchoscope tip pose estimate at a rate of no less than 30 Hz during the NAVIGATE phase." base_Class="_pb-BYHP8EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_sFFYsHP8EfGImPMr3c7uaQ" base_NamedElement="_sE_SEHP8EfGImPMr3c7uaQ" id="SUB-REQ-002" text="Each fused tip pose estimate shall include a 3D position uncertainty representation expressed as an ellipsoid with semi-axis lengths in millimeters." base_Class="_sE_SEHP8EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_tME18HP8EfGImPMr3c7uaQ" base_NamedElement="_tL_WYHP8EfGImPMr3c7uaQ" id="SUB-REQ-003" text="The RBNS shall complete image-to-patient registration within 4 seconds of receiving a Cone Beam Computed Tomography (CBCT) volume." base_Class="_tL_WYHP8EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_vcMecHP8EfGImPMr3c7uaQ" base_NamedElement="_vcG-4HP8EfGImPMr3c7uaQ" id="SUB-REQ-004" text="The RBNS shall inhibit path replanning when the tip position uncertainty exceeds the configured replanning threshold." base_Class="_vcG-4HP8EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_wVXiIHP8EfGImPMr3c7uaQ" base_NamedElement="_wVSCkHP8EfGImPMr3c7uaQ" id="SUB-REQ-005" text="The replanning uncertainty threshold shall be a configurable parameter modifiable without software rebuild." base_Class="_wVSCkHP8EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_MeVX8HP9EfGImPMr3c7uaQ" base_NamedElement="_MeNcIHP9EfGImPMr3c7uaQ" id="SUB-REQ-006" text="The RBNS shall command zero scope advancement (HOLD) within one guidance cycle of the tip position uncertainty exceeding the configured threshold." base_Class="_MeNcIHP9EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_QsXeoHP9EfGImPMr3c7uaQ" base_NamedElement="_QsR_EHP9EfGImPMr3c7uaQ" id="SUB-REQ-007" text="All guidance commands shall be magnitude-limited to configurable maximum advance rate and maximum steering angle values prior to transmission on IF-07." base_Class="_QsR_EHP9EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_Rb7TUHP9EfGImPMr3c7uaQ" base_NamedElement="_Rb2a0HP9EfGImPMr3c7uaQ" id="SUB-REQ-008" text="The RBNS shall implement the procedure state machine with states IDLE, NAVIGATE, CONFIRM, BIOPSY, FAULT, and ABORT, with transitions as defined in the Supervisor state machine model." base_Class="_Rb2a0HP9EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_SKx9YHP9EfGImPMr3c7uaQ" base_NamedElement="_SKozcHP9EfGImPMr3c7uaQ" id="SUB-REQ-009" text="All command, control, status, and logging communication between the RBNS and external systems shall be routed through the Procedure Supervisor, with the exception of continuous sensor and imaging feeds (IF-EX-02a, IF-EX-03, IF-EX-08), which connect directly to their consuming subsystem." base_Class="_SKozcHP9EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_Tb94cHP9EfGImPMr3c7uaQ" base_NamedElement="_Tb4Y4HP9EfGImPMr3c7uaQ" id="SUB-REQ-010" text="The RBNS shall report a lost-tracking alert to the Procedure Supervisor within 100 ms of tracking loss detection." base_Class="_Tb4Y4HP9EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_WBV_QHP9EfGImPMr3c7uaQ" base_NamedElement="_WBRGwHP9EfGImPMr3c7uaQ" id="SUB-REQ-011" text="Upon deassertion of the motion enable signal (IF-EX-06a), the RBNS shall cease issuing guidance commands within 50 ms." base_Class="_WBRGwHP9EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_W1dj0HP9EfGImPMr3c7uaQ" base_NamedElement="_W1YEQHP9EfGImPMr3c7uaQ" id="SUB-REQ-012" text="Upon receiving a lost-tracking alert, the Procedure Supervisor shall transition to the FAULT state and command HOLD on IF-EX-04 within 100 ms." base_Class="_W1YEQHP9EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_Xu9XoHP9EfGImPMr3c7uaQ" base_NamedElement="_Xu34EHP9EfGImPMr3c7uaQ" id="SUB-REQ-013" text="The RBNS shall maintain a degraded tip pose estimate upon failure of any single localization source, and shall flag the estimate as DEGRADED on IF-03." base_Class="_Xu34EHP9EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_YfYH8HP9EfGImPMr3c7uaQ" base_NamedElement="_YfT2gHP9EfGImPMr3c7uaQ" id="SUB-REQ-014" text="The RBNS shall compute an airway path from current position to a newly commanded target within 1 second." base_Class="_YfT2gHP9EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_aNZI8HP9EfGImPMr3c7uaQ" base_NamedElement="_aNUQcHP9EfGImPMr3c7uaQ" id="SUB-REQ-015" text="The end-to-end latency from a tip pose estimate (IF-01) to the corresponding guidance command transmission (IF-EX-04) shall not exceed 200 ms." base_Class="_aNUQcHP9EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_bAXeAHP9EfGImPMr3c7uaQ" base_NamedElement="_bAR-cHP9EfGImPMr3c7uaQ" id="SUB-REQ-016" text="The RBNS shall issue CBCT acquisition triggers (IF-EX-02b) only during the NAVIGATE and CONFIRM procedure phases." base_Class="_bAR-cHP9EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_b4WO4HP9EfGImPMr3c7uaQ" base_NamedElement="_b4RWYHP9EfGImPMr3c7uaQ" id="SUB-REQ-017" text="The RBNS shall record all state transitions, replanning events, fault events, and the tip pose trace to the Procedure Data Recorder (IF-EX-07) with timestamps of 10 ms resolution or better." base_Class="_b4RWYHP9EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_6se1AHP-EfGImPMr3c7uaQ" base_NamedElement="_6sZ8gHP-EfGImPMr3c7uaQ" id="COMP-REQ-001" text="The Guidance Command Generator shall support distal tip articulation commands of up to [TBD] degrees per axis, sufficient to follow airway centerline curvature at branch points up to the generation depth required by SYS-REQ-001." base_Class="_6sZ8gHP-EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_7DnioHP-EfGImPMr3c7uaQ" base_NamedElement="_7DiqIHP-EfGImPMr3c7uaQ" id="COMP-REQ-002" text="The Sensor Fusion &amp; Uncertainty Estimator shall bound the fused position uncertainty ellipsoid such that the 95% confidence volume does not exceed [TBD]." base_Class="_7DiqIHP-EfGImPMr3c7uaQ"/>
+  <Requirements:Requirement xmi:id="_7X2tQHP-EfGImPMr3c7uaQ" base_NamedElement="_7Xx0wHP-EfGImPMr3c7uaQ" id="COMP-REQ-003" text="The Real-Time Path Updater shall default the replanning inhibition threshold to an uncertainty ellipsoid semi-axis of [TBD], configurable per SUB-REQ-005." base_Class="_7Xx0wHP-EfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_fDTyMHQBEfGImPMr3c7uaQ" base_DirectedRelationship="_fDO5sHQBEfGImPMr3c7uaQ" base_Abstraction="_fDO5sHQBEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_f76OIHQBEfGImPMr3c7uaQ" base_DirectedRelationship="_f70ukHQBEfGImPMr3c7uaQ" base_Abstraction="_f70ukHQBEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_iwDwwHQBEfGImPMr3c7uaQ" base_DirectedRelationship="_iv-4QHQBEfGImPMr3c7uaQ" base_Abstraction="_iv-4QHQBEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_kS-8EHQBEfGImPMr3c7uaQ" base_DirectedRelationship="_kS6DkHQBEfGImPMr3c7uaQ" base_Abstraction="_kS6DkHQBEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_lm-TgHQBEfGImPMr3c7uaQ" base_DirectedRelationship="_lm5bAHQBEfGImPMr3c7uaQ" base_Abstraction="_lm5bAHQBEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_mgqUkHQBEfGImPMr3c7uaQ" base_DirectedRelationship="_mgkN8HQBEfGImPMr3c7uaQ" base_Abstraction="_mgkN8HQBEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_nq7IQHQBEfGImPMr3c7uaQ" base_DirectedRelationship="_nq2PwHQBEfGImPMr3c7uaQ" base_Abstraction="_nq2PwHQBEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_vIXKMHQBEfGImPMr3c7uaQ" base_DirectedRelationship="_vIRqoHQBEfGImPMr3c7uaQ" base_Abstraction="_vIRqoHQBEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_xLdDUHQBEfGImPMr3c7uaQ" base_DirectedRelationship="_xLYK0HQBEfGImPMr3c7uaQ" base_Abstraction="_xLYK0HQBEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_31boAHQBEfGImPMr3c7uaQ" base_DirectedRelationship="_31WvgHQBEfGImPMr3c7uaQ" base_Abstraction="_31WvgHQBEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_4ziPAHQBEfGImPMr3c7uaQ" base_DirectedRelationship="_4zdWgHQBEfGImPMr3c7uaQ" base_Abstraction="_4zdWgHQBEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_6leGsHQBEfGImPMr3c7uaQ" base_DirectedRelationship="_6lZOMHQBEfGImPMr3c7uaQ" base_Abstraction="_6lZOMHQBEfGImPMr3c7uaQ"/>
+  <Requirements:Refine xmi:id="_80RgkHQBEfGImPMr3c7uaQ" base_DirectedRelationship="_80GhcHQBEfGImPMr3c7uaQ" base_Abstraction="_80GhcHQBEfGImPMr3c7uaQ"/>
+  <Requirements:Refine xmi:id="_9mu4QHQBEfGImPMr3c7uaQ" base_DirectedRelationship="_9mp_wHQBEfGImPMr3c7uaQ" base_Abstraction="_9mp_wHQBEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="__TriQHQBEfGImPMr3c7uaQ" base_DirectedRelationship="__TmCsHQBEfGImPMr3c7uaQ" base_Abstraction="__TmCsHQBEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_Ap0OwHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_ApthEHQCEfGImPMr3c7uaQ" base_Abstraction="_ApthEHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_BfzbkHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_BfujEHQCEfGImPMr3c7uaQ" base_Abstraction="_BfujEHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_C7c6MHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_C7YBsHQCEfGImPMr3c7uaQ" base_Abstraction="_C7YBsHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Refine xmi:id="_Ehpb8HQCEfGImPMr3c7uaQ" base_DirectedRelationship="_EhkjcHQCEfGImPMr3c7uaQ" base_Abstraction="_EhkjcHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_GKzyIHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_GKuSkHQCEfGImPMr3c7uaQ" base_Abstraction="_GKuSkHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_HKMLgHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_HKHTAHQCEfGImPMr3c7uaQ" base_Abstraction="_HKHTAHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_IclngHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_IchWEHQCEfGImPMr3c7uaQ" base_Abstraction="_IchWEHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_KQi4cHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_KQd_8HQCEfGImPMr3c7uaQ" base_Abstraction="_KQd_8HQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_LV-2gHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_LV3hwHQCEfGImPMr3c7uaQ" base_Abstraction="_LV3hwHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_NQNukHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_NQIPAHQCEfGImPMr3c7uaQ" base_Abstraction="_NQIPAHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_OF_gAHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_OF6ngHQCEfGImPMr3c7uaQ" base_Abstraction="_OF6ngHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_Q8pkEHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_Q8krkHQCEfGImPMr3c7uaQ" base_Abstraction="_Q8krkHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_RypX8HQCEfGImPMr3c7uaQ" base_DirectedRelationship="_RyjRUHQCEfGImPMr3c7uaQ" base_Abstraction="_RyjRUHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_UnF1gHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_UnAV8HQCEfGImPMr3c7uaQ" base_Abstraction="_UnAV8HQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_Wxsr4HQCEfGImPMr3c7uaQ" base_DirectedRelationship="_WxnzYHQCEfGImPMr3c7uaQ" base_Abstraction="_WxnzYHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_XnZk0HQCEfGImPMr3c7uaQ" base_DirectedRelationship="_XnUsUHQCEfGImPMr3c7uaQ" base_Abstraction="_XnUsUHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_ZlUqEHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_ZlOjcHQCEfGImPMr3c7uaQ" base_Abstraction="_ZlOjcHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Trace xmi:id="_bEhzAHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_bEc6gHQCEfGImPMr3c7uaQ" base_Abstraction="_bEc6gHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_egzFkHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_eguNEHQCEfGImPMr3c7uaQ" base_Abstraction="_eguNEHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_pLFeAHQCEfGImPMr3c7uaQ" base_DirectedRelationship="_pK8UEHQCEfGImPMr3c7uaQ" base_Abstraction="_pK8UEHQCEfGImPMr3c7uaQ"/>
+  <Requirements:Satisfy xmi:id="_qiWy8HQCEfGImPMr3c7uaQ" base_DirectedRelationship="_qiR6cHQCEfGImPMr3c7uaQ" base_Abstraction="_qiR6cHQCEfGImPMr3c7uaQ"/>
+</xmi:XMI>

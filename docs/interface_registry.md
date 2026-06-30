@@ -3,7 +3,7 @@
 **Status:** CANONICAL — this registry is the single source of truth for all interface definitions.
 All diagrams, documents, and models shall conform to this registry. Discrepancies are defects in the downstream artifact, not the registry.
 
-**Version:** 1.2
+**Version:** 1.3
 **Change control:** Any interface addition, removal, or redefinition requires a version increment and a changelog entry.
 
 ---
@@ -65,10 +65,24 @@ All diagrams, documents, and models shall conform to this registry. Discrepancie
 | 1.0 | Initial registry established as canonical. Added IF-EX-08 (bronchoscope camera), IF-07 (guidance forwarding), IF-08 (localization mode command). Renumber conflict with pre-registry working notes resolved in favor of artifact numbering. | Registry audit found one undocumented boundary crossing and one routing contradiction with Design Decision 5; both resolved. |
 | 1.1 | Removed product-specific imaging system references; replaced with generic CBCT terminology, defined on first use. Updated REQ-### references to SUB-REQ-### to match the renamed requirements hierarchy. | Project repositioned as company-agnostic; requirements ID convention updated for consistency across documents. |
 | 1.2 | No interface changes. Conformance note updated to reflect Design Decision 5 amendment (Supervisor routing exception for high-rate sensor/imaging feeds). | The registry's port assignments (Localization and Image Processing receiving certain external interfaces directly) were already correct; the design decisions document and SUB-REQ-009 had not caught up to match. |
+| 1.3 | No interface changes. Conformance notes updated: draw.io sketch conformance notices retired (defects resolved in Papyrus model); Modelio reference replaced with Papyrus; Tier 3 naming mapping table added. | Papyrus model complete; registry version bumped to reflect documentation currency. |
 
 ## Conformance Notes for Downstream Artifacts
 
-- `L0_system_context` diagram: **requires update** — add Bronchoscope Camera actor and IF-EX-08
-- `L2_path_planning_ibd` diagram: **requires update** — Block 2.3 output port relabeled IF-07 (to Supervisor), not IF-EX-04
-- `design_decisions.md`: conformant (Design Decision 5 documents the Supervisor-centralized routing for command/control/status interfaces and the explicit exception for IF-EX-02a, IF-EX-03, and IF-EX-08, which connect directly to Blocks 1.0 and 3.0)
-- Modelio model: build directly from this registry
+- `design_decisions.md` v1.5: conformant — Design Decision 5 correctly documents Supervisor-centralized routing with the explicit exception for IF-EX-02a (to Block 3.0 only), IF-EX-03, and IF-EX-08 (both to Block 1.0 directly)
+- `requirements.md` v2.3: conformant — SUB-REQ-009 reflects the sensor feed exception
+- `sysml_build_plan.md`: conformant — references registry v1.2
+- Papyrus SysML model (`/model`): conformant — all 8 diagrams built from this registry; D4 boundary ports and internal connectors reflect Tier 1 and Tier 2 interface definitions; D5/D6 reflect Tier 3 definitions using descriptive model element names (see Tier 3 naming note below)
+- `/sketches` draw.io diagrams: superseded — retained as design evolution evidence only; defects they contained are resolved in the Papyrus model
+
+**Tier 3 naming note:** The Papyrus model uses descriptive names for Tier 3 interface elements (`IF_LT_FKPose`, `IF_LT_VisionDisplacement`, `IF_LT_CBCTRefinedPose`, `IF_LT_FKInit`, `IF_PP_PlannedPath`, `IF_PP_ReplanRequest`, `IF_PP_NextWaypoint`) rather than the positional IDs used in this registry (`IF-1.1` through `IF-2.3`). The mapping is:
+
+| Registry ID | Model element name |
+|---|---|
+| IF-1.1 | IF_LT_FKPose |
+| IF-1.2 | IF_LT_VisionDisplacement |
+| IF-1.3 | IF_LT_CBCTRefinedPose |
+| IF-1.4 | IF_LT_FKInit |
+| IF-2.1 | IF_PP_PlannedPath |
+| IF-2.2 | IF_PP_ReplanRequest |
+| IF-2.3 | IF_PP_NextWaypoint |

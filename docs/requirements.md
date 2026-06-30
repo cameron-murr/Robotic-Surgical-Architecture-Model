@@ -1,6 +1,6 @@
 # RBNS Requirements Hierarchy
 
-**Status:** Baseline v2.3 — supersedes v2.2 (rewrote SYS-REQ tier to be properly system-level, scoped to the full robotic bronchoscopy system rather than the RBNS; SUB-REQ tier unchanged).
+**Status:** Baseline v2.4 — supersedes v2.3 (updated SUB-REQ-008 to reference RBNS procedure state machine model rather than Supervisor state machine model).
 **Structure:** User Needs → System Requirements → Subsystem Requirements → Component Requirements → Verification Method.
 **Verification methods:** I = Inspection, A = Analysis, D = Demonstration, T = Test
 
@@ -46,7 +46,7 @@ Scoped to the Robotic Bronchoscopy Navigation Subsystem (RBNS). These requiremen
 | SUB-REQ-005 | The replanning uncertainty threshold shall be a configurable parameter modifiable without software rebuild. | 2.2 | SYS-REQ-003 | I, D |
 | SUB-REQ-006 | The RBNS shall command zero scope advancement (HOLD) within one guidance cycle of the tip position uncertainty exceeding the configured threshold. | 2.3 | SYS-REQ-003, SYS-REQ-006 | T |
 | SUB-REQ-007 | All guidance commands shall be magnitude-limited to configurable maximum advance rate and maximum steering angle values prior to transmission on IF-07. | 2.3 | SYS-REQ-003 | T |
-| SUB-REQ-008 | The RBNS shall implement the procedure state machine with states IDLE, NAVIGATE, CONFIRM, BIOPSY, FAULT, and ABORT, with transitions as defined in the Supervisor state machine model. | 4.0 | SYS-REQ-004 | T, D |
+| SUB-REQ-008 | The RBNS shall implement the procedure state machine with states IDLE, NAVIGATE, CONFIRM, BIOPSY, FAULT, and ABORT, with transitions as defined in the RBNS procedure state machine model (D7). | 4.0 | SYS-REQ-004 | T, D |
 | SUB-REQ-009 | All command, control, status, and logging communication between the RBNS and external systems shall be routed through the Procedure Supervisor, with the exception of continuous sensor and imaging feeds (IF-EX-02a, IF-EX-03, IF-EX-08), which connect directly to their consuming subsystem. | 4.0 (architecture constraint) | SYS-REQ-004, SYS-REQ-005 | I, A |
 | SUB-REQ-010 | The RBNS shall report a lost-tracking alert to the Procedure Supervisor within 100 ms of tracking loss detection. | 1.4 | SYS-REQ-006 | T |
 | SUB-REQ-011 | Upon deassertion of the motion enable signal (IF-EX-06a), the RBNS shall cease issuing guidance commands within 50 ms. | 4.0 | SYS-REQ-003, SYS-REQ-004 | T |

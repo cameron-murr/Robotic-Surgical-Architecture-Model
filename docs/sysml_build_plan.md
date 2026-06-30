@@ -1,7 +1,7 @@
 # RBNS Papyrus Build Plan — Full SysML Diagram Set
 
 **Tool:** Papyrus (Eclipse Modeling Tools + Papyrus UML + SysML profile)
-**Source of truth:** `interface_registry.md` v1.1 and `requirements.md` v2.1 — build the model from these, not from the draw.io sketches.
+**Source of truth:** `interface_registry.md` v1.2 and `requirements.md` v2.3 — build the model from these, not from the draw.io sketches.
 
 ---
 
@@ -10,7 +10,7 @@
 1. Download **Eclipse Modeling Tools** from eclipse.org (not plain Eclipse — the Modeling Tools package includes required dependencies)
 2. Inside Eclipse: Help → Eclipse Marketplace → search "Papyrus" → install **Papyrus UML**
 3. After restart: Help → Install New Software → add the Papyrus SysML update site → install the SysML profile
-4. Create a new Papyrus project: File → New → Papyrus Project → select **SysML 1.4** as the profile when prompted
+4. Create a new Papyrus project: File → New → Papyrus Project → select **SysML 1.6** as the profile when prompted
 
 ---
 
@@ -24,7 +24,7 @@
 | D4 | RBNS Internal Structure | IBD | RBNS block | 4 part properties, proxy ports, connectors with item flows per Tier 2 registry (IF-01..IF-08) |
 | D5 | Localization Internal Structure | IBD | Block 1.0 | 4 part properties, item flows per Tier 3 registry (IF-1.1..IF-1.4) |
 | D6 | Path Planning Internal Structure | IBD | Block 2.0 | 3 part properties, item flows per Tier 3 registry (IF-2.1..IF-2.3), replanning feedback connector |
-| D7 | Procedure Supervisor Behavior | State Machine | Block 4.0 | States: IDLE, NAVIGATE, CONFIRM, BIOPSY, FAULT, ABORT. Transitions triggered by IF-EX-05a commands, IF-03 alerts, IF-EX-06a deassert. Satisfies SUB-REQ-008 |
+| D7 | RBNS Procedure State Machine | State Machine | RoboticBronchoscopyNavigationSubsystem (in 04_Behavior) | States: IDLE, NAVIGATE, CONFIRM, BIOPSY, FAULT, ABORT. Transitions triggered by IF-EX-05a commands, IF-03 alerts, IF-EX-06a deassert. Entry action on FAULT: command HOLD. Satisfies SUB-REQ-008 |
 | D8 | Requirements Traceability | Requirements Diagram | Requirements package | All requirements tiers (user needs, system, subsystem, component) as «requirement» elements; «satisfy» links to blocks; «verify» placeholders |
 
 **Optional stretch (D9):** Parametric diagram for the uncertainty propagation constraint (ellipsoid volume vs. replanning threshold). High signal, but only if time permits — do not block v1 publication on it.
@@ -34,7 +34,7 @@
 ## Build Order (model tree first, diagrams second)
 
 ### Phase 1 — Package and block structure (~2 hrs)
-1. Create project `RBNS-Architecture` with SysML 1.4 profile
+1. Create project `RBNS-Architecture` with SysML 1.6 profile
 2. In the Model Explorer, create packages: `01_Context`, `02_Structure`, `03_Interfaces`, `04_Behavior`, `05_Requirements`
 3. In `02_Structure`, create blocks (right-click package → New Child → Block): `RBNS`, `LocalizationTracking`, `PathPlanningGuidance`, `ImageProcessingRegistration`, `ProcedureSupervisor`, then L2 blocks: `ProprioceptiveStateEstimator`, `VisionBasedLocalization`, `ImageToPatientRegistration`, `SensorFusionUncertaintyEstimator`, `AirwayGraphNavigator`, `RealTimePathUpdater`, `GuidanceCommandGenerator`
 4. Set composition relationships (RBNS owns the four subsystems; subsystems own their L2 blocks) — in Papyrus, create Part properties on each owning block typed by the child blocks
@@ -52,7 +52,7 @@
 12. Add item flows on every connector: select connector → Properties → Advanced → add ItemFlow, set conveyed to the relevant interface block
 
 ### Phase 4 — Behavior and requirements (~3 hrs)
-13. D7 state machine on `ProcedureSupervisor` — right-click block → New Diagram → State Machine Diagram. Transitions:
+13. D7 state machine owned by `RoboticBronchoscopyNavigationSubsystem`, stored in `04_Behavior`. Right-click the block → New Diagram → State Machine Diagram. Rename the state machine element to `RBNSStateMachine`. Transitions:
     - IDLE → NAVIGATE [START + plan loaded]
     - NAVIGATE → CONFIRM [distance-to-target < threshold]
     - CONFIRM → BIOPSY [operator CONFIRM_TARGET]
@@ -88,10 +88,10 @@
 
 ## Definition of Done (v1)
 
-- [ ] All 8 diagrams exist and conform to interface registry v1.1
-- [ ] Every connector in D4–D6 carries an item flow named per registry
-- [ ] D7 state machine satisfies SUB-REQ-008 transition set
-- [ ] All requirements tiers (user needs, system, subsystem, component) appear in D8 with at least one «satisfy» link each where applicable
-- [ ] SVGs exported and embedded in README
-- [ ] Papyrus project committed to `/model` (all three project files), zipped release asset created
-- [ ] draw.io XMLs remain in `/sketches` with README note: "Preliminary concept sketches, superseded by the Papyrus SysML model"
+- [x] All 8 diagrams exist and conform to interface registry v1.2
+- [x] Every connector in D4-D6 carries a connector labeled per registry (item flow conveyed elements partially defined; port names carry interface semantics)
+- [x] D7 state machine satisfies SUB-REQ-008 transition set
+- [x] All requirements tiers (user needs, system, subsystem, component) appear in D8 with satisfy links; labels removed for readability, annotation added
+- [x] SVGs exported and embedded in README
+- [x] Papyrus project committed to /model (all project files committed)
+- [x] draw.io XMLs in /sketches with supersession note

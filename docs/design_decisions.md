@@ -2,8 +2,8 @@
 ## Functional Architecture Model — Design Decisions Document
 
 **Author:** Portfolio Project — Systems Engineering Competency Demonstration  
-**Notation:** SysML, implemented in Modelio  
-**Version:** 1.4  
+**Notation:** SysML, implemented in Papyrus  
+**Version:** 1.5  
 **Date:** 2026
 
 ---
@@ -81,7 +81,7 @@ Most external interfaces connect to or through Block 4.0 (Procedure Supervisor).
 **Exception: continuous sensor and imaging feeds connect directly to their consuming subsystem, bypassing the Supervisor.** Specifically:
 
 - IF-EX-03 (encoder telemetry, 100 Hz) and IF-EX-08 (endoscopic video, 30 Hz) connect directly to Block 1.0 (Localization & Tracking)
-- IF-EX-02a (CBCT volume) connects directly to Block 3.0 (Image Processing & Registration), and also to Block 1.0 where the registered volume is consumed for fusion
+- IF-EX-02a (CBCT volume) connects directly to Block 3.0 (Image Processing & Registration). The registered output then flows to Block 1.0 via IF-06, not the raw CBCT volume directly.
 
 **Rationale for the exception:**
 
@@ -99,9 +99,9 @@ Command, control, and status interfaces remain centralized through the Superviso
 
 ## 6. Notation Note
 
-All diagrams in this portfolio artifact are built in Modelio with the SysML module, following SysML 1.6 Block Definition Diagram (BDD) and Internal Block Diagram (IBD) conventions, including block stereotypes, proxy ports, and item flows.
+All diagrams in this portfolio artifact are built in Papyrus with the SysML 1.6 profile, following SysML 1.6 Block Definition Diagram (BDD) and Internal Block Diagram (IBD) conventions, including block stereotypes, proxy ports, and connectors.
 
-Because Modelio's SysML module enforces SysML semantics, block relationships, ports, and item flows are defined as elements in the underlying model and are consistent across diagrams, rather than existing only as independent graphical shapes.
+Because Papyrus enforces SysML semantics through the applied profile, block relationships, ports, and stereotypes are defined as elements in the underlying model and are consistent across diagrams, rather than existing only as independent graphical shapes.
 
 ---
 

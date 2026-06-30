@@ -14,8 +14,10 @@ The system boundary is deliberately narrow: the RBNS receives a preoperative air
 ├── docs/
 │   ├── interface_registry.md    ← CANONICAL interface definitions (3 tiers, 26 interfaces)
 │   ├── requirements.md          ← Full requirements hierarchy: user needs, system requirements (full bronchoscopy system), subsystem requirements (RBNS), and component requirements, with allocation and verification methods
-│   ├── requirements.csv         ← Requirements in medtrace-compatible format
+│   ├── requirements.csv         ← Requirements in medtrace-compatible format with test case linkage
 │   ├── test_cases.csv           ← Planned verification activities linked to requirements
+│   ├── rtm.html                 ← medtrace-generated Requirements Traceability Matrix (HTML)
+│   ├── rtm.pdf                  ← medtrace-generated Requirements Traceability Matrix (PDF)
 │   ├── design_decisions.md      ← 6 key architectural decisions with rationale
 │   └── sysml_build_plan.md      ← SysML diagram set specification and build sequence
 ├── model/
@@ -101,13 +103,20 @@ RBNS
 
 6. **Requirements hierarchy scoped by level** — User needs describe clinical intent. System requirements are scoped to the full bronchoscopy platform. Subsystem requirements are scoped to the RBNS. Component requirements are derived values produced by analysis, not asserted from clinical need.
 
+## Requirements Traceability
+
+31 requirements across four tiers (user needs, system, subsystem, component) are linked to 31 planned verification activities via [medtrace](https://github.com/cameron-murr/medtrace). All test cases carry `not_run` status, reflecting that this is an architecture-phase model — the test cases represent the verification plan that would be executed as the system is implemented.
+
+- [RTM — HTML](docs/rtm.html)
+- [RTM — PDF](docs/rtm.pdf)
+
 ## Process Note
 
 The `/sketches` directory contains the initial draw.io concept diagrams. They were superseded when the project moved to a formal Papyrus SysML model driven by the interface registry — and they contain the two defects the registry audit caught, retained deliberately as evidence of the review process.
 
 ## Related Work
 
-Requirements and test cases in this project are structured for traceability analysis with [medtrace](https://github.com/cameron-murr/medtrace), a Python CLI requirements traceability tool built as a companion portfolio project. `requirements.csv` and `test_cases.csv` in `/docs` are formatted for direct medtrace ingestion, producing a requirements traceability matrix linking each requirement to its planned verification activity. All test cases carry `not_run` status, reflecting that this is an architecture-phase model — the test cases represent the verification plan that would be executed as the system is implemented.
+This project was traced using [medtrace](https://github.com/cameron-murr/medtrace), a Python CLI requirements traceability tool built as a companion portfolio project.
 
 ---
 

@@ -1,0 +1,768 @@
+{
+  "project_name": "RBNS FunctionalArchitecture v1.0",
+  "generated_at": "2026-06-29T21:03:48",
+  "medtrace_version": "0.1.0",
+  "regulatory_basis": [
+    "21 CFR 820.30 (Design Controls)",
+    "ISO 13485:2016 §7.3",
+    "ISO 14971:2019 (Risk Management)",
+    "IEC 62366-1:2015 §5.9 (Usability Engineering)"
+  ],
+  "stats": {
+    "total": 31,
+    "covered": 31,
+    "uncovered": 0,
+    "coverage_pct": 100.0,
+    "all_pass": 0,
+    "has_fail": 0,
+    "dangling_link_count": 0
+  },
+  "requirements": [
+    {
+      "id": "UN-001",
+      "title": "Physician navigation to target nodule",
+      "description": "Physicians need to navigate a bronchoscope to a target nodule identified in preoperative imaging in order to obtain a tissue biopsy.",
+      "type": "functional",
+      "source": "",
+      "parent_id": null,
+      "notes": "User Need",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-001",
+          "title": "Physician navigation to nodule demonstration",
+          "result": "not_run",
+          "protocol_ref": "TP-001 §1.1",
+          "notes": "Covers UN-001; demonstration-level verification of user need"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "UN-002",
+      "title": "Peripheral airway reach",
+      "description": "Physicians need to reach target nodules located in peripheral (small-diameter, high-generation) airway branches that are difficult or impossible to access with manual bronchoscopy.",
+      "type": "functional",
+      "source": "",
+      "parent_id": null,
+      "notes": "User Need",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-002",
+          "title": "Peripheral airway reach demonstration",
+          "result": "not_run",
+          "protocol_ref": "TP-001 §1.2",
+          "notes": "Covers UN-002; demonstration of peripheral reach capability"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "UN-003",
+      "title": "No unintended airway injury",
+      "description": "Patients need assurance that navigation will not cause unintended injury to the airway.",
+      "type": "safety",
+      "source": "",
+      "parent_id": null,
+      "notes": "User Need",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-003",
+          "title": "No unintended airway contact demonstration",
+          "result": "not_run",
+          "protocol_ref": "TP-001 §1.3",
+          "notes": "Covers UN-003; demonstration of safety user need"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "UN-004",
+      "title": "Physician supervisory authority",
+      "description": "Physicians need to retain supervisory authority over the procedure including the ability to pause or abort navigation at any time.",
+      "type": "functional",
+      "source": "",
+      "parent_id": null,
+      "notes": "User Need",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-004",
+          "title": "Operator pause and abort demonstration",
+          "result": "not_run",
+          "protocol_ref": "TP-001 §1.4",
+          "notes": "Covers UN-004; demonstration of supervisory authority user need"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "UN-005",
+      "title": "Procedure record",
+      "description": "Clinical staff need a record of the navigation procedure to support post-procedure review.",
+      "type": "functional",
+      "source": "",
+      "parent_id": null,
+      "notes": "User Need",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-005",
+          "title": "Procedure log review",
+          "result": "not_run",
+          "protocol_ref": "TP-001 §1.5",
+          "notes": "Covers UN-005; inspection-level verification of record-keeping user need"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SYS-REQ-001",
+      "title": "System navigation capability",
+      "description": "The system shall enable a physician to navigate a flexible bronchoscope to target pulmonary nodules identified in preoperative imaging.",
+      "type": "functional",
+      "source": "",
+      "parent_id": "UN-001",
+      "notes": "Derived from UN-001 and UN-002; verification: Analysis and Demonstration",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-006",
+          "title": "Navigation to target pulmonary nodule",
+          "result": "not_run",
+          "protocol_ref": "TP-002 §2.1",
+          "notes": "Covers SYS-REQ-001; analysis of reach capability against system-level requirement"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SYS-REQ-002",
+      "title": "Positional confidence for biopsy",
+      "description": "The system shall provide the physician with sufficient positional confidence to perform a tissue biopsy at the target location.",
+      "type": "functional",
+      "source": "",
+      "parent_id": "UN-001",
+      "notes": "Verification: Test and Analysis",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-007",
+          "title": "Positional confidence at target location",
+          "result": "not_run",
+          "protocol_ref": "TP-002 §2.2",
+          "notes": "Covers SYS-REQ-002; analysis of positional confidence at target"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SYS-REQ-003",
+      "title": "Prevent unintended scope motion",
+      "description": "The system shall prevent unintended scope advancement or steering that could result in airway wall injury.",
+      "type": "safety",
+      "source": "",
+      "parent_id": "UN-003",
+      "notes": "Verification: Test and Analysis",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-008",
+          "title": "No wall-contact guidance commands issued",
+          "result": "not_run",
+          "protocol_ref": "TP-002 §2.3",
+          "notes": "Covers SYS-REQ-003; test of safety constraint at system level"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SYS-REQ-004",
+      "title": "Respond to pause and abort commands",
+      "description": "The system shall respond to physician pause and abort commands within a clinically acceptable time.",
+      "type": "functional",
+      "source": "",
+      "parent_id": "UN-004",
+      "notes": "Verification: Test",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-009",
+          "title": "Pause and abort command response time",
+          "result": "not_run",
+          "protocol_ref": "TP-002 §2.4",
+          "notes": "Covers SYS-REQ-004; system-level test of command response"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SYS-REQ-005",
+      "title": "Generate procedure record",
+      "description": "The system shall generate a complete procedure record suitable for post-procedure clinical review.",
+      "type": "functional",
+      "source": "",
+      "parent_id": "UN-005",
+      "notes": "Verification: Test and Inspection",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-010",
+          "title": "Procedure record completeness",
+          "result": "not_run",
+          "protocol_ref": "TP-002 §2.5",
+          "notes": "Covers SYS-REQ-005; inspection of system-level record requirement"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SYS-REQ-006",
+      "title": "Detect and respond to navigation accuracy loss",
+      "description": "The system shall detect conditions under which navigation accuracy cannot be assured and shall prevent scope motion under those conditions.",
+      "type": "safety",
+      "source": "",
+      "parent_id": "UN-003",
+      "notes": "Verification: Test and Analysis",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-011",
+          "title": "Navigation halt on accuracy loss",
+          "result": "not_run",
+          "protocol_ref": "TP-002 §2.6",
+          "notes": "Covers SYS-REQ-006; system-level test of accuracy-loss response"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-001",
+      "title": "30 Hz fused pose estimate",
+      "description": "The RBNS shall produce a fused bronchoscope tip pose estimate at a rate of no less than 30 Hz during the NAVIGATE phase.",
+      "type": "performance",
+      "source": "",
+      "parent_id": "SYS-REQ-001",
+      "notes": "Allocated to 1.0/1.4; verification: Test",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-012",
+          "title": "Fused pose estimate rate at 30 Hz",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.1",
+          "notes": "Covers SUB-REQ-001"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-002",
+      "title": "Uncertainty ellipsoid on IF-01",
+      "description": "Each fused tip pose estimate shall include a 3D position uncertainty representation expressed as an ellipsoid with semi-axis lengths in millimeters.",
+      "type": "functional",
+      "source": "",
+      "parent_id": "SYS-REQ-002",
+      "notes": "Allocated to 1.4; verification: Inspection and Test",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-013",
+          "title": "Uncertainty ellipsoid field presence on IF-01",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.2",
+          "notes": "Covers SUB-REQ-002; inspection verification"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-003",
+      "title": "CBCT registration within 4 seconds",
+      "description": "The RBNS shall complete image-to-patient registration within 4 seconds of receiving a Cone Beam Computed Tomography (CBCT) volume.",
+      "type": "performance",
+      "source": "",
+      "parent_id": "SYS-REQ-002",
+      "notes": "Allocated to 1.3 and 3.0; verification: Test",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-014",
+          "title": "CBCT registration within 4 seconds",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.3",
+          "notes": "Covers SUB-REQ-003"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-004",
+      "title": "Replanning inhibition under uncertainty",
+      "description": "The RBNS shall inhibit path replanning when the tip position uncertainty exceeds the configured replanning threshold.",
+      "type": "safety",
+      "source": "",
+      "parent_id": "SYS-REQ-003",
+      "notes": "Allocated to 2.2; verification: Test",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-015",
+          "title": "Replanning inhibited when uncertainty exceeds threshold",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.4",
+          "notes": "Covers SUB-REQ-004"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-005",
+      "title": "Configurable replanning threshold",
+      "description": "The replanning uncertainty threshold shall be a configurable parameter modifiable without software rebuild.",
+      "type": "functional",
+      "source": "",
+      "parent_id": "SYS-REQ-003",
+      "notes": "Allocated to 2.2; verification: Inspection and Demonstration",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-016",
+          "title": "Replanning threshold modifiable without rebuild",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.5",
+          "notes": "Covers SUB-REQ-005; demonstration verification"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-006",
+      "title": "HOLD within one guidance cycle of uncertainty exceedance",
+      "description": "The RBNS shall command zero scope advancement (HOLD) within one guidance cycle of the tip position uncertainty exceeding the configured threshold.",
+      "type": "safety",
+      "source": "",
+      "parent_id": "SYS-REQ-003",
+      "notes": "Allocated to 2.3; verification: Test",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-017",
+          "title": "HOLD command within one guidance cycle of threshold exceedance",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.6",
+          "notes": "Covers SUB-REQ-006"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-007",
+      "title": "Guidance command magnitude limiting",
+      "description": "All guidance commands shall be magnitude-limited to configurable maximum advance rate and maximum steering angle values prior to transmission on IF-07.",
+      "type": "safety",
+      "source": "",
+      "parent_id": "SYS-REQ-003",
+      "notes": "Allocated to 2.3; verification: Test",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-018",
+          "title": "Guidance command magnitude clamping",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.7",
+          "notes": "Covers SUB-REQ-007"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-008",
+      "title": "RBNS procedure state machine",
+      "description": "The RBNS shall implement the procedure state machine with states IDLE NAVIGATE CONFIRM BIOPSY FAULT and ABORT with transitions as defined in the RBNS procedure state machine model (D7).",
+      "type": "functional",
+      "source": "",
+      "parent_id": "SYS-REQ-004",
+      "notes": "Allocated to 4.0; verification: Test and Demonstration",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-019",
+          "title": "Procedure state machine full transition coverage",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.8",
+          "notes": "Covers SUB-REQ-008; demonstration and test"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-009",
+      "title": "Supervisor as primary external interface point",
+      "description": "All command control status and logging communication between the RBNS and external systems shall be routed through the Procedure Supervisor with the exception of continuous sensor and imaging feeds (IF-EX-02a IF-EX-03 IF-EX-08) which connect directly to their consuming subsystem.",
+      "type": "functional",
+      "source": "",
+      "parent_id": "SYS-REQ-004",
+      "notes": "Allocated to 4.0 architecture constraint; verification: Inspection and Analysis",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-020",
+          "title": "Supervisor external interface routing inspection",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.9",
+          "notes": "Covers SUB-REQ-009; inspection verification"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-010",
+      "title": "Lost-tracking alert within 100 ms",
+      "description": "The RBNS shall report a lost-tracking alert to the Procedure Supervisor within 100 ms of tracking loss detection.",
+      "type": "performance",
+      "source": "",
+      "parent_id": "SYS-REQ-006",
+      "notes": "Allocated to 1.4; verification: Test",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-021",
+          "title": "Lost-tracking alert within 100 ms",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.10",
+          "notes": "Covers SUB-REQ-010"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-011",
+      "title": "Cease guidance commands within 50 ms of interlock deassert",
+      "description": "Upon deassertion of the motion enable signal (IF-EX-06a) the RBNS shall cease issuing guidance commands within 50 ms.",
+      "type": "safety",
+      "source": "",
+      "parent_id": "SYS-REQ-003",
+      "notes": "Allocated to 4.0; verification: Test",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-022",
+          "title": "Guidance command cessation within 50 ms of interlock deassert",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.11",
+          "notes": "Covers SUB-REQ-011"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-012",
+      "title": "FAULT state and HOLD within 100 ms of lost-tracking",
+      "description": "Upon receiving a lost-tracking alert the Procedure Supervisor shall transition to the FAULT state and command HOLD on IF-EX-04 within 100 ms.",
+      "type": "safety",
+      "source": "",
+      "parent_id": "SYS-REQ-003",
+      "notes": "Allocated to 4.0; verification: Test",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-023",
+          "title": "FAULT state and HOLD within 100 ms of lost-tracking",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.12",
+          "notes": "Covers SUB-REQ-012"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-013",
+      "title": "Degraded pose estimate on single-source failure",
+      "description": "The RBNS shall maintain a degraded tip pose estimate upon failure of any single localization source and shall flag the estimate as DEGRADED on IF-03.",
+      "type": "functional",
+      "source": "",
+      "parent_id": "SYS-REQ-002",
+      "notes": "Allocated to 1.4; verification: Test and Analysis",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-024",
+          "title": "Degraded pose estimate on single-source failure",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.13",
+          "notes": "Covers SUB-REQ-013"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-014",
+      "title": "Path computation within 1 second",
+      "description": "The RBNS shall compute an airway path from current position to a newly commanded target within 1 second.",
+      "type": "performance",
+      "source": "",
+      "parent_id": "SYS-REQ-001",
+      "notes": "Allocated to 2.1; verification: Test",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-025",
+          "title": "Path computation within 1 second on target change",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.14",
+          "notes": "Covers SUB-REQ-014"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-015",
+      "title": "End-to-end guidance latency 200 ms",
+      "description": "The end-to-end latency from a tip pose estimate (IF-01) to the corresponding guidance command transmission (IF-EX-04) shall not exceed 200 ms.",
+      "type": "performance",
+      "source": "",
+      "parent_id": "SYS-REQ-001",
+      "notes": "Allocated to 2.0 and 4.0; verification: Test and Analysis",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-026",
+          "title": "End-to-end guidance latency budget analysis",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.15",
+          "notes": "Covers SUB-REQ-015; analysis verification"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-016",
+      "title": "CBCT trigger phase gating",
+      "description": "The RBNS shall issue CBCT acquisition triggers (IF-EX-02b) only during the NAVIGATE and CONFIRM procedure phases.",
+      "type": "functional",
+      "source": "",
+      "parent_id": "SYS-REQ-002",
+      "notes": "Allocated to 4.0; verification: Test",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-027",
+          "title": "CBCT trigger issued only in NAVIGATE and CONFIRM",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.16",
+          "notes": "Covers SUB-REQ-016"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "SUB-REQ-017",
+      "title": "Procedure event logging",
+      "description": "The RBNS shall record all state transitions replanning events fault events and the tip pose trace to the Procedure Data Recorder (IF-EX-07) with timestamps of 10 ms resolution or better.",
+      "type": "functional",
+      "source": "",
+      "parent_id": "SYS-REQ-005",
+      "notes": "Allocated to 4.0; verification: Test and Inspection",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-028",
+          "title": "Procedure event log completeness and timestamp resolution",
+          "result": "not_run",
+          "protocol_ref": "TP-003 §3.17",
+          "notes": "Covers SUB-REQ-017"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "COMP-REQ-001",
+      "title": "Tip articulation range (TBD)",
+      "description": "The Guidance Command Generator shall support distal tip articulation commands of up to [TBD] degrees per axis sufficient to follow airway centerline curvature at branch points up to the generation depth required by SYS-REQ-001.",
+      "type": "functional",
+      "source": "",
+      "parent_id": "SUB-REQ-014",
+      "notes": "Allocated to GuidanceCommandGenerator; TBD pending kinematic reach analysis; verification: Analysis and Test",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-029",
+          "title": "Tip articulation range kinematic analysis",
+          "result": "not_run",
+          "protocol_ref": "TP-004 §4.1",
+          "notes": "Covers COMP-REQ-001; analysis verification; prerequisite: airway centerline geometry dataset"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "COMP-REQ-002",
+      "title": "Uncertainty ellipsoid bound (TBD)",
+      "description": "The Sensor Fusion and Uncertainty Estimator shall bound the fused position uncertainty ellipsoid such that the 95% confidence volume does not exceed [TBD].",
+      "type": "functional",
+      "source": "",
+      "parent_id": "SUB-REQ-002",
+      "notes": "Allocated to SensorFusionUncertaintyEstimator; TBD pending EKF covariance analysis; verification: Analysis and Test",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-030",
+          "title": "EKF uncertainty ellipsoid bound analysis",
+          "result": "not_run",
+          "protocol_ref": "TP-004 §4.2",
+          "notes": "Covers COMP-REQ-002; analysis verification; prerequisite: FK drift and vision rate characterization data"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    },
+    {
+      "id": "COMP-REQ-003",
+      "title": "Replanning threshold default (TBD)",
+      "description": "The Real-Time Path Updater shall default the replanning inhibition threshold to an uncertainty ellipsoid semi-axis of [TBD] configurable per SUB-REQ-005.",
+      "type": "functional",
+      "source": "",
+      "parent_id": "SUB-REQ-004",
+      "notes": "Allocated to RealTimePathUpdater; TBD pending parametric analysis; verification: Analysis and Test",
+      "trace_status": "covered",
+      "all_tests_pass": false,
+      "has_failing_test": false,
+      "test_cases": [
+        {
+          "id": "TC-031",
+          "title": "Replanning threshold parametric analysis",
+          "result": "not_run",
+          "protocol_ref": "TP-004 §4.3",
+          "notes": "Covers COMP-REQ-003; analysis verification; prerequisite: airway geometry dataset and tissue clearance tolerance"
+        }
+      ],
+      "risk_controls": [],
+      "dangling_test_ids": [],
+      "dangling_risk_ids": []
+    }
+  ],
+  "unlinked_test_cases": [],
+  "unlinked_risk_controls": []
+}

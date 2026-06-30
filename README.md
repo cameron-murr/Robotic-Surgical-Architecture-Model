@@ -14,7 +14,8 @@ The system boundary is deliberately narrow: the RBNS receives a preoperative air
 ├── docs/
 │   ├── interface_registry.md    ← CANONICAL interface definitions (3 tiers, 26 interfaces)
 │   ├── requirements.md          ← Full requirements hierarchy: user needs, system requirements (full bronchoscopy system), subsystem requirements (RBNS), and component requirements, with allocation and verification methods
-│   ├── requirements.csv         ← Tooling-readable export (medtrace-compatible)
+│   ├── requirements.csv         ← Requirements in medtrace-compatible format
+│   ├── test_cases.csv           ← Planned verification activities linked to requirements
 │   ├── design_decisions.md      ← 6 key architectural decisions with rationale
 │   └── sysml_build_plan.md      ← SysML diagram set specification and build sequence
 ├── model/
@@ -106,7 +107,7 @@ The `/sketches` directory contains the initial draw.io concept diagrams. They we
 
 ## Related Work
 
-Requirements in this project are structured for traceability analysis with [medtrace](https://github.com/cameron-murr/medtrace), a Python CLI requirements traceability tool built as a companion portfolio project.
+Requirements and test cases in this project are structured for traceability analysis with [medtrace](https://github.com/cameron-murr/medtrace), a Python CLI requirements traceability tool built as a companion portfolio project. `requirements.csv` and `test_cases.csv` in `/docs` are formatted for direct medtrace ingestion, producing a requirements traceability matrix linking each requirement to its planned verification activity. All test cases carry `not_run` status, reflecting that this is an architecture-phase model — the test cases represent the verification plan that would be executed as the system is implemented.
 
 ---
 

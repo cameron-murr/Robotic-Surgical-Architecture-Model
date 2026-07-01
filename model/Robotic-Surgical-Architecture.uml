@@ -378,7 +378,7 @@
           <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUHWtoEfGuEvnTmBr3Tw" name="port_IF_05_out" type="_ypYUOmtoEfGuEvnTmBr3Tw" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUHmtoEfGuEvnTmBr3Tw" name="port_IF_07_in" type="_ypYUPGtoEfGuEvnTmBr3Tw" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_ypYUH2toEfGuEvnTmBr3Tw" name="port_IF_08_out" type="_ypY7EWtoEfGuEvnTmBr3Tw" aggregation="composite"/>
-          <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_i1hwkHNGEfGImPMr3c7uaQ" name="SupervisorStateMachine">
+          <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_i1hwkHNGEfGImPMr3c7uaQ" name="RBNSStateMachine">
             <region xmi:type="uml:Region" xmi:id="_krjeEHNGEfGImPMr3c7uaQ" name="Region1">
               <transition xmi:type="uml:Transition" xmi:id="_Z906oHNHEfGImPMr3c7uaQ" source="_4T-PIHNGEfGImPMr3c7uaQ" target="_6Omv0HNGEfGImPMr3c7uaQ"/>
               <transition xmi:type="uml:Transition" xmi:id="_qgWRwHNHEfGImPMr3c7uaQ" name="[START + plan loaded]" source="_6Omv0HNGEfGImPMr3c7uaQ" target="_7aGSkHNGEfGImPMr3c7uaQ"/>
@@ -483,6 +483,9 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_ypY7EmtoEfGuEvnTmBr3Tw" name="04_Behavior"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_ypY7E2toEfGuEvnTmBr3Tw" name="05_Requirements">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Ull7gHQUEfGImPMr3c7uaQ">
+        <body>All dependencies shown are «satisfy» relationships</body>
+      </ownedComment>
       <packagedElement xmi:type="uml:Class" xmi:id="__WqJUHP3EfGImPMr3c7uaQ" name="UN-001"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_0racsHP5EfGImPMr3c7uaQ" name="UN-002"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_1A5kgHP5EfGImPMr3c7uaQ" name="UN-003"/>

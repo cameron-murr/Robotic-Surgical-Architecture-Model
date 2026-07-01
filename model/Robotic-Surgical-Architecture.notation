@@ -7060,422 +7060,6 @@
     </styles>
     <element xmi:type="uml:Model" href="Robotic-Surgical-Architecture.uml#_LvDiUGtFEfG8dPPFavWWFA"/>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_krksMHNGEfGImPMr3c7uaQ" type="PapyrusUMLStateMachineDiagram" name="D7_supervisor_state_machine" measurementUnit="Pixel">
-    <children xmi:type="notation:Shape" xmi:id="_krksMXNGEfGImPMr3c7uaQ" type="StateMachine_Shape">
-      <children xmi:type="notation:DecorationNode" xmi:id="_krksMnNGEfGImPMr3c7uaQ" type="StateMachine_NameLabel">
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_krksM3NGEfGImPMr3c7uaQ" width="1425" height="21"/>
-      </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_krksNHNGEfGImPMr3c7uaQ" type="StateMachine_RegionCompartment">
-        <children xmi:type="notation:Shape" xmi:id="_krksNXNGEfGImPMr3c7uaQ" type="Region_Shape">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_krksNnNGEfGImPMr3c7uaQ" source="RegionAnnotationKey">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_krksN3NGEfGImPMr3c7uaQ" key="RegionZoneKey" value=""/>
-          </eAnnotations>
-          <children xmi:type="notation:BasicCompartment" xmi:id="_krksOHNGEfGImPMr3c7uaQ" type="Region_SubvertexCompartment">
-            <children xmi:type="notation:Shape" xmi:id="_4UEVwHNGEfGImPMr3c7uaQ" type="Pseudostate_InitialShape">
-              <children xmi:type="notation:DecorationNode" xmi:id="_4UE80HNGEfGImPMr3c7uaQ" type="Pseudostate_InitialFloatingNameLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_4UE80XNGEfGImPMr3c7uaQ" x="17" y="-28"/>
-              </children>
-              <children xmi:type="notation:DecorationNode" xmi:id="_4UE80nNGEfGImPMr3c7uaQ" type="Pseudostate_InitialStereotypeLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_4UE803NGEfGImPMr3c7uaQ" x="25" y="-10"/>
-              </children>
-              <element xmi:type="uml:Pseudostate" href="Robotic-Surgical-Architecture.uml#_4T-PIHNGEfGImPMr3c7uaQ"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4UEVwXNGEfGImPMr3c7uaQ" x="29" y="169"/>
-            </children>
-            <children xmi:type="notation:Shape" xmi:id="_6OrBQHNGEfGImPMr3c7uaQ" type="State_Shape">
-              <children xmi:type="notation:DecorationNode" xmi:id="_6OrBQnNGEfGImPMr3c7uaQ" type="State_NameLabel">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__FHg4HNIEfGImPMr3c7uaQ" width="76"/>
-              </children>
-              <children xmi:type="notation:DecorationNode" xmi:id="_6OrBQ3NGEfGImPMr3c7uaQ" type="State_FloatingNameLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_6OrBRHNGEfGImPMr3c7uaQ" x="40"/>
-              </children>
-              <children xmi:type="notation:BasicCompartment" xmi:id="_6OrBRXNGEfGImPMr3c7uaQ" type="State_RegionCompartment">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6OrBRnNGEfGImPMr3c7uaQ" y="-1" width="76"/>
-              </children>
-              <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_6Omv0HNGEfGImPMr3c7uaQ"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6OrBQXNGEfGImPMr3c7uaQ" x="149" y="169" width="76" height="81"/>
-            </children>
-            <children xmi:type="notation:Shape" xmi:id="_7aLLEHNGEfGImPMr3c7uaQ" type="State_Shape">
-              <children xmi:type="notation:DecorationNode" xmi:id="_7aLLEnNGEfGImPMr3c7uaQ" type="State_NameLabel">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__FKkMHNIEfGImPMr3c7uaQ" width="102"/>
-              </children>
-              <children xmi:type="notation:DecorationNode" xmi:id="_7aLLE3NGEfGImPMr3c7uaQ" type="State_FloatingNameLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_7aLLFHNGEfGImPMr3c7uaQ" x="40"/>
-              </children>
-              <children xmi:type="notation:BasicCompartment" xmi:id="_7aLLFXNGEfGImPMr3c7uaQ" type="State_RegionCompartment">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7aLLFnNGEfGImPMr3c7uaQ" y="-1" width="102"/>
-              </children>
-              <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_7aGSkHNGEfGImPMr3c7uaQ"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7aLLEXNGEfGImPMr3c7uaQ" x="389" y="169" width="102" height="81"/>
-            </children>
-            <children xmi:type="notation:Shape" xmi:id="_8jrw0HNGEfGImPMr3c7uaQ" type="State_Shape">
-              <children xmi:type="notation:DecorationNode" xmi:id="_8jrw0nNGEfGImPMr3c7uaQ" type="State_NameLabel">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__FMZYHNIEfGImPMr3c7uaQ" width="100"/>
-              </children>
-              <children xmi:type="notation:DecorationNode" xmi:id="_8jrw03NGEfGImPMr3c7uaQ" type="State_FloatingNameLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_8jrw1HNGEfGImPMr3c7uaQ" x="40"/>
-              </children>
-              <children xmi:type="notation:BasicCompartment" xmi:id="_8jrw1XNGEfGImPMr3c7uaQ" type="State_RegionCompartment">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8jrw1nNGEfGImPMr3c7uaQ" y="-1" width="100"/>
-              </children>
-              <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_8jm4UHNGEfGImPMr3c7uaQ"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8jrw0XNGEfGImPMr3c7uaQ" x="889" y="169" width="100" height="81"/>
-            </children>
-            <children xmi:type="notation:Shape" xmi:id="_9UdGcHNGEfGImPMr3c7uaQ" type="State_Shape">
-              <children xmi:type="notation:DecorationNode" xmi:id="_9UdtgHNGEfGImPMr3c7uaQ" type="State_NameLabel">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__FNngHNIEfGImPMr3c7uaQ" width="87"/>
-              </children>
-              <children xmi:type="notation:DecorationNode" xmi:id="_9UdtgXNGEfGImPMr3c7uaQ" type="State_FloatingNameLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_9UdtgnNGEfGImPMr3c7uaQ" x="40"/>
-              </children>
-              <children xmi:type="notation:BasicCompartment" xmi:id="_9Udtg3NGEfGImPMr3c7uaQ" type="State_RegionCompartment">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9UdthHNGEfGImPMr3c7uaQ" y="-1" width="87"/>
-              </children>
-              <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_9UXm4HNGEfGImPMr3c7uaQ"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9UdGcXNGEfGImPMr3c7uaQ" x="1249" y="169" width="87" height="81"/>
-            </children>
-            <children xmi:type="notation:Shape" xmi:id="_-XFoIHNGEfGImPMr3c7uaQ" type="State_Shape">
-              <children xmi:type="notation:DecorationNode" xmi:id="_-XGPMHNGEfGImPMr3c7uaQ" type="State_NameLabel">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__FQq0HNIEfGImPMr3c7uaQ" width="120"/>
-              </children>
-              <children xmi:type="notation:DecorationNode" xmi:id="_-XGPMXNGEfGImPMr3c7uaQ" type="State_FloatingNameLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_-XGPMnNGEfGImPMr3c7uaQ" x="40"/>
-              </children>
-              <children xmi:type="notation:BasicCompartment" xmi:id="_-XGPM3NGEfGImPMr3c7uaQ" type="State_RegionCompartment">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-XGPNHNGEfGImPMr3c7uaQ" y="-1" width="120"/>
-              </children>
-              <children xmi:type="notation:BasicCompartment" xmi:id="_-XMV0HNGEfGImPMr3c7uaQ" type="compartment_shape_display">
-                <styles xmi:type="notation:TitleStyle" xmi:id="_-XMV0XNGEfGImPMr3c7uaQ"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-XMV0nNGEfGImPMr3c7uaQ"/>
-              </children>
-              <children xmi:type="notation:Shape" xmi:id="_Sa_egHNLEfGImPMr3c7uaQ" type="Behavior_EntryBehaviorLabel">
-                <element xmi:type="uml:OpaqueBehavior" href="Robotic-Surgical-Architecture.uml#_P5IlwHNLEfGImPMr3c7uaQ"/>
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_Sa_egXNLEfGImPMr3c7uaQ" x="-10" y="-10"/>
-              </children>
-              <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_-W_hgHNGEfGImPMr3c7uaQ"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-XFoIXNGEfGImPMr3c7uaQ" x="609" y="369" width="120" height="121"/>
-            </children>
-            <children xmi:type="notation:Shape" xmi:id="__1KvsHNGEfGImPMr3c7uaQ" type="State_Shape">
-              <children xmi:type="notation:DecorationNode" xmi:id="__1KvsnNGEfGImPMr3c7uaQ" type="State_NameLabel">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__FPcsHNIEfGImPMr3c7uaQ" width="85"/>
-              </children>
-              <children xmi:type="notation:DecorationNode" xmi:id="__1Kvs3NGEfGImPMr3c7uaQ" type="State_FloatingNameLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="__1KvtHNGEfGImPMr3c7uaQ" x="40"/>
-              </children>
-              <children xmi:type="notation:BasicCompartment" xmi:id="__1KvtXNGEfGImPMr3c7uaQ" type="State_RegionCompartment">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__1KvtnNGEfGImPMr3c7uaQ" y="-1" width="85"/>
-              </children>
-              <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#__1Cz4HNGEfGImPMr3c7uaQ"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="__1KvsXNGEfGImPMr3c7uaQ" x="629" y="569" width="85" height="81"/>
-            </children>
-            <children xmi:type="notation:Shape" xmi:id="_ddEhUHNKEfGImPMr3c7uaQ" type="FinalState_Shape">
-              <children xmi:type="notation:DecorationNode" xmi:id="_ddEhUnNKEfGImPMr3c7uaQ" type="FinalState_FloatingNameLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_ddEhU3NKEfGImPMr3c7uaQ" x="-60" y="-20"/>
-              </children>
-              <children xmi:type="notation:DecorationNode" xmi:id="_ddEhVHNKEfGImPMr3c7uaQ" type="FinalState_StereotypeLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_ddEhVXNKEfGImPMr3c7uaQ" x="25" y="-10"/>
-              </children>
-              <element xmi:type="uml:FinalState" href="Robotic-Surgical-Architecture.uml#_dc6JQHNKEfGImPMr3c7uaQ"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ddEhUXNKEfGImPMr3c7uaQ" x="169" y="589"/>
-            </children>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_krksOXNGEfGImPMr3c7uaQ"/>
-          </children>
-          <element xmi:type="uml:Region" href="Robotic-Surgical-Architecture.uml#_krjeEHNGEfGImPMr3c7uaQ"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_krksOnNGEfGImPMr3c7uaQ" width="1425" height="678"/>
-        </children>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_krksO3NGEfGImPMr3c7uaQ" y="21" width="1425" height="678"/>
-      </children>
-      <element xmi:type="uml:StateMachine" href="Robotic-Surgical-Architecture.uml#_i1hwkHNGEfGImPMr3c7uaQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_krksPHNGEfGImPMr3c7uaQ" x="30" y="30" width="1425" height="699"/>
-    </children>
-    <styles xmi:type="notation:StringValueStyle" xmi:id="_krksPXNGEfGImPMr3c7uaQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
-    <styles xmi:type="notation:DiagramStyle" xmi:id="_krksPnNGEfGImPMr3c7uaQ"/>
-    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_krksP3NGEfGImPMr3c7uaQ" diagramKindId="org.eclipse.papyrus.sysml16.diagram.stateMachine">
-      <owner xmi:type="uml:Class" href="Robotic-Surgical-Architecture.uml#_ypYUEWtoEfGuEvnTmBr3Tw"/>
-    </styles>
-    <element xmi:type="uml:StateMachine" href="Robotic-Surgical-Architecture.uml#_i1hwkHNGEfGImPMr3c7uaQ"/>
-    <edges xmi:type="notation:Connector" xmi:id="_Z-j6cHNHEfGImPMr3c7uaQ" type="Transition_Edge" source="_4UEVwHNGEfGImPMr3c7uaQ" target="_6OrBQHNGEfGImPMr3c7uaQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_Z-khgHNHEfGImPMr3c7uaQ" type="Transition_NameLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_ARbYcHNIEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_Z-khgXNHEfGImPMr3c7uaQ" x="1" y="19"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_Z-khgnNHEfGImPMr3c7uaQ" type="Transition_GuardLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_ARkiYHNIEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_Z-khg3NHEfGImPMr3c7uaQ" x="-1" y="-18"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_Z-khhHNHEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_ARr3IHNIEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_Z-khhXNHEfGImPMr3c7uaQ" x="1" y="59"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_Z-j6cXNHEfGImPMr3c7uaQ"/>
-      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_Z906oHNHEfGImPMr3c7uaQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Z-j6cnNHEfGImPMr3c7uaQ" points="[60, 168, -643984, -643984]$[180, 180, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Z_BNcHNHEfGImPMr3c7uaQ" id="(0.0,0.4)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Z_BNcXNHEfGImPMr3c7uaQ" id="(0.0,0.4444444444444444)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_qggp0HNHEfGImPMr3c7uaQ" type="Transition_Edge" source="_6OrBQHNGEfGImPMr3c7uaQ" target="_7aLLEHNGEfGImPMr3c7uaQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_qggp03NHEfGImPMr3c7uaQ" type="Transition_NameLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_x7vFQHNHEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_qggp1HNHEfGImPMr3c7uaQ" y="20"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_qggp1XNHEfGImPMr3c7uaQ" type="Transition_GuardLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_x71L4HNHEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_qggp1nNHEfGImPMr3c7uaQ" y="-20"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_qggp13NHEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_x76EYHNHEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_qggp2HNHEfGImPMr3c7uaQ" y="60"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_qggp0XNHEfGImPMr3c7uaQ"/>
-      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_qgWRwHNHEfGImPMr3c7uaQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qggp0nNHEfGImPMr3c7uaQ" points="[200, 265, -643984, -643984]$[340, 265, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qhBAIHNHEfGImPMr3c7uaQ" id="(1.0,0.4444444444444444)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qhBnMHNHEfGImPMr3c7uaQ" id="(0.0,0.4444444444444444)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_0UK8QHNHEfGImPMr3c7uaQ" type="Transition_Edge" source="_7aLLEHNGEfGImPMr3c7uaQ" target="_8jrw0HNGEfGImPMr3c7uaQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_0UK8Q3NHEfGImPMr3c7uaQ" type="Transition_NameLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_2u2O8HNHEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_0UK8RHNHEfGImPMr3c7uaQ" y="20"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_0UK8RXNHEfGImPMr3c7uaQ" type="Transition_GuardLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_2u7HcHNHEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_0UK8RnNHEfGImPMr3c7uaQ" y="-20"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_0UK8R3NHEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_2vBOEHNHEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_0UK8SHNHEfGImPMr3c7uaQ" y="60"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_0UK8QXNHEfGImPMr3c7uaQ"/>
-      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_0UByUHNHEfGImPMr3c7uaQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0UK8QnNHEfGImPMr3c7uaQ" points="[471, 240, -643984, -643984]$[585, 240, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0UcCAHNHEfGImPMr3c7uaQ" id="(1.0,0.4444444444444444)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0UcCAXNHEfGImPMr3c7uaQ" id="(0.0,0.4444444444444444)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_37HNwHNHEfGImPMr3c7uaQ" type="Transition_Edge" source="_8jrw0HNGEfGImPMr3c7uaQ" target="_9UdGcHNGEfGImPMr3c7uaQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_37H00HNHEfGImPMr3c7uaQ" type="Transition_NameLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_6Nh8UHNHEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_37H00XNHEfGImPMr3c7uaQ" y="20"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_37H00nNHEfGImPMr3c7uaQ" type="Transition_GuardLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_6Nnb4HNHEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_37H003NHEfGImPMr3c7uaQ" y="-20"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_37H01HNHEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_6NrtUHNHEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_37H01XNHEfGImPMr3c7uaQ" y="60"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_37HNwXNHEfGImPMr3c7uaQ"/>
-      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_3681sHNHEfGImPMr3c7uaQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_37HNwnNHEfGImPMr3c7uaQ" points="[794, 240, -643984, -643984]$[910, 240, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_37avwHNHEfGImPMr3c7uaQ" id="(1.0,0.4444444444444444)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_37avwXNHEfGImPMr3c7uaQ" id="(0.0,0.4444444444444444)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_95sFAHNHEfGImPMr3c7uaQ" type="Transition_Edge" source="_9UdGcHNGEfGImPMr3c7uaQ" target="_7aLLEHNGEfGImPMr3c7uaQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_95ssEHNHEfGImPMr3c7uaQ" type="Transition_NameLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_-n2LgHNHEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_95ssEXNHEfGImPMr3c7uaQ" x="-1" y="18"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_95ssEnNHEfGImPMr3c7uaQ" type="Transition_GuardLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_-n8SIHNHEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_95ssE3NHEfGImPMr3c7uaQ" x="-1" y="-19"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_95ssFHNHEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_-oBKoHNHEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_95ssFXNHEfGImPMr3c7uaQ" x="1" y="58"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_95sFAXNHEfGImPMr3c7uaQ"/>
-      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_95jiIHNHEfGImPMr3c7uaQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_95sFAnNHEfGImPMr3c7uaQ" points="[1296, 220, -643984, -643984]$[900, 180, -643984, -643984]$[504, 220, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_956ugHNHEfGImPMr3c7uaQ" id="(0.1839080459770115,0.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_956ugXNHEfGImPMr3c7uaQ" id="(0.8235294117647058,0.0)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_EdqvYHNIEfGImPMr3c7uaQ" type="Transition_Edge" source="_9UdGcHNGEfGImPMr3c7uaQ" target="_6OrBQHNGEfGImPMr3c7uaQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_EdqvY3NIEfGImPMr3c7uaQ" type="Transition_NameLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_FjbdkHNIEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_EdqvZHNIEfGImPMr3c7uaQ" x="-1" y="18"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_EdqvZXNIEfGImPMr3c7uaQ" type="Transition_GuardLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_Fjg9IHNIEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_EdqvZnNIEfGImPMr3c7uaQ" x="1" y="-19"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_EdqvZ3NIEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_Fjl1oHNIEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_EdqvaHNIEfGImPMr3c7uaQ" x="-2" y="57"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_EdqvYXNIEfGImPMr3c7uaQ"/>
-      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_Edg-YHNIEfGImPMr3c7uaQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EdqvYnNIEfGImPMr3c7uaQ" points="[1348, 220, -643984, -643984]$[1060, 100, -643984, -643984]$[460, 100, -643984, -643984]$[236, 220, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ed7OEHNIEfGImPMr3c7uaQ" id="(0.7816091954022989,0.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ed7OEXNIEfGImPMr3c7uaQ" id="(0.7368421052631579,0.0)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_T0HU8HNIEfGImPMr3c7uaQ" type="Transition_Edge" source="_7aLLEHNGEfGImPMr3c7uaQ" target="_-XFoIHNGEfGImPMr3c7uaQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_T0H8AHNIEfGImPMr3c7uaQ" type="Transition_NameLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_AfgbQHNJEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_T0H8AXNIEfGImPMr3c7uaQ" x="111" y="-37"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_T0H8AnNIEfGImPMr3c7uaQ" type="Transition_GuardLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_AfsBcHNJEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_T0H8A3NIEfGImPMr3c7uaQ" x="-1" y="-18"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_T0H8BHNIEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_Af1ycHNJEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_T0H8BXNIEfGImPMr3c7uaQ" x="2" y="57"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_T0HU8XNIEfGImPMr3c7uaQ"/>
-      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_T0AAMHNIEfGImPMr3c7uaQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_T0HU8nNIEfGImPMr3c7uaQ" points="[480, 300, -643984, -643984]$[620, 340, -643984, -643984]$[696, 440, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_T0XzoHNIEfGImPMr3c7uaQ" id="(0.5882352941176471,0.9876543209876543)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_T0XzoXNIEfGImPMr3c7uaQ" id="(0.45,0.0)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_ZGf0kHNIEfGImPMr3c7uaQ" type="Transition_Edge" source="_8jrw0HNGEfGImPMr3c7uaQ" target="_-XFoIHNGEfGImPMr3c7uaQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_ZGf0k3NIEfGImPMr3c7uaQ" type="Transition_NameLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_AgzbwHNJEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZGf0lHNIEfGImPMr3c7uaQ" x="65" y="32"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_ZGf0lXNIEfGImPMr3c7uaQ" type="Transition_GuardLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_AhFvoHNJEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZGf0lnNIEfGImPMr3c7uaQ" y="-19"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_ZGf0l3NIEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_AhVAMHNJEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZGf0mHNIEfGImPMr3c7uaQ" x="-1" y="58"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_ZGf0kXNIEfGImPMr3c7uaQ"/>
-      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_ZGX4wHNIEfGImPMr3c7uaQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZGf0knNIEfGImPMr3c7uaQ" points="[980, 300, -643984, -643984]$[940, 420, -643984, -643984]$[728, 440, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZGvsMHNIEfGImPMr3c7uaQ" id="(0.6,0.9876543209876543)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZGwTQHNIEfGImPMr3c7uaQ" id="(0.85,0.0)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_ryNs0HNIEfGImPMr3c7uaQ" type="Transition_Edge" source="_-XFoIHNGEfGImPMr3c7uaQ" target="_7aLLEHNGEfGImPMr3c7uaQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_ryNs03NIEfGImPMr3c7uaQ" type="Transition_NameLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_uwyWwHNIEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_ryNs1HNIEfGImPMr3c7uaQ" x="-80" y="-20"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_ryNs1XNIEfGImPMr3c7uaQ" type="Transition_GuardLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_uw3PQHNIEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_ryNs1nNIEfGImPMr3c7uaQ" x="1" y="-18"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_ryNs13NIEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_uw8HwHNIEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_ryNs2HNIEfGImPMr3c7uaQ" x="-1" y="57"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_ryNs0XNIEfGImPMr3c7uaQ"/>
-      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_ryD70HNIEfGImPMr3c7uaQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ryNs0nNIEfGImPMr3c7uaQ" points="[660, 476, -643984, -643984]$[480, 460, -643984, -643984]$[460, 300, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rymHUHNIEfGImPMr3c7uaQ" id="(0.0,0.4444444444444444)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rymHUXNIEfGImPMr3c7uaQ" id="(0.39215686274509803,0.9876543209876543)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_xnNxUHNIEfGImPMr3c7uaQ" type="Transition_Edge" source="_-XFoIHNGEfGImPMr3c7uaQ" target="__1KvsHNGEfGImPMr3c7uaQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_xnOYYHNIEfGImPMr3c7uaQ" type="Transition_NameLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_AgEb8HNJEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_xnOYYXNIEfGImPMr3c7uaQ" x="-12" y="-62"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_xnOYYnNIEfGImPMr3c7uaQ" type="Transition_GuardLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_AgU6oHNJEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_xnOYY3NIEfGImPMr3c7uaQ" y="-20"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_xnOYZHNIEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_AgmncHNJEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_xnOYZXNIEfGImPMr3c7uaQ" y="60"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_xnNxUXNIEfGImPMr3c7uaQ"/>
-      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_xnFOcHNIEfGImPMr3c7uaQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xnNxUnNIEfGImPMr3c7uaQ" points="[469, 465, -643984, -643984]$[705, 465, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xnca0HNIEfGImPMr3c7uaQ" id="(0.55,0.9876543209876543)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xnca0XNIEfGImPMr3c7uaQ" id="(0.5176470588235295,0.0)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_a3QyIHNJEfGImPMr3c7uaQ" type="Transition_Edge" source="_7aLLEHNGEfGImPMr3c7uaQ" target="__1KvsHNGEfGImPMr3c7uaQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_a3QyI3NJEfGImPMr3c7uaQ" type="Transition_NameLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_bYEZIHNJEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_a3QyJHNJEfGImPMr3c7uaQ" x="169" y="-27"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_a3QyJXNJEfGImPMr3c7uaQ" type="Transition_GuardLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_bYLt4HNJEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_a3QyJnNJEfGImPMr3c7uaQ" y="-19"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_a3QyJ3NJEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_bYR0gHNJEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_a3QyKHNJEfGImPMr3c7uaQ" x="-1" y="57"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_a3QyIXNJEfGImPMr3c7uaQ"/>
-      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_a3HoMHNJEfGImPMr3c7uaQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_a3QyInNJEfGImPMr3c7uaQ" points="[429, 300, -643984, -643984]$[400, 500, -643984, -643984]$[660, 640, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_a3gpwHNJEfGImPMr3c7uaQ" id="(0.0784313725490196,0.9876543209876543)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_a3gpwXNJEfGImPMr3c7uaQ" id="(0.0,0.24691358024691357)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_oEwHIHNJEfGImPMr3c7uaQ" type="Transition_Edge" source="_8jrw0HNGEfGImPMr3c7uaQ" target="__1KvsHNGEfGImPMr3c7uaQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_oEwHI3NJEfGImPMr3c7uaQ" type="Transition_NameLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_osA7cHNJEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_oEwHJHNJEfGImPMr3c7uaQ" x="-4" y="-65"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_oEwHJXNJEfGImPMr3c7uaQ" type="Transition_GuardLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_osGbAHNJEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_oEwHJnNJEfGImPMr3c7uaQ" x="-1" y="-18"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_oEwHJ3NJEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_osL6kHNJEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_oEwHKHNJEfGImPMr3c7uaQ" x="1" y="57"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_oEwHIXNJEfGImPMr3c7uaQ"/>
-      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_oEmWIHNJEfGImPMr3c7uaQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oEwHInNJEfGImPMr3c7uaQ" points="[1008, 300, -643984, -643984]$[960, 580, -643984, -643984]$[744, 640, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oE_XsHNJEfGImPMr3c7uaQ" id="(0.88,0.9876543209876543)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oE_XsXNJEfGImPMr3c7uaQ" id="(0.9882352941176471,0.24691358024691357)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_EwG4UHNKEfGImPMr3c7uaQ" type="Transition_Edge" source="_9UdGcHNGEfGImPMr3c7uaQ" target="__1KvsHNGEfGImPMr3c7uaQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_EwG4U3NKEfGImPMr3c7uaQ" type="Transition_NameLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_FT2ekHNKEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_EwG4VHNKEfGImPMr3c7uaQ" x="-1" y="18"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_EwG4VXNKEfGImPMr3c7uaQ" type="Transition_GuardLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_FT8lMHNKEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_EwG4VnNKEfGImPMr3c7uaQ" y="-19"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_EwG4V3NKEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_FUDS4HNKEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_EwG4WHNKEfGImPMr3c7uaQ" x="-1" y="58"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_EwG4UXNKEfGImPMr3c7uaQ"/>
-      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_Ev75MHNKEfGImPMr3c7uaQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EwG4UnNKEfGImPMr3c7uaQ" points="[1324, 300, -643984, -643984]$[1260, 622, -643984, -643984]$[744, 680, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EwZzQHNKEfGImPMr3c7uaQ" id="(0.8735632183908046,0.9876543209876543)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EwZzQXNKEfGImPMr3c7uaQ" id="(0.9882352941176471,0.7407407407407407)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_fp6MUHNKEfGImPMr3c7uaQ" type="Transition_Edge" source="__1KvsHNGEfGImPMr3c7uaQ" target="_ddEhUHNKEfGImPMr3c7uaQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_fp6MU3NKEfGImPMr3c7uaQ" type="Transition_NameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_fp6MVHNKEfGImPMr3c7uaQ" y="20"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_fp6MVXNKEfGImPMr3c7uaQ" type="Transition_GuardLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_fp6MVnNKEfGImPMr3c7uaQ" y="-20"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_fp6MV3NKEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_fp6MWHNKEfGImPMr3c7uaQ" y="60"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_fp6MUXNKEfGImPMr3c7uaQ"/>
-      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_fpumIHNKEfGImPMr3c7uaQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fp6MUnNKEfGImPMr3c7uaQ" points="[660, 668, -643984, -643984]$[217, 649, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fqOVYHNKEfGImPMr3c7uaQ" id="(0.0,0.5925925925925926)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fqOVYXNKEfGImPMr3c7uaQ" id="(0.9,0.5120535714285722)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_4qYnMHNKEfGImPMr3c7uaQ" type="Transition_Edge" source="_9UdGcHNGEfGImPMr3c7uaQ" target="_-XFoIHNGEfGImPMr3c7uaQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_4qYnM3NKEfGImPMr3c7uaQ" type="Transition_NameLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_5tGBYHNKEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_4qYnNHNKEfGImPMr3c7uaQ" x="-53" y="13"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_4qYnNXNKEfGImPMr3c7uaQ" type="Transition_GuardLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_5tOkQHNKEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_4qYnNnNKEfGImPMr3c7uaQ" y="-19"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_4qYnN3NKEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_5tXHIHNKEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_4qYnOHNKEfGImPMr3c7uaQ" x="-1" y="58"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_4qYnMXNKEfGImPMr3c7uaQ"/>
-      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_4qNBAHNKEfGImPMr3c7uaQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_4qYnMnNKEfGImPMr3c7uaQ" points="[1280, 291, -643984, -643984]$[1240, 480, -643984, -643984]$[740, 492, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4qq7EHNKEfGImPMr3c7uaQ" id="(0.27586206896551724,0.9876543209876543)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4qq7EXNKEfGImPMr3c7uaQ" id="(1.0,0.6419753086419753)"/>
-    </edges>
-  </notation:Diagram>
   <notation:Diagram xmi:id="_3gp2YHP3EfGImPMr3c7uaQ" type="PapyrusUMLClassDiagram" name="D8_requirements_traceability" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="__W0hYHP3EfGImPMr3c7uaQ" type="Class_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="__W1IcHP3EfGImPMr3c7uaQ" type="Class_NameLabel"/>
@@ -8819,6 +8403,11 @@
       <element xsi:nil="true"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qjO8tXQCEfGImPMr3c7uaQ" x="700" y="660"/>
     </children>
+    <children xmi:type="notation:Shape" xmi:id="_UlvsgHQUEfGImPMr3c7uaQ" type="Comment_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_UlwTkHQUEfGImPMr3c7uaQ" type="Comment_BodyLabel"/>
+      <element xmi:type="uml:Comment" href="Robotic-Surgical-Architecture.uml#_Ull7gHQUEfGImPMr3c7uaQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UlvsgXQUEfGImPMr3c7uaQ" x="200" y="340" width="140"/>
+    </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_3gp2YXP3EfGImPMr3c7uaQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_3gp2YnP3EfGImPMr3c7uaQ"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_3gp2Y3P3EfGImPMr3c7uaQ" diagramKindId="org.eclipse.papyrus.sysml16.diagram.requirement">
@@ -10037,6 +9626,538 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qjPjwnQCEfGImPMr3c7uaQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qjPjw3QCEfGImPMr3c7uaQ"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qjPjxHQCEfGImPMr3c7uaQ"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_eW4Z8HQVEfGImPMr3c7uaQ" type="PapyrusUMLStateMachineDiagram" name="D7_RBNS_state_machine" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_eW4Z8XQVEfGImPMr3c7uaQ" type="StateMachine_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4Z8nQVEfGImPMr3c7uaQ" type="StateMachine_NameLabel">
+        <element xmi:type="uml:StateMachine" href="Robotic-Surgical-Architecture.uml#_i1hwkHNGEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4Z83QVEfGImPMr3c7uaQ" width="1425" height="21"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_eW4Z9HQVEfGImPMr3c7uaQ" type="StateMachine_RegionCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_eW4Z9XQVEfGImPMr3c7uaQ" type="Region_Shape">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eW4Z9nQVEfGImPMr3c7uaQ" source="RegionAnnotationKey">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eW4Z93QVEfGImPMr3c7uaQ" key="RegionZoneKey" value=""/>
+          </eAnnotations>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_eW4Z-HQVEfGImPMr3c7uaQ" type="Region_SubvertexCompartment">
+            <children xmi:type="notation:Shape" xmi:id="_eW4Z-XQVEfGImPMr3c7uaQ" type="Pseudostate_InitialShape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4Z-nQVEfGImPMr3c7uaQ" type="Pseudostate_InitialFloatingNameLabel">
+                <element xmi:type="uml:Pseudostate" href="Robotic-Surgical-Architecture.uml#_4T-PIHNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4Z-3QVEfGImPMr3c7uaQ" x="17" y="-28"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4Z_HQVEfGImPMr3c7uaQ" type="Pseudostate_InitialStereotypeLabel">
+                <element xmi:type="uml:Pseudostate" href="Robotic-Surgical-Architecture.uml#_4T-PIHNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4Z_XQVEfGImPMr3c7uaQ" x="25" y="-10"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_eW4Z_nQVEfGImPMr3c7uaQ" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_eW4Z_3QVEfGImPMr3c7uaQ"/>
+                <element xmi:type="uml:Pseudostate" href="Robotic-Surgical-Architecture.uml#_4T-PIHNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aAHQVEfGImPMr3c7uaQ"/>
+              </children>
+              <element xmi:type="uml:Pseudostate" href="Robotic-Surgical-Architecture.uml#_4T-PIHNGEfGImPMr3c7uaQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aAXQVEfGImPMr3c7uaQ" x="29" y="169"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_eW4aAnQVEfGImPMr3c7uaQ" type="State_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4aA3QVEfGImPMr3c7uaQ" type="State_NameLabel">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_6Omv0HNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aBHQVEfGImPMr3c7uaQ" width="76"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4aBXQVEfGImPMr3c7uaQ" type="State_FloatingNameLabel">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_6Omv0HNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aBnQVEfGImPMr3c7uaQ" x="40"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_eW4aB3QVEfGImPMr3c7uaQ" type="State_RegionCompartment">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_6Omv0HNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aCHQVEfGImPMr3c7uaQ" y="-1" width="76"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_eW4aCXQVEfGImPMr3c7uaQ" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_eW4aCnQVEfGImPMr3c7uaQ"/>
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_6Omv0HNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aC3QVEfGImPMr3c7uaQ"/>
+              </children>
+              <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_6Omv0HNGEfGImPMr3c7uaQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aDHQVEfGImPMr3c7uaQ" x="149" y="169" width="76" height="81"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_eW4aDXQVEfGImPMr3c7uaQ" type="State_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4aDnQVEfGImPMr3c7uaQ" type="State_NameLabel">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_7aGSkHNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aD3QVEfGImPMr3c7uaQ" width="102"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4aEHQVEfGImPMr3c7uaQ" type="State_FloatingNameLabel">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_7aGSkHNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aEXQVEfGImPMr3c7uaQ" x="40"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_eW4aEnQVEfGImPMr3c7uaQ" type="State_RegionCompartment">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_7aGSkHNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aE3QVEfGImPMr3c7uaQ" y="-1" width="102"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_eW4aFHQVEfGImPMr3c7uaQ" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_eW4aFXQVEfGImPMr3c7uaQ"/>
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_7aGSkHNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aFnQVEfGImPMr3c7uaQ"/>
+              </children>
+              <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_7aGSkHNGEfGImPMr3c7uaQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aF3QVEfGImPMr3c7uaQ" x="389" y="169" width="102" height="81"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_eW4aGHQVEfGImPMr3c7uaQ" type="State_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4aGXQVEfGImPMr3c7uaQ" type="State_NameLabel">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_8jm4UHNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aGnQVEfGImPMr3c7uaQ" width="100"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4aG3QVEfGImPMr3c7uaQ" type="State_FloatingNameLabel">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_8jm4UHNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aHHQVEfGImPMr3c7uaQ" x="40"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_eW4aHXQVEfGImPMr3c7uaQ" type="State_RegionCompartment">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_8jm4UHNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aHnQVEfGImPMr3c7uaQ" y="-1" width="100"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_eW4aH3QVEfGImPMr3c7uaQ" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_eW4aIHQVEfGImPMr3c7uaQ"/>
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_8jm4UHNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aIXQVEfGImPMr3c7uaQ"/>
+              </children>
+              <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_8jm4UHNGEfGImPMr3c7uaQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aInQVEfGImPMr3c7uaQ" x="889" y="169" width="100" height="81"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_eW4aI3QVEfGImPMr3c7uaQ" type="State_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4aJHQVEfGImPMr3c7uaQ" type="State_NameLabel">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_9UXm4HNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aJXQVEfGImPMr3c7uaQ" width="87"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4aJnQVEfGImPMr3c7uaQ" type="State_FloatingNameLabel">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_9UXm4HNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aJ3QVEfGImPMr3c7uaQ" x="40"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_eW4aKHQVEfGImPMr3c7uaQ" type="State_RegionCompartment">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_9UXm4HNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aKXQVEfGImPMr3c7uaQ" y="-1" width="87"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_eW4aKnQVEfGImPMr3c7uaQ" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_eW4aK3QVEfGImPMr3c7uaQ"/>
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_9UXm4HNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aLHQVEfGImPMr3c7uaQ"/>
+              </children>
+              <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_9UXm4HNGEfGImPMr3c7uaQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aLXQVEfGImPMr3c7uaQ" x="1249" y="169" width="87" height="81"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_eW4aLnQVEfGImPMr3c7uaQ" type="State_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4aL3QVEfGImPMr3c7uaQ" type="State_NameLabel">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_-W_hgHNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aMHQVEfGImPMr3c7uaQ" width="120"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4aMXQVEfGImPMr3c7uaQ" type="State_FloatingNameLabel">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_-W_hgHNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aMnQVEfGImPMr3c7uaQ" x="40"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_eW4aM3QVEfGImPMr3c7uaQ" type="State_RegionCompartment">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_-W_hgHNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aNHQVEfGImPMr3c7uaQ" y="-1" width="120"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_eW4aNXQVEfGImPMr3c7uaQ" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_eW4aNnQVEfGImPMr3c7uaQ"/>
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_-W_hgHNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aN3QVEfGImPMr3c7uaQ"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_eW4aOHQVEfGImPMr3c7uaQ" type="Behavior_EntryBehaviorLabel">
+                <element xmi:type="uml:OpaqueBehavior" href="Robotic-Surgical-Architecture.uml#_P5IlwHNLEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aOXQVEfGImPMr3c7uaQ" x="-10" y="-10"/>
+              </children>
+              <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#_-W_hgHNGEfGImPMr3c7uaQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aOnQVEfGImPMr3c7uaQ" x="609" y="369" width="120" height="121"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_eW4aO3QVEfGImPMr3c7uaQ" type="State_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4aPHQVEfGImPMr3c7uaQ" type="State_NameLabel">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#__1Cz4HNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aPXQVEfGImPMr3c7uaQ" width="85"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4aPnQVEfGImPMr3c7uaQ" type="State_FloatingNameLabel">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#__1Cz4HNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aP3QVEfGImPMr3c7uaQ" x="40"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_eW4aQHQVEfGImPMr3c7uaQ" type="State_RegionCompartment">
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#__1Cz4HNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aQXQVEfGImPMr3c7uaQ" y="-1" width="85"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_eW4aQnQVEfGImPMr3c7uaQ" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_eW4aQ3QVEfGImPMr3c7uaQ"/>
+                <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#__1Cz4HNGEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aRHQVEfGImPMr3c7uaQ"/>
+              </children>
+              <element xmi:type="uml:State" href="Robotic-Surgical-Architecture.uml#__1Cz4HNGEfGImPMr3c7uaQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aRXQVEfGImPMr3c7uaQ" x="629" y="569" width="85" height="81"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_eW4aRnQVEfGImPMr3c7uaQ" type="FinalState_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4aR3QVEfGImPMr3c7uaQ" type="FinalState_FloatingNameLabel">
+                <element xmi:type="uml:FinalState" href="Robotic-Surgical-Architecture.uml#_dc6JQHNKEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aSHQVEfGImPMr3c7uaQ" x="-60" y="-20"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_eW4aSXQVEfGImPMr3c7uaQ" type="FinalState_StereotypeLabel">
+                <element xmi:type="uml:FinalState" href="Robotic-Surgical-Architecture.uml#_dc6JQHNKEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aSnQVEfGImPMr3c7uaQ" x="25" y="-10"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_eW4aS3QVEfGImPMr3c7uaQ" type="compartment_shape_display">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_eW4aTHQVEfGImPMr3c7uaQ"/>
+                <element xmi:type="uml:FinalState" href="Robotic-Surgical-Architecture.uml#_dc6JQHNKEfGImPMr3c7uaQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aTXQVEfGImPMr3c7uaQ"/>
+              </children>
+              <element xmi:type="uml:FinalState" href="Robotic-Surgical-Architecture.uml#_dc6JQHNKEfGImPMr3c7uaQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aTnQVEfGImPMr3c7uaQ" x="169" y="589"/>
+            </children>
+            <element xmi:type="uml:Region" href="Robotic-Surgical-Architecture.uml#_krjeEHNGEfGImPMr3c7uaQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aT3QVEfGImPMr3c7uaQ"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_eW4aUHQVEfGImPMr3c7uaQ" type="compartment_shape_display">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_eW4aUXQVEfGImPMr3c7uaQ"/>
+            <element xmi:type="uml:Region" href="Robotic-Surgical-Architecture.uml#_krjeEHNGEfGImPMr3c7uaQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aUnQVEfGImPMr3c7uaQ"/>
+          </children>
+          <element xmi:type="uml:Region" href="Robotic-Surgical-Architecture.uml#_krjeEHNGEfGImPMr3c7uaQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aU3QVEfGImPMr3c7uaQ" width="1425" height="678"/>
+        </children>
+        <element xmi:type="uml:StateMachine" href="Robotic-Surgical-Architecture.uml#_i1hwkHNGEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aVHQVEfGImPMr3c7uaQ" y="21" width="1425" height="678"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_eW4aVXQVEfGImPMr3c7uaQ" type="compartment_shape_display">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_eW4aVnQVEfGImPMr3c7uaQ"/>
+        <element xmi:type="uml:StateMachine" href="Robotic-Surgical-Architecture.uml#_i1hwkHNGEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aV3QVEfGImPMr3c7uaQ"/>
+      </children>
+      <element xmi:type="uml:StateMachine" href="Robotic-Surgical-Architecture.uml#_i1hwkHNGEfGImPMr3c7uaQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eW4aWHQVEfGImPMr3c7uaQ" x="30" y="30" width="1425" height="699"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_eW4aWXQVEfGImPMr3c7uaQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_eW4aWnQVEfGImPMr3c7uaQ"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_eW4aW3QVEfGImPMr3c7uaQ" diagramKindId="org.eclipse.papyrus.sysml16.diagram.stateMachine">
+      <owner xmi:type="uml:Package" href="Robotic-Surgical-Architecture.uml#_ypY7EmtoEfGuEvnTmBr3Tw"/>
+    </styles>
+    <element xmi:type="uml:StateMachine" href="Robotic-Surgical-Architecture.uml#_i1hwkHNGEfGImPMr3c7uaQ"/>
+    <edges xmi:type="notation:Connector" xmi:id="_eW4aXHQVEfGImPMr3c7uaQ" type="Transition_Edge" source="_eW4Z-XQVEfGImPMr3c7uaQ" target="_eW4aAnQVEfGImPMr3c7uaQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4aXXQVEfGImPMr3c7uaQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4aXnQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_Z906oHNHEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aX3QVEfGImPMr3c7uaQ" x="1" y="19"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4aYHQVEfGImPMr3c7uaQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4aYXQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_Z906oHNHEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aYnQVEfGImPMr3c7uaQ" x="-1" y="-18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4aY3QVEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4aZHQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_Z906oHNHEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aZXQVEfGImPMr3c7uaQ" x="1" y="59"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eW4aZnQVEfGImPMr3c7uaQ"/>
+      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_Z906oHNHEfGImPMr3c7uaQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eW4aZ3QVEfGImPMr3c7uaQ" points="[60, 168, -643984, -643984]$[180, 180, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4aaHQVEfGImPMr3c7uaQ" id="(0.0,0.4)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4aaXQVEfGImPMr3c7uaQ" id="(0.0,0.4444444444444444)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_eW4aanQVEfGImPMr3c7uaQ" type="Transition_Edge" source="_eW4aAnQVEfGImPMr3c7uaQ" target="_eW4aDXQVEfGImPMr3c7uaQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4aa3QVEfGImPMr3c7uaQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4abHQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_qgWRwHNHEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4abXQVEfGImPMr3c7uaQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4abnQVEfGImPMr3c7uaQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4ab3QVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_qgWRwHNHEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4acHQVEfGImPMr3c7uaQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4acXQVEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4acnQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_qgWRwHNHEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4ac3QVEfGImPMr3c7uaQ" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eW4adHQVEfGImPMr3c7uaQ"/>
+      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_qgWRwHNHEfGImPMr3c7uaQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eW4adXQVEfGImPMr3c7uaQ" points="[200, 265, -643984, -643984]$[340, 265, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4adnQVEfGImPMr3c7uaQ" id="(1.0,0.4444444444444444)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4ad3QVEfGImPMr3c7uaQ" id="(0.0,0.4444444444444444)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_eW4aeHQVEfGImPMr3c7uaQ" type="Transition_Edge" source="_eW4aDXQVEfGImPMr3c7uaQ" target="_eW4aGHQVEfGImPMr3c7uaQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4aeXQVEfGImPMr3c7uaQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4aenQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_0UByUHNHEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4ae3QVEfGImPMr3c7uaQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4afHQVEfGImPMr3c7uaQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4afXQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_0UByUHNHEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4afnQVEfGImPMr3c7uaQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4af3QVEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4agHQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_0UByUHNHEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4agXQVEfGImPMr3c7uaQ" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eW4agnQVEfGImPMr3c7uaQ"/>
+      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_0UByUHNHEfGImPMr3c7uaQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eW4ag3QVEfGImPMr3c7uaQ" points="[471, 240, -643984, -643984]$[585, 240, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4ahHQVEfGImPMr3c7uaQ" id="(1.0,0.4444444444444444)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4ahXQVEfGImPMr3c7uaQ" id="(0.0,0.4444444444444444)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_eW4ahnQVEfGImPMr3c7uaQ" type="Transition_Edge" source="_eW4aGHQVEfGImPMr3c7uaQ" target="_eW4aI3QVEfGImPMr3c7uaQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4ah3QVEfGImPMr3c7uaQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4aiHQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_3681sHNHEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aiXQVEfGImPMr3c7uaQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4ainQVEfGImPMr3c7uaQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4ai3QVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_3681sHNHEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4ajHQVEfGImPMr3c7uaQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4ajXQVEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4ajnQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_3681sHNHEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aj3QVEfGImPMr3c7uaQ" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eW4akHQVEfGImPMr3c7uaQ"/>
+      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_3681sHNHEfGImPMr3c7uaQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eW4akXQVEfGImPMr3c7uaQ" points="[794, 240, -643984, -643984]$[910, 240, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4aknQVEfGImPMr3c7uaQ" id="(1.0,0.4444444444444444)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4ak3QVEfGImPMr3c7uaQ" id="(0.0,0.4444444444444444)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_eW4alHQVEfGImPMr3c7uaQ" type="Transition_Edge" source="_eW4aI3QVEfGImPMr3c7uaQ" target="_eW4aDXQVEfGImPMr3c7uaQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4alXQVEfGImPMr3c7uaQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4alnQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_95jiIHNHEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4al3QVEfGImPMr3c7uaQ" x="-1" y="18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4amHQVEfGImPMr3c7uaQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4amXQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_95jiIHNHEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4amnQVEfGImPMr3c7uaQ" x="-1" y="-19"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4am3QVEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4anHQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_95jiIHNHEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4anXQVEfGImPMr3c7uaQ" x="1" y="58"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eW4annQVEfGImPMr3c7uaQ"/>
+      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_95jiIHNHEfGImPMr3c7uaQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eW4an3QVEfGImPMr3c7uaQ" points="[1296, 220, -643984, -643984]$[900, 180, -643984, -643984]$[504, 220, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4aoHQVEfGImPMr3c7uaQ" id="(0.1839080459770115,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4aoXQVEfGImPMr3c7uaQ" id="(0.8235294117647058,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_eW4aonQVEfGImPMr3c7uaQ" type="Transition_Edge" source="_eW4aI3QVEfGImPMr3c7uaQ" target="_eW4aAnQVEfGImPMr3c7uaQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4ao3QVEfGImPMr3c7uaQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4apHQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_Edg-YHNIEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4apXQVEfGImPMr3c7uaQ" x="-1" y="18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4apnQVEfGImPMr3c7uaQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4ap3QVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_Edg-YHNIEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aqHQVEfGImPMr3c7uaQ" x="1" y="-19"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4aqXQVEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4aqnQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_Edg-YHNIEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4aq3QVEfGImPMr3c7uaQ" x="-2" y="57"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eW4arHQVEfGImPMr3c7uaQ"/>
+      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_Edg-YHNIEfGImPMr3c7uaQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eW4arXQVEfGImPMr3c7uaQ" points="[1348, 220, -643984, -643984]$[1060, 100, -643984, -643984]$[460, 100, -643984, -643984]$[236, 220, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4arnQVEfGImPMr3c7uaQ" id="(0.7816091954022989,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4ar3QVEfGImPMr3c7uaQ" id="(0.7368421052631579,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_eW4asHQVEfGImPMr3c7uaQ" type="Transition_Edge" source="_eW4aDXQVEfGImPMr3c7uaQ" target="_eW4aLnQVEfGImPMr3c7uaQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4asXQVEfGImPMr3c7uaQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4asnQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_T0AAMHNIEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4as3QVEfGImPMr3c7uaQ" x="111" y="-37"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4atHQVEfGImPMr3c7uaQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4atXQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_T0AAMHNIEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4atnQVEfGImPMr3c7uaQ" x="-1" y="-18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4at3QVEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4auHQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_T0AAMHNIEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4auXQVEfGImPMr3c7uaQ" x="2" y="57"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eW4aunQVEfGImPMr3c7uaQ"/>
+      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_T0AAMHNIEfGImPMr3c7uaQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eW4au3QVEfGImPMr3c7uaQ" points="[480, 300, -643984, -643984]$[620, 340, -643984, -643984]$[696, 440, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4avHQVEfGImPMr3c7uaQ" id="(0.5882352941176471,0.9876543209876543)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4avXQVEfGImPMr3c7uaQ" id="(0.45,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_eW4avnQVEfGImPMr3c7uaQ" type="Transition_Edge" source="_eW4aGHQVEfGImPMr3c7uaQ" target="_eW4aLnQVEfGImPMr3c7uaQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4av3QVEfGImPMr3c7uaQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4awHQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_ZGX4wHNIEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4awXQVEfGImPMr3c7uaQ" x="65" y="32"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4awnQVEfGImPMr3c7uaQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4aw3QVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_ZGX4wHNIEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4axHQVEfGImPMr3c7uaQ" y="-19"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4axXQVEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4axnQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_ZGX4wHNIEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4ax3QVEfGImPMr3c7uaQ" x="-1" y="58"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eW4ayHQVEfGImPMr3c7uaQ"/>
+      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_ZGX4wHNIEfGImPMr3c7uaQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eW4ayXQVEfGImPMr3c7uaQ" points="[980, 300, -643984, -643984]$[940, 420, -643984, -643984]$[728, 440, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4aynQVEfGImPMr3c7uaQ" id="(0.6,0.9876543209876543)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4ay3QVEfGImPMr3c7uaQ" id="(0.85,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_eW4azHQVEfGImPMr3c7uaQ" type="Transition_Edge" source="_eW4aLnQVEfGImPMr3c7uaQ" target="_eW4aDXQVEfGImPMr3c7uaQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4azXQVEfGImPMr3c7uaQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4aznQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_ryD70HNIEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4az3QVEfGImPMr3c7uaQ" x="-80" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4a0HQVEfGImPMr3c7uaQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4a0XQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_ryD70HNIEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4a0nQVEfGImPMr3c7uaQ" x="1" y="-18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4a03QVEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4a1HQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_ryD70HNIEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4a1XQVEfGImPMr3c7uaQ" x="-1" y="57"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eW4a1nQVEfGImPMr3c7uaQ"/>
+      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_ryD70HNIEfGImPMr3c7uaQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eW4a13QVEfGImPMr3c7uaQ" points="[660, 476, -643984, -643984]$[480, 460, -643984, -643984]$[460, 300, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4a2HQVEfGImPMr3c7uaQ" id="(0.0,0.4444444444444444)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4a2XQVEfGImPMr3c7uaQ" id="(0.39215686274509803,0.9876543209876543)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_eW4a2nQVEfGImPMr3c7uaQ" type="Transition_Edge" source="_eW4aLnQVEfGImPMr3c7uaQ" target="_eW4aO3QVEfGImPMr3c7uaQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4a23QVEfGImPMr3c7uaQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4a3HQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_xnFOcHNIEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4a3XQVEfGImPMr3c7uaQ" x="-12" y="-62"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4a3nQVEfGImPMr3c7uaQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4a33QVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_xnFOcHNIEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4a4HQVEfGImPMr3c7uaQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4a4XQVEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4a4nQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_xnFOcHNIEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4a43QVEfGImPMr3c7uaQ" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eW4a5HQVEfGImPMr3c7uaQ"/>
+      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_xnFOcHNIEfGImPMr3c7uaQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eW4a5XQVEfGImPMr3c7uaQ" points="[469, 465, -643984, -643984]$[705, 465, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4a5nQVEfGImPMr3c7uaQ" id="(0.55,0.9876543209876543)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4a53QVEfGImPMr3c7uaQ" id="(0.5176470588235295,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_eW4a6HQVEfGImPMr3c7uaQ" type="Transition_Edge" source="_eW4aDXQVEfGImPMr3c7uaQ" target="_eW4aO3QVEfGImPMr3c7uaQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4a6XQVEfGImPMr3c7uaQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4a6nQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_a3HoMHNJEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4a63QVEfGImPMr3c7uaQ" x="169" y="-27"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4a7HQVEfGImPMr3c7uaQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4a7XQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_a3HoMHNJEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4a7nQVEfGImPMr3c7uaQ" y="-19"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4a73QVEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4a8HQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_a3HoMHNJEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4a8XQVEfGImPMr3c7uaQ" x="-1" y="57"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eW4a8nQVEfGImPMr3c7uaQ"/>
+      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_a3HoMHNJEfGImPMr3c7uaQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eW4a83QVEfGImPMr3c7uaQ" points="[429, 300, -643984, -643984]$[400, 500, -643984, -643984]$[660, 640, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4a9HQVEfGImPMr3c7uaQ" id="(0.0784313725490196,0.9876543209876543)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4a9XQVEfGImPMr3c7uaQ" id="(0.0,0.24691358024691357)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_eW4a9nQVEfGImPMr3c7uaQ" type="Transition_Edge" source="_eW4aGHQVEfGImPMr3c7uaQ" target="_eW4aO3QVEfGImPMr3c7uaQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4a93QVEfGImPMr3c7uaQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4a-HQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_oEmWIHNJEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4a-XQVEfGImPMr3c7uaQ" x="-4" y="-65"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4a-nQVEfGImPMr3c7uaQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4a-3QVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_oEmWIHNJEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4a_HQVEfGImPMr3c7uaQ" x="-1" y="-18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4a_XQVEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4a_nQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_oEmWIHNJEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4a_3QVEfGImPMr3c7uaQ" x="1" y="57"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eW4bAHQVEfGImPMr3c7uaQ"/>
+      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_oEmWIHNJEfGImPMr3c7uaQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eW4bAXQVEfGImPMr3c7uaQ" points="[1008, 300, -643984, -643984]$[960, 580, -643984, -643984]$[744, 640, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4bAnQVEfGImPMr3c7uaQ" id="(0.88,0.9876543209876543)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW4bA3QVEfGImPMr3c7uaQ" id="(0.9882352941176471,0.24691358024691357)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_eW4bBHQVEfGImPMr3c7uaQ" type="Transition_Edge" source="_eW4aI3QVEfGImPMr3c7uaQ" target="_eW4aO3QVEfGImPMr3c7uaQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4bBXQVEfGImPMr3c7uaQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4bBnQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_Ev75MHNKEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4bB3QVEfGImPMr3c7uaQ" x="-1" y="18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW4bCHQVEfGImPMr3c7uaQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW4bCXQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_Ev75MHNKEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW4bCnQVEfGImPMr3c7uaQ" y="-19"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW5BAHQVEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW5BAXQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_Ev75MHNKEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW5BAnQVEfGImPMr3c7uaQ" x="-1" y="58"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eW5BA3QVEfGImPMr3c7uaQ"/>
+      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_Ev75MHNKEfGImPMr3c7uaQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eW5BBHQVEfGImPMr3c7uaQ" points="[1324, 300, -643984, -643984]$[1260, 622, -643984, -643984]$[744, 680, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW5BBXQVEfGImPMr3c7uaQ" id="(0.8735632183908046,0.9876543209876543)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW5BBnQVEfGImPMr3c7uaQ" id="(0.9882352941176471,0.7407407407407407)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_eW5BB3QVEfGImPMr3c7uaQ" type="Transition_Edge" source="_eW4aO3QVEfGImPMr3c7uaQ" target="_eW4aRnQVEfGImPMr3c7uaQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW5BCHQVEfGImPMr3c7uaQ" type="Transition_NameLabel">
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_fpumIHNKEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW5BCXQVEfGImPMr3c7uaQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW5BCnQVEfGImPMr3c7uaQ" type="Transition_GuardLabel">
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_fpumIHNKEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW5BC3QVEfGImPMr3c7uaQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW5BDHQVEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_fpumIHNKEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW5BDXQVEfGImPMr3c7uaQ" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eW5BDnQVEfGImPMr3c7uaQ"/>
+      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_fpumIHNKEfGImPMr3c7uaQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eW5BD3QVEfGImPMr3c7uaQ" points="[660, 668, -643984, -643984]$[217, 649, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW5BEHQVEfGImPMr3c7uaQ" id="(0.0,0.5925925925925926)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW5BEXQVEfGImPMr3c7uaQ" id="(0.9,0.5120535714285722)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_eW5BEnQVEfGImPMr3c7uaQ" type="Transition_Edge" source="_eW4aI3QVEfGImPMr3c7uaQ" target="_eW4aLnQVEfGImPMr3c7uaQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW5BE3QVEfGImPMr3c7uaQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW5BFHQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_4qNBAHNKEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW5BFXQVEfGImPMr3c7uaQ" x="-53" y="13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW5BFnQVEfGImPMr3c7uaQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW5BF3QVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_4qNBAHNKEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW5BGHQVEfGImPMr3c7uaQ" y="-19"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eW5BGXQVEfGImPMr3c7uaQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_eW5BGnQVEfGImPMr3c7uaQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_4qNBAHNKEfGImPMr3c7uaQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eW5BG3QVEfGImPMr3c7uaQ" x="-1" y="58"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eW5BHHQVEfGImPMr3c7uaQ"/>
+      <element xmi:type="uml:Transition" href="Robotic-Surgical-Architecture.uml#_4qNBAHNKEfGImPMr3c7uaQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eW5BHXQVEfGImPMr3c7uaQ" points="[1280, 291, -643984, -643984]$[1240, 480, -643984, -643984]$[740, 492, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW5BHnQVEfGImPMr3c7uaQ" id="(0.27586206896551724,0.9876543209876543)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eW5BH3QVEfGImPMr3c7uaQ" id="(1.0,0.6419753086419753)"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>
